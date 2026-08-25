@@ -19,10 +19,12 @@ export default function ServiceAdvisorySupport({
 
           <ol className="mt-8 space-y-5">
             {steps.map((step, index) => (
-              <li key={step.title} className="grid grid-cols-[auto_1fr] gap-x-2">
-                <span className="text-sm font-medium text-[#3d3d3d] sm:text-base">{index + 1}.</span>
+              <li key={step.title} className="grid grid-cols-[1.25rem_minmax(0,1fr)] items-baseline gap-x-2">
+                <span className="text-left text-base font-medium leading-6 text-[#3d3d3d] sm:text-lg">
+                  {index + 1}.
+                </span>
                 <div>
-                  <h3 className="text-base font-medium text-[#3d3d3d] sm:text-lg">{step.title}</h3>
+                  <h3 className="text-base font-medium leading-6 text-[#3d3d3d] sm:text-lg">{step.title}</h3>
                   {step.description ? <p className="mt-3 text-sm leading-7 text-[#555555] md:text-base">{step.description}</p> : null}
                 </div>
               </li>
