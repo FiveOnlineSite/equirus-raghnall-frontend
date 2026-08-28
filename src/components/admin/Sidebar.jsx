@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { apiRequest } from "@/lib/api";
 
 const menuItems = [
   {
@@ -25,11 +26,9 @@ export default function Sidebar() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("/api/admin/logout", {
+      const data = await apiRequest("/api/admin/logout", {
         method: "POST",
       });
-
-      const data = await response.json();
 
       if (data.success) {
         router.push("/admin/login");

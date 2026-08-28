@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { apiRequest } from "@/lib/api";
 
 export default function ServiceHero({
   label,
@@ -35,17 +36,10 @@ export default function ServiceHero({
 
     async function loadBanner() {
       try {
-        const response = await fetch(
+        const data = await apiRequest(
           `/api/banners/${encodeURIComponent(pageSlug)}`,
           { signal: controller.signal },
         );
-
-        if (!response.ok) {
-          setBannerImage(image);
-          return;
-        }
-
-        const data = await response.json();
 
         if (data.banner?.imageUrl) {
           setBannerImage(data.banner.imageUrl);

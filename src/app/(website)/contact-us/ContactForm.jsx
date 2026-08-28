@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { apiRequest } from "@/lib/api";
 
 const inputClass = "mt-2 h-10 w-full rounded-sm border-0 bg-[#f7f7f7] px-3 text-sm outline-none ring-[#0A4E08] transition focus:ring-1 md:h-12 md:px-4";
 
@@ -28,16 +29,10 @@ export default function ContactForm({ serviceGroups }) {
     const payload = Object.fromEntries(new FormData(form));
 
     try {
-      const response = await fetch("/api/contact", {
+      await apiRequest("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result.message || "Unable to send your message.");
-      }
 
       form.reset();
       setStatus("success");

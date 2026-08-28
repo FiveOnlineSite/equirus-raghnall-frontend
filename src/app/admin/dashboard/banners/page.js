@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { serviceSections } from "@/data/serviceMenus";
+import { ApiError, apiRequest } from "@/lib/api";
 
 export default function BannersPage() {
   const [selectedSection, setSelectedSection] = useState(
@@ -105,33 +106,12 @@ export default function BannersPage() {
 
       setPreviewUrl("");
 
-      const response = await fetch(
+      const data = await apiRequest(
         `/api/admin/banners/${selectedPage}`,
         {
           cache: "no-store",
         }
       );
-
-      // Banner doesn't exist yet
-      if (response.status === 404) {
-        setImageKey("");
-        setAltText("");
-        return;
-      }
-
-      if (!response.ok) {
-        console.error(
-          "Unable to load banner:",
-          response.status
-        );
-
-        setImageKey("");
-        setAltText("");
-
-        return;
-      }
-
-      const data = await response.json();
 
       if (data.success && data.banner) {
         setImageKey(data.banner.imageKey || "");
@@ -141,6 +121,12 @@ export default function BannersPage() {
         setAltText("");
       }
     } catch (error) {
+      if (error instanceof ApiError && error.status === 404) {
+        setImageKey("");
+        setAltText("");
+        return;
+      }
+
       console.error("Banner fetch error:", error);
 
       setImageKey("");
@@ -192,13 +178,10 @@ export default function BannersPage() {
     }
 
     // 1. Ask backend for presigned S3 URL
-    const signedResponse = await fetch(
+    const signedData = await apiRequest(
       "/api/admin/upload",
       {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
         body: JSON.stringify({
           fileType: selectedFile.type,
           fileSize: selectedFile.size,
@@ -206,16 +189,6 @@ export default function BannersPage() {
         }),
       }
     );
-
-    const signedData =
-      await signedResponse.json();
-
-    if (!signedResponse.ok) {
-      throw new Error(
-        signedData.message ||
-          "Unable to generate upload URL"
-      );
-    }
 
     if (!signedData.uploadUrl || !signedData.fields || !signedData.key) {
       throw new Error(
@@ -272,13 +245,10 @@ export default function BannersPage() {
       }
 
       // 2. Save S3 key in MongoDB
-      const response = await fetch(
+      const data = await apiRequest(
         `/api/admin/banners/${selectedPage}`,
         {
           method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
           body: JSON.stringify({
             imageKey: finalImageKey,
             altText: altText.trim(),
@@ -286,9 +256,7 @@ export default function BannersPage() {
         }
       );
 
-      const data = await response.json();
-
-      if (!response.ok || !data.success) {
+      if (!data.success) {
         throw new Error(
           data.message ||
             "Unable to save banner"

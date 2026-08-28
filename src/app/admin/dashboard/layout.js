@@ -1,8 +1,48 @@
-import { requireAdmin } from "@/lib/requireAdmin";
-import Sidebar from "@/components/admin/Sidebar";
+"use client";
 
-export default async function DashboardLayout({ children }) {
-  await requireAdmin();
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import Sidebar from "@/components/admin/Sidebar";
+import { apiRequest } from "@/lib/api";
+
+export default function DashboardLayout({ children }) {
+  const router = useRouter();
+  const [authenticated, setAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function verifySession() {
+      try {
+        const session = await apiRequest("/api/admin/session", {
+          cache: "no-store",
+          signal: controller.signal,
+        });
+
+        if (session?.success === false || session?.authenticated === false) {
+          router.replace("/admin/login");
+          return;
+        }
+
+        setAuthenticated(true);
+      } catch (error) {
+        if (error.name !== "AbortError") {
+          router.replace("/admin/login");
+        }
+      }
+    }
+
+    verifySession();
+    return () => controller.abort();
+  }, [router]);
+
+  if (!authenticated) {
+    return (
+      <div className="grid min-h-screen place-items-center bg-[#F7F8F6] text-sm text-[#555555]">
+        Verifying admin session...
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#F7F8F6]">

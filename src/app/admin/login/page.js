@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { apiRequest } from "@/lib/api";
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -19,18 +20,13 @@ export default function AdminLoginPage() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/admin/login", {
+      const data = await apiRequest("/api/admin/login", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
         body: JSON.stringify({
           username,
           password,
         }),
       });
-
-      const data = await response.json();
 
       if (!data.success) {
         setError(data.message || "Login failed");
@@ -42,7 +38,7 @@ export default function AdminLoginPage() {
     } catch (error) {
       console.error("Login error:", error);
 
-      setError("Something went wrong. Please try again.");
+      setError(error.message || "Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
