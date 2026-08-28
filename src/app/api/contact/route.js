@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
-import { commercialMenu } from "../../data/commercialServices";
-import { privateClientsMenu } from "../../data/privateClientServices";
-import { reinsuranceMenu } from "../../data/reinsuranceServices";
+import { commercialMenu } from "@/data/commercialServices";
+import { privateClientsMenu } from "@/data/privateClientServices";
+import { reinsuranceMenu } from "@/data/reinsuranceServices";
 
 export const runtime = "nodejs";
 

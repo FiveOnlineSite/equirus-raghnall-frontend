@@ -9,6 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1119.0",
+    "@aws-sdk/s3-presigned-post": "^3.1119.0",
+    "@aws-sdk/s3-request-presigner": "^3.1119.0",
+    "@imagekit/nodejs": "^7.11.0",
+    "bcryptjs": "^3.0.3",
+    "jose": "^6.2.10",
+    "mongoose": "^8.24.4",
     "next": "16.3.0",
     "nodemailer": "^9.0.5",
     "react": "19.2.8",
