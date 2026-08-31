@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { serviceSections } from "@/data/serviceMenus";
 import { apiRequest } from "@/lib/api";
 
@@ -16,6 +16,7 @@ export default function FaqManagementPage() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [notice, setNotice] = useState(null);
+  const formRef = useRef(null);
 
   useEffect(() => {
     if (notice?.type !== "success") return undefined;
@@ -126,7 +127,7 @@ export default function FaqManagementPage() {
           </select>
         </label>
 
-        <form onSubmit={saveFaq} className="mt-7 rounded-xl border border-gray-200 bg-gray-50 p-5">
+        <form ref={formRef} onSubmit={saveFaq} className="mt-7 rounded-xl border border-gray-200 bg-gray-50 p-5">
           <div className="flex items-center justify-between gap-4"><h2 className="font-semibold text-gray-900">{editingId ? "Edit FAQ" : "Add FAQ"}</h2><span className="text-sm text-gray-500">{faqs.length}/5 used</span></div>
           <label className="mt-4 block text-sm font-medium text-gray-700">Question
             <input value={form.question} maxLength={300} onChange={(event) => setForm({ ...form, question: event.target.value })} className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none focus:border-[#0A4E08]" required />
@@ -137,7 +138,7 @@ export default function FaqManagementPage() {
           <div className="mt-5 flex justify-end gap-3">{editingId && <button type="button" onClick={resetForm} className="rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700">Cancel</button>}<button type="submit" disabled={saving || (!editingId && faqs.length >= 5)} className="rounded-lg bg-[#0A4E08] px-5 py-2.5 text-sm font-medium text-white disabled:opacity-50">{saving ? "Saving..." : editingId ? "Update FAQ" : "Add FAQ"}</button></div>
         </form>
 
-        <div className="mt-7"><div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="font-semibold text-gray-900">Page FAQs</h2><p className={`mt-1 text-sm font-medium ${isPublished ? "text-green-700" : "text-gray-500"}`}>{isPublished ? "Published on the service page" : "Draft — not yet published"}</p></div><button type="button" onClick={() => updatePublishState(!isPublished)} disabled={!isPublished && faqs.length !== 5} className="rounded-lg bg-[#0A4E08] px-5 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-50">{isPublished ? "Unpublish FAQs" : "Publish FAQs"}</button></div>{loading ? <p className="py-6 text-sm text-gray-500">Loading FAQs...</p> : faqs.length === 0 ? <p className="mt-4 rounded-lg bg-gray-50 p-5 text-sm text-gray-500">No managed FAQs yet. Add all five FAQs, then publish them to replace the current page content.</p> : <div className="mt-4 space-y-3">{faqs.map((faq, index) => <article key={faq._id} className="rounded-xl border border-gray-200 p-4"><div className="flex flex-col justify-between gap-4 sm:flex-row"><div className="min-w-0"><p className="font-semibold text-gray-900">{index + 1}. {faq.question}</p><p className="mt-2 whitespace-pre-wrap text-sm leading-6 text-gray-500">{faq.answer}</p></div><div className="flex shrink-0 gap-2"><button type="button" onClick={() => moveFaq(index, -1)} disabled={index === 0} className="inline-flex size-10 items-center justify-center rounded border border-gray-300 text-sm disabled:opacity-40">↑</button><button type="button" onClick={() => moveFaq(index, 1)} disabled={index === faqs.length - 1} className="inline-flex size-10 items-center justify-center rounded border border-gray-300 text-sm disabled:opacity-40">↓</button><button type="button" onClick={() => { setForm({ question: faq.question, answer: faq.answer }); setEditingId(faq._id); }} className="inline-flex h-10 w-16 items-center justify-center rounded border border-[#0A4E08] text-sm text-[#0A4E08]">Edit</button><button type="button" onClick={() => deleteFaq(faq)} className="inline-flex h-10 w-16 items-center justify-center rounded border border-red-200 text-sm text-red-700">Delete</button></div></div></article>)}</div>}</div>
+        <div className="mt-7"><div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="font-semibold text-gray-900">Page FAQs</h2><p className={`mt-1 text-sm font-medium ${isPublished ? "text-green-700" : "text-gray-500"}`}>{isPublished ? "Published on the service page" : "Draft — not yet published"}</p></div><button type="button" onClick={() => updatePublishState(!isPublished)} disabled={!isPublished && faqs.length !== 5} className="rounded-lg bg-[#0A4E08] px-5 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-50">{isPublished ? "Unpublish FAQs" : "Publish FAQs"}</button></div>{loading ? <p className="py-6 text-sm text-gray-500">Loading FAQs...</p> : faqs.length === 0 ? <p className="mt-4 rounded-lg bg-gray-50 p-5 text-sm text-gray-500">No managed FAQs yet. Add all five FAQs, then publish them to replace the current page content.</p> : <div className="mt-4 space-y-3">{faqs.map((faq, index) => <article key={faq._id} className="rounded-xl border border-gray-200 p-4"><div className="flex flex-col justify-between gap-4 sm:flex-row"><div className="min-w-0"><p className="font-semibold text-gray-900">{index + 1}. {faq.question}</p><p className="mt-2 whitespace-pre-wrap text-sm leading-6 text-gray-500">{faq.answer}</p></div><div className="flex shrink-0 gap-2"><button type="button" onClick={() => moveFaq(index, -1)} disabled={index === 0} className="inline-flex size-10 items-center justify-center rounded border border-gray-300 text-sm disabled:opacity-40">↑</button><button type="button" onClick={() => moveFaq(index, 1)} disabled={index === faqs.length - 1} className="inline-flex size-10 items-center justify-center rounded border border-gray-300 text-sm disabled:opacity-40">↓</button><button type="button" onClick={() => { setForm({ question: faq.question, answer: faq.answer }); setEditingId(faq._id); window.requestAnimationFrame(() => formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })); }} className="inline-flex h-10 w-16 items-center justify-center rounded border border-[#0A4E08] text-sm text-[#0A4E08]">Edit</button><button type="button" onClick={() => deleteFaq(faq)} className="inline-flex h-10 w-16 items-center justify-center rounded border border-red-200 text-sm text-red-700">Delete</button></div></div></article>)}</div>}</div>
       </section>
     </div>
   );
