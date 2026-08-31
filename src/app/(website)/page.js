@@ -4,6 +4,7 @@ import CounterStats from "@/components/CounterStats";
 import FaqSection from "@/components/FaqSection";
 import HomeHeroVisual, { MobileHomeHeroVisual } from "@/components/HomeHeroVisual";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import HomeBottomSection from "@/components/HomeBottomSection";
 
 const services = [
   {
@@ -487,41 +488,7 @@ export default function Home() {
           compactTop
         />
 
-        <section className="bg-white pb-14 pt-4">
-          <div className="mx-auto flex max-w-[1440px] flex-col items-start px-5 text-left md:px-10 xl:px-20">
-            <Image
-              src="/assets/shared/raghnall-logo.png"
-              alt="Equirus Raghnall"
-              width={200}
-              height={200}
-              className="h-[180px] w-[180px] object-contain"
-            />
-            <p className="text-sm md:text-base  leading-7 text-[#555555]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse...
-            </p>
-            <Link
-              href="/about-us"
-              className="group mt-5 inline-flex items-center gap-2 text-base font-semibold text-[#0A4E08] transition"
-            >
-              Read More
-              <Image
-                src="/assets/shared/arrow-right.svg"
-                alt=""
-                width={18}
-                height={18}
-                className="size-[20px] transition-transform duration-300 group-hover:translate-x-1.5"
-                aria-hidden
-              />
-            </Link>
-          </div>
-        </section>
+        <HomeBottomSection />
       </main>
       
     </>

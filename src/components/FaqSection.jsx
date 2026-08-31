@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { apiRequest } from "@/lib/api";
 
 export default function FaqSection({
   eyebrow = "Frequently Asked Questions",
@@ -11,6 +13,33 @@ export default function FaqSection({
   compactTop = false,
 }) {
   const [openIndex, setOpenIndex] = useState(defaultOpen);
+  const [managedItems, setManagedItems] = useState(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const page = pathname.split("/").filter(Boolean).at(-1) || "home";
+
+    const controller = new AbortController();
+
+    async function loadManagedFaqs() {
+      try {
+        const data = await apiRequest(`/api/faqs/${page}`, {
+          cache: "no-store",
+          signal: controller.signal,
+        });
+        if (data?.success && Array.isArray(data.faqs) && data.faqs.length) {
+          setManagedItems(data.faqs);
+        }
+      } catch (error) {
+        if (error.name !== "AbortError") console.error("FAQ fetch error:", error);
+      }
+    }
+
+    loadManagedFaqs();
+    return () => controller.abort();
+  }, [pathname]);
+
+  const displayedItems = managedItems || items;
 
   return (
     <section className={`bg-[#F8F9FF] pb-16 md:pb-20 ${compactTop ? "pt-6 md:pt-12" : "pt-16 md:pt-20"}`}>
@@ -23,7 +52,7 @@ export default function FaqSection({
         </div>
 
         <div className="space-y-3">
-          {items.map((item, index) => {
+          {displayedItems.map((item, index) => {
             const isOpen = openIndex === index;
             const panelId = `faq-panel-${index}`;
             const buttonId = `faq-button-${index}`;

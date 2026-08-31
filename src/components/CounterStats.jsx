@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { apiRequest } from "@/lib/api";
 
-const stats = [
+const defaultStats = [
   { value: 20, suffix: "+", label: "Years Of Experience" },
   { value: 10, suffix: "M+", label: "Satisfied Customers" },
   { value: 360, suffix: "°", label: "Risk Protection" },
@@ -38,8 +39,33 @@ function Counter({ value, suffix, active }) {
 }
 
 export default function CounterStats() {
+  const [stats, setStats] = useState(defaultStats);
   const [active, setActive] = useState(false);
   const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function loadStats() {
+      try {
+        const data = await apiRequest("/api/home/stats", {
+          cache: "no-store",
+          signal: controller.signal,
+        });
+
+        if (data?.success && Array.isArray(data.stats) && data.stats.length === 4) {
+          setStats(data.stats);
+        }
+      } catch (error) {
+        if (error.name !== "AbortError") {
+          console.error("Home statistics fetch error:", error);
+        }
+      }
+    }
+
+    loadStats();
+    return () => controller.abort();
+  }, []);
 
   useEffect(() => {
     const section = sectionRef.current;

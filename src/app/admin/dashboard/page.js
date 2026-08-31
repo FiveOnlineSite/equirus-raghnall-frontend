@@ -7,9 +7,14 @@ const sections = [
     href: "/admin/dashboard/banners",
   },
   {
-    title: "SEO",
-    description: "Review and manage search metadata for public pages.",
-    href: "/admin/dashboard/seo",
+    title: "Home Page",
+    description: "Manage homepage counters and customer testimonials.",
+    href: "/admin/dashboard/home-page",
+  },
+  {
+    title: "FAQs",
+    description: "Manage and publish up to five FAQs for each page.",
+    href: "/admin/dashboard/faqs",
   },
 ];
 
@@ -20,7 +25,7 @@ export default function DashboardPage() {
         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/65">Admin workspace</p>
         <h1 className="mt-3 text-3xl font-semibold">Welcome to your dashboard</h1>
         <p className="mt-2 max-w-2xl text-sm leading-6 text-white/75">
-          Manage the content and search visibility of the Equirus Raghnall website.
+          Manage website content for the Equirus Raghnall website.
         </p>
       </div>
 

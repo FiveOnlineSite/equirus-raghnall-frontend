@@ -1,32 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { serviceSections } from "@/data/serviceMenus";
 import { ApiError, apiRequest } from "@/lib/api";
 
 export default function BannersPage() {
-  const [selectedSection, setSelectedSection] = useState(
-    serviceSections[0]?.value || "",
+  const [selectedPage, setSelectedPage] = useState(
+    serviceSections[0]?.categories[0]?.links[0]?.slug || "",
   );
-
-  const currentSection = useMemo(() => {
-    return serviceSections.find(
-      (section) => section.value === selectedSection
-    );
-  }, [selectedSection]);
-
-  const servicePages = useMemo(() => {
-    if (!currentSection) return [];
-
-    return currentSection.categories.flatMap((category) =>
-      category.links.map((service) => ({
-        ...service,
-        category: category.title,
-      })),
-    );
-  }, [currentSection]);
-
-  const [selectedPage, setSelectedPage] = useState("");
 
   const [imageKey, setImageKey] = useState("");
   const [altText, setAltText] = useState("");
@@ -48,15 +29,6 @@ export default function BannersPage() {
     imageKey && cloudFrontUrl
       ? `${cloudFrontUrl}/${imageKey.replace(/^\//, "")}`
       : "";
-
-  // Set first service whenever section changes
-  useEffect(() => {
-    if (servicePages.length > 0) {
-      setSelectedPage(servicePages[0].slug);
-    } else {
-      setSelectedPage("");
-    }
-  }, [selectedSection, servicePages]);
 
   // Load existing banner whenever page changes
   useEffect(() => {
@@ -308,69 +280,31 @@ export default function BannersPage() {
       </div>
 
       <div className="rounded-xl border border-gray-200 bg-white p-6">
-        {/* Service Section */}
-        <div className="mb-6">
-          <label className="mb-2 block text-sm font-medium text-gray-700">
-            Service Section
-          </label>
-
-          <select
-            value={selectedSection}
-            onChange={(e) => {
-              setSuccessMessage("");
-              setSelectedSection(e.target.value);
-            }}
-            className="w-full max-w-md rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none transition focus:border-[#0A4E08] focus:ring-2 focus:ring-[#0A4E08]/10"
-          >
-            <option value="">Select a service section</option>
-            {serviceSections.map(
-              (section) => (
-                <option
-                  key={section.value}
-                  value={section.value}
-                >
-                  {section.label}
-                </option>
-              )
-            )}
-          </select>
-        </div>
-
-        {/* Service Page */}
         <div className="mb-8">
-          <label className="mb-2 block text-sm font-medium text-gray-700">
-            Service Page
-          </label>
-
+          <label className="block max-w-xl text-sm font-medium text-gray-700">
+            Service page
           <select
             value={selectedPage}
             onChange={(e) => {
               setSuccessMessage("");
               setSelectedPage(e.target.value);
             }}
-            className="w-full max-w-md rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none transition focus:border-[#0A4E08] focus:ring-2 focus:ring-[#0A4E08]/10"
+            className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none focus:border-[#0A4E08]"
           >
             <option value="">Select a service page</option>
-            {currentSection?.categories.map(
-              (category) => (
-                <optgroup
-                  key={category.title}
-                  label={category.title}
-                >
-                  {category.links.map(
-                    (service) => (
-                      <option
-                        key={service.slug}
-                        value={service.slug}
-                      >
-                        {service.label}
-                      </option>
-                    )
-                  )}
-                </optgroup>
-              )
-            )}
+            {serviceSections.map((section) => (
+              <optgroup key={section.value} label={section.label}>
+                {section.categories.map((category) =>
+                  category.links.map((service) => (
+                    <option key={service.slug} value={service.slug}>
+                      {category.title} — {service.label}
+                    </option>
+                  )),
+                )}
+              </optgroup>
+            ))}
           </select>
+          </label>
         </div>
 
         {fetching ? (

@@ -15,8 +15,12 @@ const menuItems = [
     href: "/admin/dashboard/banners",
   },
   {
-    name: "SEO",
-    href: "/admin/dashboard/seo",
+    name: "Home Page",
+    href: "/admin/dashboard/home-page",
+  },
+  {
+    name: "FAQs",
+    href: "/admin/dashboard/faqs",
   },
 ];
 
