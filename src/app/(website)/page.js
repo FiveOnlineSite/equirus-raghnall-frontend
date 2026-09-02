@@ -5,6 +5,7 @@ import FaqSection from "@/components/FaqSection";
 import HomeHeroVisual, { MobileHomeHeroVisual } from "@/components/HomeHeroVisual";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import HomeBottomSection from "@/components/HomeBottomSection";
+import HomeFeaturedBlogs from "@/components/HomeFeaturedBlogs";
 
 const services = [
   {
@@ -419,68 +420,7 @@ export default function Home() {
 
         <TestimonialsCarousel />
 
-        <section className="bg-[#F8F9FF] py-16 md:py-20">
-          <div className="mx-auto grid max-w-[1440px] gap-10 px-5 md:px-10 lg:grid-cols-[0.9fr_1fr_1fr] lg:gap-5 xl:px-20">
-            <div className="self-center lg:pr-10">
-              <p className="text-sm font-semibold uppercase tracking-[0.04em] text-[#0A4E08] sm:text-base">
-                Thought Leadership
-              </p>
-              <h2 className="mt-6 text-[clamp(24px,7vw,30px)] font-semibold tracking-[-0.02em] text-[#111111] md:text-[30px]">
-                Beyond The Policy
-              </h2>
-              <p className="mt-6 max-w-[390px] text-base leading-7 text-[#555555]">
-                Market updates, risk reports, and case studies from our advisory
-                team helping you stay ahead of emerging risks and regulatory
-                changes.
-              </p>
-              <Link
-                href="/blogs"
-                className="mt-8 inline-flex h-12 min-w-40 items-center justify-center rounded-md border border-[#0A4E08] px-7 text-base font-semibold text-[#0A4E08] transition hover:bg-[#0A4E08] hover:text-white"
-              >
-                View All
-              </Link>
-            </div>
-
-            {[
-              {
-                image: "/assets/blogs/blog1.png",
-                title:
-                  "Understanding D&O Liability in India's Evolving Corporate Governance Landscape",
-                href: "/blogs/understanding-do-liability-india-corporate-governance",
-              },
-              {
-                image: "/assets/blogs/blog2.png",
-                title:
-                  "Cyber Insurance in India: Why every business needs it in 2026",
-                href: "/blogs/cyber-insurance-india-why-every-business-needs-it-2026",
-              },
-            ].map((article) => (
-              <article key={article.title}>
-                <Link href={article.href} className="group block">
-                  <div className="relative aspect-[1.55/1] overflow-hidden rounded-lg bg-[#e8e8e8]">
-                    <Image
-                      src={article.image}
-                      alt=""
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                      className="object-cover transition duration-500 group-hover:scale-[1.03]"
-                    />
-                    <span className="absolute left-3 top-3 rounded bg-black/45 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
-                      Blog
-                    </span>
-                  </div>
-                  <div className="mt-3 flex items-center justify-between text-sm text-[#666666]">
-                    <time dateTime="2026-07-11">11 Jul</time>
-                    <span>2 min read</span>
-                  </div>
-                  <h3 className="mt-4 text-lg font-semibold leading-7 tracking-[-0.01em] text-[#181818] transition-colors group-hover:text-[#0A4E08] sm:text-xl">
-                    {article.title}
-                  </h3>
-                </Link>
-              </article>
-            ))}
-          </div>
-        </section>
+        <HomeFeaturedBlogs />
 
         <FaqSection
           title="Answers to Common Insurance Queries"

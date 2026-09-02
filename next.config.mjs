@@ -18,6 +18,11 @@ const nextConfig = {
         hostname: "d15zngbzwsyml4.cloudfront.net",
         pathname: "/testimonials/**",
       },
+      {
+        protocol: "https",
+        hostname: "d15zngbzwsyml4.cloudfront.net",
+        pathname: "/blogs/**",
+      },
     ],
   },
 };

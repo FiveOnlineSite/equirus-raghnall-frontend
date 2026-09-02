@@ -27,9 +27,7 @@ export default function FaqSection({
           cache: "no-store",
           signal: controller.signal,
         });
-        if (data?.success && Array.isArray(data.faqs) && data.faqs.length) {
-          setManagedItems(data.faqs);
-        }
+        if (data?.success && Array.isArray(data.faqs)) setManagedItems(data.faqs);
       } catch (error) {
         if (error.name !== "AbortError") console.error("FAQ fetch error:", error);
       }
@@ -39,7 +37,9 @@ export default function FaqSection({
     return () => controller.abort();
   }, [pathname]);
 
-  const displayedItems = managedItems || items;
+  const displayedItems = managedItems || [];
+
+  if (!displayedItems.length) return null;
 
   return (
     <section className={`bg-[#F8F9FF] pb-16 md:pb-20 ${compactTop ? "pt-6 md:pt-12" : "pt-16 md:pt-20"}`}>

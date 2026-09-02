@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { apiRequest } from "@/lib/api";
 
 const fallbackContent = {
@@ -11,6 +10,9 @@ const fallbackContent = {
 
 export default function HomeBottomSection() {
   const [content, setContent] = useState(fallbackContent);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [canExpand, setCanExpand] = useState(false);
+  const descriptionRef = useRef(null);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -30,15 +32,50 @@ export default function HomeBottomSection() {
     return () => controller.abort();
   }, []);
 
+  useEffect(() => {
+    const description = descriptionRef.current;
+    if (!description) return undefined;
+
+    function updateOverflowState() {
+      if (description.dataset.expanded === "true") return;
+      setCanExpand(description.scrollHeight > description.clientHeight + 1);
+    }
+
+    const frameId = window.requestAnimationFrame(updateOverflowState);
+    const observer = new ResizeObserver(updateOverflowState);
+    observer.observe(description);
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      observer.disconnect();
+    };
+  }, [content.description]);
+
   return (
     <section className="bg-white pb-14 pt-4">
       <div className="mx-auto flex max-w-[1440px] flex-col items-start px-5 text-left md:px-10 xl:px-20">
         <Image src="/assets/shared/raghnall-logo.png" alt="Equirus Raghnall" width={200} height={200} className="h-[180px] w-[180px] object-contain" />
-        <p className="text-sm leading-7 text-[#555555] md:text-base">{content.description}</p>
-        <Link href="/about-us" className="group mt-5 inline-flex items-center gap-2 text-base font-semibold text-[#0A4E08] transition">
-          Read More
-          <Image src="/assets/shared/arrow-right.svg" alt="" width={18} height={18} className="size-[20px] transition-transform duration-300 group-hover:translate-x-1.5" aria-hidden />
-        </Link>
+        <p
+          ref={descriptionRef}
+          id="home-bottom-description"
+          data-expanded={isExpanded}
+          className={`whitespace-pre-line text-sm leading-7 text-[#555555] md:text-base ${
+            isExpanded ? "" : "line-clamp-4"
+          }`}
+        >
+          {content.description}
+        </p>
+        {canExpand && (
+          <button
+            type="button"
+            aria-controls="home-bottom-description"
+            aria-expanded={isExpanded}
+            onClick={() => setIsExpanded((expanded) => !expanded)}
+            className="mt-5 inline-flex text-base font-semibold text-[#0A4E08] transition"
+          >
+            {isExpanded ? "Show Less" : "Read More"}
+          </button>
+        )}
       </div>
     </section>
   );

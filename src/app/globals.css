@@ -5,6 +5,20 @@
   --foreground: #171717;
 }
 
+/* Blog Management form spacing. */
+form:has(textarea[rows="10"]) {
+  display: flex;
+  max-width: 64rem;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+form:has(textarea[rows="10"]) > label,
+form:has(textarea[rows="10"]) > button {
+  margin-top: 0 !important;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

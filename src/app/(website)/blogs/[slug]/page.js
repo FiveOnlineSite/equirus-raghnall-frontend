@@ -1,27 +1,59 @@
 import Image from "next/image";
 import Link from "next/link";
+import { cache } from "react";
 import { notFound } from "next/navigation";
 import { RiArrowLeftSLine } from "react-icons/ri";
-import { blogs, getBlog } from "@/data/blogs";
+import { apiRequest } from "@/lib/api";
+import BlogShareButtons from "@/components/BlogShareButtons";
 
-export function generateStaticParams() {
-  return blogs.map(({ slug }) => ({ slug }));
+const getBlogDetails = cache(async function getBlogDetails(slug) {
+  try {
+    const data = await apiRequest(`/api/blogs/${encodeURIComponent(slug)}`, {
+      cache: "no-store",
+    });
+
+    return data?.blog
+      ? {
+          ...data.blog,
+          image: data.blog.imageUrl,
+        }
+      : null;
+  } catch (error) {
+    if (error.status === 404) return null;
+    throw error;
+  }
+});
+
+function formatPublishedDate(createdAt) {
+  if (!createdAt) return null;
+
+  return new Intl.DateTimeFormat("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    timeZone: "Asia/Kolkata",
+  }).format(new Date(createdAt));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const blog = getBlog(slug);
+  const blog = await getBlogDetails(slug);
 
   return blog
-    ? { title: `${blog.title} | Equirus Raghnall`, description: blog.excerpt }
+    ? {
+        title: blog.metaTitle,
+        description: blog.metaDescription,
+      }
     : {};
 }
 
 export default async function BlogDetailsPage({ params }) {
   const { slug } = await params;
-  const blog = getBlog(slug);
+  const blog = await getBlogDetails(slug);
 
   if (!blog) notFound();
+
+  const publishedDate = formatPublishedDate(blog.createdAt);
 
   return (
     <>
@@ -41,20 +73,30 @@ export default async function BlogDetailsPage({ params }) {
           </h1>
 
           <div className="mt-6 flex flex-wrap items-center gap-2 text-xs text-[#4b4b4b] md:gap-3 md:text-sm">
-            <time dateTime="2026-07-11">11 Jul 2026</time>
-            {[blog.category, ...(blog.tags ?? [])].map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full bg-[#edf4ec] px-3 py-1 font-medium text-[#0a4e08]"
-              >
-                {tag}
+            {publishedDate && (
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5">
+                <span className="text-gray-500">Published:</span>
+                <time dateTime={blog.createdAt} className="font-medium text-gray-800">
+                  {publishedDate}
+                </time>
               </span>
-            ))}
+            )}
+            {blog.readTime && (
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5">
+                <span className="text-gray-500">Read time:</span>
+                <span className="font-medium text-gray-800">{blog.readTime}</span>
+              </span>
+            )}
+            <span className="rounded-full bg-[#edf4ec] px-3 py-1 font-medium text-[#0a4e08]">
+              {blog.category}
+            </span>
           </div>
+
+          <BlogShareButtons title={blog.title} />
 
           <Image
             src={blog.image}
-            alt={blog.title}
+            alt={blog.imageAlt}
             width={1200}
             height={675}
             priority
@@ -63,9 +105,11 @@ export default async function BlogDetailsPage({ params }) {
           />
 
           <div className="mt-10 w-full md:mt-14">
-            <p className="w-full text-base font-medium leading-7 text-gray-500 md:text-xl md:leading-8">
-              {blog.excerpt}
-            </p>
+            {blog.content && (
+              <p className="w-full whitespace-pre-line text-base leading-8 text-[#363636]">
+                {blog.content}
+              </p>
+            )}
           </div>
         </article>
       </main>

@@ -6,38 +6,18 @@ import { useState } from "react";
 
 const tabs = ["Blogs", "Risk Reports", "Market Updates", "Case Studies"];
 
-const tabSlugs = {
-  Blogs: [
-    "understanding-do-liability-india-corporate-governance",
-    "cyber-insurance-india-why-every-business-needs-it-2026",
-    "why-every-growing-business-needs-insurance",
-    "building-better-employee-benefits-programs",
-    "building-resilience-before-risks-become-reality",
-    "why-risk-management-deserves-board-attention",
-    "why-smart-businesses-review-coverage-annually",
-    "getting-to-know-todays-insurance-scene",
-    "insurance-mistakes-that-cost-businesses-millions",
-    "the-hidden-cost-of-being-underinsured",
-  ],
-  "Risk Reports": [
-    "building-resilience-before-risks-become-reality",
-    "why-risk-management-deserves-board-attention",
-  ],
-  "Market Updates": [
-    "why-smart-businesses-review-coverage-annually",
-    "getting-to-know-todays-insurance-scene",
-  ],
-  "Case Studies": [
-    "insurance-mistakes-that-cost-businesses-millions",
-    "the-hidden-cost-of-being-underinsured",
-  ],
-};
+function formatBlogDate(value) {
+  if (!value) return "";
+
+  return new Intl.DateTimeFormat("en-IN", {
+    day: "2-digit",
+    month: "short",
+  }).format(new Date(value));
+}
 
 export default function InsightsTabs({ items }) {
   const [activeTab, setActiveTab] = useState(tabs[0]);
-  const visibleItems = tabSlugs[activeTab]
-    .map((slug) => items.find((item) => item.slug === slug))
-    .filter(Boolean);
+  const visibleItems = items.filter((item) => item.category === activeTab);
 
   function handleKeyDown(event, currentIndex) {
     if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
@@ -107,8 +87,10 @@ export default function InsightsTabs({ items }) {
               width={305}
             />
             <div className="mt-2 flex justify-between text-xs leading-5 text-[#3d3d3d] md:text-sm">
-              <time dateTime="2026-07-11">11 Jul</time>
-              <span>2 min read</span>
+              {item.createdAt && (
+                <time dateTime={item.createdAt}>{formatBlogDate(item.createdAt)}</time>
+              )}
+              {item.readTime && <span>{item.readTime} read</span>}
             </div>
             <h2 className="mt-2 text-base font-semibold leading-6 text-[#080808] transition-colors group-hover:text-[#0a4e08] md:text-lg md:leading-7">
               {item.title}

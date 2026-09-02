@@ -9,7 +9,6 @@ const emptyTestimonial = {
   quote: "",
   imageKey: "",
   imageUrl: "",
-  isPublished: false,
 };
 
 export default function TestimonialsManager() {
@@ -19,9 +18,11 @@ export default function TestimonialsManager() {
   const [form, setForm] = useState(emptyTestimonial);
   const [editingId, setEditingId] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
+  const [imagePreviewUrl, setImagePreviewUrl] = useState("");
   const [notice, setNotice] = useState(null);
   const fileInputRef = useRef(null);
   const formRef = useRef(null);
+  const previewUrlRef = useRef("");
 
   useEffect(() => {
     if (notice?.type !== "success") return undefined;
@@ -31,6 +32,10 @@ export default function TestimonialsManager() {
 
   useEffect(() => {
     loadTestimonials();
+  }, []);
+
+  useEffect(() => () => {
+    if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
   }, []);
 
   async function loadTestimonials() {
@@ -46,6 +51,9 @@ export default function TestimonialsManager() {
   }
 
   function resetForm() {
+    if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
+    previewUrlRef.current = "";
+    setImagePreviewUrl("");
     setForm(emptyTestimonial);
     setEditingId(null);
     setSelectedFile(null);
@@ -53,12 +61,14 @@ export default function TestimonialsManager() {
   }
 
   function editTestimonial(testimonial) {
+    if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
+    previewUrlRef.current = "";
+    setImagePreviewUrl("");
     setForm({
       name: testimonial.name,
       quote: testimonial.quote,
       imageKey: testimonial.imageKey,
       imageUrl: testimonial.imageUrl,
-      isPublished: testimonial.isPublished,
     });
     setEditingId(testimonial._id);
     setSelectedFile(null);
@@ -79,6 +89,10 @@ export default function TestimonialsManager() {
       return;
     }
 
+    if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
+    const previewUrl = URL.createObjectURL(file);
+    previewUrlRef.current = previewUrl;
+    setImagePreviewUrl(previewUrl);
     setSelectedFile(file);
     setNotice(null);
   }
@@ -117,7 +131,6 @@ export default function TestimonialsManager() {
         name: form.name.trim(),
         quote: form.quote.trim(),
         imageKey,
-        isPublished: form.isPublished,
       };
       const data = await apiRequest(
         editingId ? `/api/admin/testimonials/${editingId}` : "/api/admin/testimonials",
@@ -167,13 +180,11 @@ export default function TestimonialsManager() {
     }
   }
 
-  const publishedCount = testimonials.filter((testimonial) => testimonial.isPublished).length;
-
   return (
     <section className="mt-10 rounded-xl border border-gray-200 bg-white p-6">
       <div className="mb-6">
         <h2 className="text-lg font-semibold text-gray-900">Testimonials</h2>
-        <p className="mt-1 text-sm text-gray-500">Add, edit, order, publish, or delete testimonial cards. At least five must stay published.</p>
+        <p className="mt-1 text-sm text-gray-500">Add, edit, order, or delete testimonial cards. Add at least five cards to display this section on the home page.</p>
       </div>
 
       {notice && (
@@ -192,12 +203,9 @@ export default function TestimonialsManager() {
             <input ref={fileInputRef} type="file" accept=".jpg,.jpeg,.png,.webp" onChange={handleFileChange} className="mt-2 block w-full text-sm text-gray-600 file:mr-3 file:border-0 file:bg-[#0A4E08] file:px-4 file:py-2 file:text-white" />
           </label>
         </div>
+        {(imagePreviewUrl || form.imageUrl) && <div className="mt-4"><p className="text-sm font-medium text-gray-700">Image preview</p><div className="mt-2 size-24 overflow-hidden rounded-lg border border-gray-200 bg-white">{imagePreviewUrl ? <img src={imagePreviewUrl} alt="Selected testimonial" className="size-full object-cover" /> : <Image src={form.imageUrl} alt="Current testimonial" width={96} height={96} className="size-full object-cover" />}</div></div>}
         <label className="mt-4 block text-sm font-medium text-gray-700">Testimonial
           <textarea value={form.quote} maxLength={3000} rows={5} onChange={(event) => setForm({ ...form, quote: event.target.value })} className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none focus:border-[#0A4E08]" required />
-        </label>
-        <label className="mt-4 flex items-center gap-3 text-sm font-medium text-gray-700">
-          <input type="checkbox" checked={form.isPublished} onChange={(event) => setForm({ ...form, isPublished: event.target.checked })} className="size-4 accent-[#0A4E08]" />
-          Publish on the home page
         </label>
         <div className="mt-5 flex flex-wrap justify-end gap-3">
           {editingId && <button type="button" onClick={resetForm} className="rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700">Cancel</button>}
@@ -206,13 +214,13 @@ export default function TestimonialsManager() {
       </form>
 
       <div className="mt-7">
-        <div className="mb-4 flex items-center justify-between"><h3 className="font-semibold text-gray-900">All Testimonials</h3><span className="text-sm text-gray-500">{publishedCount} published</span></div>
-        {loading ? <p className="py-6 text-sm text-gray-500">Loading testimonials...</p> : testimonials.length === 0 ? <p className="rounded-lg bg-gray-50 p-5 text-sm text-gray-500">No testimonials yet. Add at least five and publish them to show this section.</p> : (
+        <div className="mb-4 flex items-center justify-between"><h3 className="font-semibold text-gray-900">All Testimonials</h3><span className="text-sm text-gray-500">{testimonials.length} added · 5 minimum</span></div>
+        {loading ? <p className="py-6 text-sm text-gray-500">Loading testimonials...</p> : testimonials.length === 0 ? <p className="rounded-lg bg-gray-50 p-5 text-sm text-gray-500">No testimonials yet. Add at least five to show this section on the home page.</p> : (
           <div className="space-y-3">
             {testimonials.map((testimonial, index) => (
               <article key={testimonial._id} className="flex flex-col gap-4 rounded-xl border border-gray-200 p-4 sm:flex-row sm:items-center">
                 {testimonial.imageUrl && <Image src={testimonial.imageUrl} alt="" width={56} height={56} className="size-14 rounded-full object-cover" />}
-                <div className="min-w-0 flex-1"><p className="font-semibold text-gray-900">{testimonial.name}</p><p className="mt-1 line-clamp-2 text-sm text-gray-500">{testimonial.quote}</p><p className={`mt-1 text-xs font-medium ${testimonial.isPublished ? "text-green-700" : "text-gray-500"}`}>{testimonial.isPublished ? "Published" : "Hidden"}</p></div>
+                <div className="min-w-0 flex-1"><p className="font-semibold text-gray-900">{testimonial.name}</p><p className="mt-1 line-clamp-2 text-sm text-gray-500">{testimonial.quote}</p></div>
                 <div className="flex flex-wrap gap-2"><button type="button" onClick={() => moveTestimonial(index, -1)} disabled={index === 0} className="rounded border border-gray-300 px-3 py-2 text-sm disabled:opacity-40">↑</button><button type="button" onClick={() => moveTestimonial(index, 1)} disabled={index === testimonials.length - 1} className="rounded border border-gray-300 px-3 py-2 text-sm disabled:opacity-40">↓</button><button type="button" onClick={() => editTestimonial(testimonial)} className="rounded border border-[#0A4E08] px-3 py-2 text-sm text-[#0A4E08]">Edit</button><button type="button" onClick={() => deleteTestimonial(testimonial)} className="rounded border border-red-200 px-3 py-2 text-sm text-red-700">Delete</button></div>
               </article>
             ))}
