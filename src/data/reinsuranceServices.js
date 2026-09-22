@@ -1,6 +1,6 @@
 export const reinsuranceMenu = [
   {
-    title: "Actual",
+    title: "",
     links: [
       { label: "Warranty & Indemnity (W & I)", slug: "warranty-indemnity-insurance" },
       { label: "Representations & Warranties (R & W)", slug: "representations-warranties-insurance" },
