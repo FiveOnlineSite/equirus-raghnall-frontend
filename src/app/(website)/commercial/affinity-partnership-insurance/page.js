@@ -164,7 +164,7 @@ export default function AffinityPartnershipInsurancePage() {
         <ServiceCta
           title="Ready To Build An Insurance Programme Together?"
           description="Speak with our specialists about a tailored affinity or embedded insurance solution for your organisation and audience."
-          primaryAction={{ label: "Get a Free Quote", href: "/contact-us" }}
+          primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{ label: "Download Brochure", href: "/contact-us" }}
         />
 

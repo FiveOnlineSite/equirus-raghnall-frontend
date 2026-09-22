@@ -167,7 +167,7 @@ export default function DirectorsOfficersLiabilityPage() {
         <ServiceCta
           title="Ready To Protect Your Leadership Team?"
           description="Speak with a specialist today and receive a no-obligation D&O coverage assessment tailored to your organisation's risk profile."
-          primaryAction={{ label: "Get a Free Quote", href: "/contact-us" }}
+          primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",
             href: "/assets/services/directors-officers/brochure.pdf",
