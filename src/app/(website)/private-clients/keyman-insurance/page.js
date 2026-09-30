@@ -11,28 +11,66 @@ export const metadata = {
 };
 
 const faqs = [
-  { question: "Who should consider Keyman Insurance?", answer: "Keyman Insurance can be tailored to the needs and risk profile of the insured." },
-  { question: "What does this policy cover?", answer: "Coverage depends on the selected limits, extensions, exclusions, and agreed policy wording." },
-  { question: "Can the policy be customised?", answer: "Yes. Coverage can be structured around specific requirements and risk exposures." },
-  { question: "How are suitable limits determined?", answer: "We assess values, exposures, obligations, loss scenarios, and risk appetite before recommending limits." },
+  {
+    question: "Who should consider Keyman Insurance?",
+    answer:
+      "Keyman Insurance can be tailored to the needs and risk profile of the insured.",
+  },
+  {
+    question: "What does this policy cover?",
+    answer:
+      "Coverage depends on the selected limits, extensions, exclusions, and agreed policy wording.",
+  },
+  {
+    question: "Can the policy be customised?",
+    answer:
+      "Yes. Coverage can be structured around specific requirements and risk exposures.",
+  },
+  {
+    question: "How are suitable limits determined?",
+    answer:
+      "We assess values, exposures, obligations, loss scenarios, and risk appetite before recommending limits.",
+  },
 ];
 
 export default function Page() {
   return (
     <>
-      
       <main>
         <ServiceHero
           label="Keyman Insurance"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={
+            <>
+              Protect the people who
+              <br />
+              drive your business forward
+            </>
+          }
+          description="Key Man Insurance helps businesses protect themselves against the financial impact of losing a key individual whose expertise, leadership, relationships or contribution is critical to the organisation’s success."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Keyman Insurance"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            {
+              title: "Business Continuity Protection",
+              icon: "/assets/services/directors-officers/personal.svg",
+            },
+            {
+              title: "Protection Against Revenue Loss",
+              icon: "/assets/services/directors-officers/legal.svg",
+            },
+            {
+              title: "Key Person Replacement Support ",
+              icon: "/assets/services/directors-officers/management.svg",
+            },
+            {
+              title: "Protection of Business Interests ",
+              icon: "/assets/services/directors-officers/management.svg",
+            },
+            {
+              title: "Customised Coverage  ",
+              icon: "/assets/services/directors-officers/management.svg",
+            },
           ]}
         />
         <ServiceOverview
@@ -40,35 +78,90 @@ export default function Page() {
           title="Understanding Keyman Insurance"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Keyman Insurance overview"
-          description="Keyman Insurance is designed to manage life risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Key Man Insurance is a life insurance policy taken by a business on the life of an individual whose skills, experience, leadership, relationships or specialised knowledge are considered critical to the organisation.
+The company is generally the policyholder and beneficiary, subject to the policy structure and applicable regulations. If the insured key person dies during the policy term, the policy can provide a financial benefit to the business, helping it manages the resulting financial impact.
+Key Man Insurance is particularly relevant for businesses that depend heavily on founders, senior executives, specialised professionals, sales leaders or individuals with critical client and business relationships.
+"
+          coverageItems={[
+            "Key Person Death Benefit",
+            "Business Continuity Protection",
+            "Revenue & Profit Protection",
+            "Recruitment & Replacement Costs",
+            "Outstanding Financial Commitments",
+            "Stakeholder & Investor Confidence",
+          ]}
+          example="A company relies heavily on its Managing Director, who is responsible for major client relationships, strategic decisions and a significant portion of the company’s revenue.
+If the Managing Director passes away unexpectedly during the policy term, the business may face revenue disruption, replacement costs and loss of key relationships.
+A Key Man Insurance policy can provide a financial benefit to the company, helping it manage the immediate financial impact and maintain business continuity, subject to the policy terms.
+"
         />
         <ServiceCoverageGrid
           label="Coverage Components"
-          title="Comprehensive Protection At Every Level"
+          title="Comprehensive Protection for Your Business"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            {
+              title: "Key Person Protection",
+              description:
+                "Financial protection against the loss of an individual who is critical to the organisation.",
+            },
+            {
+              title: "Business Continuity",
+              description:
+                "Helps the company manage operational and financial disruption following the loss of a key person.",
+            },
+            {
+              title: "Revenue Protection",
+              description:
+                "Provides financial support against potential revenue and profitability impact.",
+            },
+            {
+              title: "Replacement & Transition Costs",
+              description:
+                "Helps meet potential recruitment, training and transition expenses.",
+            },
+            {
+              title: "Financial Commitment Protection",
+              description:
+                "Supports the business in managing financial obligations during a period of transition.",
+            },
+            {
+              title: "Customised Coverage",
+              description:
+                "Coverage can be structured based on the business’s dependency on the key individual and its financial requirements.",
+            },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
+          title={<>Protect Your Business Before the Unexpected Happens</>}
           description="Our specialists structure cover around your needs rather than relying on a standard policy."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Keyman Insurance advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            {
+              title: "Risk Assessment & Needs Analysis",
+              description: "We identify exposures and protection priorities.",
+            },
+            {
+              title: "Policy Design & Placement",
+              description:
+                "We structure suitable limits, deductibles, and extensions.",
+            },
+            {
+              title: "Coverage Review",
+              description: "We review wording against expected protection.",
+            },
+            {
+              title: "Dedicated Claims Advocacy",
+              description:
+                "We coordinate claims documentation and insurer discussions.",
+            },
+            {
+              title: "Annual Policy Review & Renewal",
+              description:
+                "We revisit coverage as circumstances and risks change.",
+            },
           ]}
         />
         <ServiceCta
@@ -81,9 +174,13 @@ export default function Page() {
             download: true,
           }}
         />
-        <FaqSection eyebrow="Frequently Asked Questions" title="Answers to Common Insurance Queries" items={faqs} defaultOpen={0} />
+        <FaqSection
+          eyebrow="Frequently Asked Questions"
+          title="Answers to Common Insurance Queries"
+          items={faqs}
+          defaultOpen={0}
+        />
       </main>
-      
     </>
   );
 }
