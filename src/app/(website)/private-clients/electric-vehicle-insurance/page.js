@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Electric Vehicle (EV) Insurance"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Protect Your EV. Power Every Journey With Confidence.</>}
+          description="Designed for electric vehicle owners, EV Insurance protects against accidents, theft, natural calamities and third-party liabilities, keeping you covered on every journey."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Electric Vehicle (EV) Insurance"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Accident & Damage Protection", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Battery & EV Component Protection", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Third-Party Liability Cover", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Theft & Total Loss Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Personal Accident Protection", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,40 @@ export default function Page() {
           title="Understanding Electric Vehicle (EV) Insurance"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Electric Vehicle (EV) Insurance overview"
-          description="Electric Vehicle (EV) Insurance is designed to manage auto risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Electric Vehicle Insurance protects your electric car, scooter or two-wheeler against financial losses from accidents, theft and third-party liabilities, with cover tailored to specialised components like high-value batteries, motors and charging equipment, subject to policy terms."
+          coverageItems={["Own Damage Protection", "Battery & EV Component Protection", "Theft Protection", "Natural Calamities","Man-Made Events"]}
+          example="If your electric vehicle is damaged in an accident, the policy can cover admissible repair costs under the applicable Own Damage section. Where covered, protection for the battery and other EV-specific components can also help reduce the financial impact of repairs."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
-          title="Comprehensive Protection At Every Level"
+          title="Comprehensive Protection for Your Electric Vehicle"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Own Damage", description: "Covers accidental damage to your electric vehicle arising from covered accidents and insured events." },
+            { title: "Battery & EV Components", description: "Provides protection for eligible battery and EV-specific components where covered under the policy or applicable add-ons." },
+            { title: "Theft & Total Loss", description: "Provides compensation for covered theft or total loss based on the applicable policy terms and Insured Declared Value." },
+            { title: "Third-Party Liability", description: "Protects against covered legal liabilities arising from injury, death or property damage caused to third parties." },
+            { title: "Personal Accident", description: "Provides financial support for covered accidental death or specified permanent disabilities." },
+            { title: "EV Add-Ons", description: "Depending on the insurer and vehicle, additional covers may be available to address specific EV-related risks and enhance the protection provided by the base policy." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Protect Your EV Before the Unexpected Happens</>}
+          description="Every EV has its own usage pattern and risk profile. Our specialists help you understand your needs and identify suitable coverage."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Electric Vehicle (EV) Insurance advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "EV Risk Assessment & Requirement Analysis", description: "We understand your vehicle type, usage, battery specifications and insurance requirements to identify appropriate protection." },
+            { title: "Policy Comparison & Placement", description: "We help evaluate insurance options, coverage limits, deductibles, IDV and EV-specific add-ons." },
+            { title: "Policy Issuance & Documentation", description: "Our team supports you through documentation and policy issuance to help ensure your vehicle and coverage details are accurate." },
+            { title: "Claims Assistance", description: "In an accident, theft or covered loss, our team assists with claims and coordinates with the insurer." },
+            { title: "Renewal & Policy Review", description: "We review your coverage at renewal to help ensure your EV keeps appropriate protection as your requirements evolve." },
           ]}
         />
         <ServiceCta
-          title="Ready To Explore Electric Vehicle (EV) Insurance?"
-          description="Speak with a specialist for a no-obligation assessment."
+          title="Ready To Drive Electric With Confidence?"
+          description="Protect your electric vehicle with insurance designed around your mobility needs and get support from experienced insurance specialists."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

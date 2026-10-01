@@ -86,20 +86,50 @@ export default function ServiceHero({
       <div className="absolute inset-0 -z-10 bg-white/10" aria-hidden="true" />
 
       <div className="mx-auto flex min-h-[calc(100svh-88px)] max-w-[1440px] flex-col px-5 pb-9 pt-14 text-center md:min-h-[560px] md:px-10 md:pt-16 xl:px-20">
-        <div className="mx-auto max-w-[650px]">
-          <p className="text-sm font-medium uppercase tracking-[0.04em] text-[#376E00] sm:text-base">{label}</p>
-          <h1 className="mt-6 text-[clamp(24px,7vw,30px)] font-semibold leading-[1.08] tracking-[-0.025em] text-[#080808] md:text-[48px]">{title}</h1>
-          <p className="mx-auto mt-7 max-w-[530px] text-sm leading-6 text-[#555555] md:text-base md:leading-7">{description}</p>
+        <div className="mx-auto max-w-[900px]">
+          <p className="text-sm font-medium uppercase tracking-[0.04em] text-[#376E00] sm:text-base">
+            {label}
+          </p>
+          <h1 className="mx-auto mt-6 max-w-[750px] text-[clamp(24px,7vw,30px)] font-semibold leading-[1.08] tracking-[-0.025em] text-[#080808] md:text-[48px]">
+            {title}
+          </h1>
+
+          <p className="mx-auto mt-7 max-w-[850px] text-sm leading-6 text-[#555555] md:text-base md:leading-7">
+            {description}
+          </p>
         </div>
 
         {features.length ? (
-          <div className="mx-auto mb-10 mt-auto grid w-full max-w-[760px] translate-y-3 gap-3 text-left sm:grid-cols-3 md:mb-12 md:translate-y-0 md:gap-5 md:pt-24">
+          <div
+            className={`mx-auto mb-10 mt-auto grid w-full translate-y-3 gap-5 text-left md:mb-12 md:translate-y-0 md:pt-24 ${
+              features.length <= 3
+                ? "max-w-[720px] sm:grid-cols-3"
+                : "max-w-[1200px] sm:grid-cols-5"
+            }`}
+          >
             {features.map((feature) => (
-              <div className="flex items-center justify-center gap-4 sm:justify-start" key={feature.title}>
+              <div
+                className={`flex items-center justify-center gap-3 ${
+                  features.length <= 3
+                    ? "sm:justify-center"
+                    : "sm:justify-start"
+                }`}
+                key={feature.title}
+              >
                 {feature.icon ? (
-                  <Image src={feature.icon} alt="" width={30} height={30} className="size-6 shrink-0 object-contain sm:size-[30px]" aria-hidden />
+                  <Image
+                    src={feature.icon}
+                    alt=""
+                    width={30}
+                    height={30}
+                    className="size-6 shrink-0 object-contain sm:size-[30px]"
+                    aria-hidden
+                  />
                 ) : null}
-                <p className="max-w-[160px] text-sm font-medium leading-5 text-[#242424] sm:text-base sm:leading-6">{feature.title}</p>
+
+                <p className="text-sm font-medium leading-5 text-[#242424] sm:text-base sm:leading-6">
+                  {feature.title}
+                </p>
               </div>
             ))}
           </div>

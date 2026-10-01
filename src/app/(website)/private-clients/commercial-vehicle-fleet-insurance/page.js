@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Commercial Vehicle & Fleet"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Protect Your Vehicles.<br />Keep Your Business Moving.</>}
+          description="Keep your commercial vehicles protected against accidents, theft, damage and third-party liabilities with insurance solutions designed to support businesses that depend on mobility"
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Commercial Vehicle & Fleet"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Accident & Damage Protection", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Third-Party Liability Cover", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Theft & Total Loss Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Fleet Insurance Solutions", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Personal Accident Protection", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,41 @@ export default function Page() {
           title="Understanding Commercial Vehicle & Fleet"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Commercial Vehicle & Fleet overview"
-          description="Commercial Vehicle & Fleet is designed to manage auto risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Commercial Vehicle & Fleet Insurance protects business vehicles against financial losses from accidents, theft, natural or man-made events and third-party liabilities, whether you run a single vehicle or a large fleet, safeguarding your vehicles, drivers and operations."
+          coverageItems={["Own Damage Protection", "Third-Party Liability", "Theft Protection", "Natural Calamities","Man-Made Events"]}
+          example="If a delivery vehicle is involved in an accident while being used for business purposes, the policy can cover admissible repair costs under the applicable Own Damage section and provide protection against covered third-party liabilities."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
-          title="Comprehensive Protection At Every Level"
+          title="Comprehensive Protection for Your Commercial Fleet"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Own Damage", description: "Covers accidental damage to insured commercial vehicles arising from covered accidents and insured events." },
+            { title: "Third-Party Liability", description: "Provides protection against covered legal liabilities arising from third-party injury, death or property damage." },
+            { title: "Theft & Total Loss", description: "Provides financial protection against covered theft or total loss based on the applicable policy terms and Insured Declared Value." },            { title: "Fleet Insurance", description: "Designed to simplify insurance management for businesses with multiple commercial vehicles through structured fleet insurance solutions." },
+            { title: "Personal Accident", description: "Provides financial protection for covered accidental death or specified permanent disabilities, as applicable under the policy." },
+            { title: "Roadside Assistance", description: "24/7 emergency breakdown assistance, towing, and on-site support anywhere in India." },
+            { title: "Legal Liability to Employees", description: "Covers liability towards employed drivers, cleaners, and crew arising from vehicle-related injuries during the course of employment." },
+            { title: "Telematics & Fleet Tracking", description: "Usage-based insurance leveraging GPS and telematics data for premium optimisation and driver safety monitoring." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Keep Your Business Moving With the Right Protection</>}
+          description="Every fleet has different vehicles, routes and needs. Our specialists help you structure insurance around your business."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Commercial Vehicle & Fleet advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "Fleet Risk Assessment & Requirement Analysis", description: "We understand your fleet composition, vehicle types, usage, geographical operations and risk profile to identify suitable coverage." },
+            { title: "Policy Structuring & Placement", description: "Our specialists help evaluate coverage options, deductibles, IDVs and add-ons before placing the programme with suitable insurers." },
+            { title: "Fleet Documentation & Policy Administration", description: "We support documentation and policy issuance while streamlining vehicle additions, deletions and other policy requirements." },
+            { title: "Dedicated Claims Assistance", description: "In an accident, theft or covered loss, our team assists with claim intimation, documentation and insurer coordination." },
+            { title: "Renewal & Fleet Review", description: "We review your fleet insurance at renewal to account for changes in your vehicles, operations and risk exposure." },
           ]}
         />
         <ServiceCta
-          title="Ready To Explore Commercial Vehicle & Fleet?"
-          description="Speak with a specialist for a no-obligation assessment."
+          title={<>Keep Your Fleet Moving. <br/>Keep Your Business Protected.</>}
+          description="Protect your commercial vehicles with an insurance programme designed around your business and fleet requirements."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

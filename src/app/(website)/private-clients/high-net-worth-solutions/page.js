@@ -41,11 +41,11 @@ export default function Page() {
           label="High Net-Worth Solutions"
           title={
             <>
-              Bespoke protection for <br />
-              complex wealth
+              Bespoke Protection For <br />
+              Complex Wealth
             </>
           }
-          description="For high-net-worth individuals and families, protecting wealth goes beyond individual insurance policies. Our High Net-Worth Solutions bring together tailored risk protection for your lifestyle, assets, liabilities and evolving personal requirements."
+          description="For high-net-worth individuals and families, protecting wealth goes beyond individual policies. Our High Net-Worth Solutions bring together tailored protection for your lifestyle, assets, liabilities and evolving needs."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="High Net-Worth Solutions"
           imagePosition="center center"
@@ -77,17 +77,15 @@ export default function Page() {
           title="Understanding High Net-Worth Solutions"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="High Net-Worth Solutions overview"
-          description="High Net-Worth Solutions are specialised insurance and risk management solutions designed for individuals and families with significant assets, complex financial interests and unique lifestyle exposures.
-From luxury residences and high-value vehicles to art, jewellery, collectibles, domestic staff, personal liability and international travel, conventional insurance solutions may not always adequately address the breadth or complexity of these risks.
-Our approach combines risk assessment, bespoke policy structuring and dedicated servicing to create a protection programme aligned with your wealth and lifestyle.
-"
-          // coverageItems={[
-          //   "Covered financial losses",
-          //   "Relevant policy extensions",
-          //   "Eligible professional expenses",
-          //   "Claims coordination and advocacy",
-          // ]}
-          // example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="High Net-Worth Solutions are specialised insurance and risk management solutions for individuals and families with significant assets and unique lifestyle exposures. From luxury residences to art, jewellery and international travel, conventional insurance may not adequately cover these risks."
+          coverageItems={[
+            "High-Value Homes",
+            "Valuable Contents",
+            "Luxury Vehicles",
+            "Personal Liability",
+            "Travel & Lifestyle Risks"
+          ]}
+          example="An individual owns a ₹15 crore residence, high-value jewellery and artwork, and multiple luxury vehicles. A High Net-Worth insurance solution can combine protection for these assets along with personal liability and worldwide coverage, subject to the applicable policy terms, limits, and exclusions."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
@@ -101,7 +99,7 @@ Our approach combines risk assessment, bespoke policy structuring and dedicated 
             {
               title: "Fine Art, Jewellery & Collectibles",
               description:
-                "Tailored protection for high-value jewellery, watches, artwork, antiques, collectibles and other valuable possessions, subject to valuation and policy terms.",
+                "Tailored protection for jewellery, watches, artwork, antiques and other valuables, subject to valuation and policy terms.",
             },
             {
               title: "Luxury & High-Value Vehicles",
@@ -145,7 +143,7 @@ Our approach combines risk assessment, bespoke policy structuring and dedicated 
           steps={[
             {
               title: " Private Client Risk Assessment",
-              description: "We understand your assets, lifestyle, family structure, geographical exposure and existing insurance arrangements to identify potential protection gaps.",
+              description: "We understand your assets, lifestyle, family structure, geographical exposure and existing insurance to identify protection gaps",
             },
             {
               title: "Bespoke Risk Mapping",
@@ -154,7 +152,7 @@ Our approach combines risk assessment, bespoke policy structuring and dedicated 
             },
             {
               title: "Tailored Policy Structuring",
-              description: "Our specialists design a coordinated insurance programme with appropriate limits, deductibles, extensions and specialised covers based on your requirements.",
+              description: "Our specialists design a coordinated insurance programme with appropriate limits, deductibles and specialised covers for you.",
             },
             {
               title: "Dedicated Claims Advocacy",
@@ -164,7 +162,7 @@ Our approach combines risk assessment, bespoke policy structuring and dedicated 
             {
               title: "Ongoing Portfolio Review",
               description:
-                "As your assets, lifestyle and financial interests evolve, we periodically review your insurance portfolio to ensure your protection keeps pace.",
+                "As your assets and lifestyle evolve, we periodically review your insurance portfolio to keep your protection current.",
             },
           ]}
         />

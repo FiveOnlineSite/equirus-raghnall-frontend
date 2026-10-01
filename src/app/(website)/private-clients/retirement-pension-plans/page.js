@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Retirement / Pension Plans"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Plan for Tomorrow. Retire With Financial Confidence.</>}
+          description="Retirement and Pension Plans help individuals build financial security for their post-retirement years by creating a structured approach to long-term savings, wealth accumulation and future income needs."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Retirement / Pension Plans"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Retirement Income Planning ", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Long-Term Financial Security ", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Systematic Wealth Accumulation ", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Flexible Retirement Solutions ", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Financial Independence ", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,42 @@ export default function Page() {
           title="Understanding Retirement / Pension Plans"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Retirement / Pension Plans overview"
-          description="Retirement / Pension Plans is designed to manage life risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Retirement / Pension Plans are long-term solutions that help individuals build funds during their working years and create retirement income, through regular contributions, guaranteed or market-linked returns, and/or periodic post-retirement payouts."
+          coverageItems={["Retirement Corpus Creation", "Regular Retirement Income","Long-Term Savings", "Financial Security After Retirement", "Life Insurance Protection"]}
+          example="An individual begins planning for retirement during their working years and contributes systematically towards a retirement-oriented plan.
+Over time, the contributions and applicable returns help build a retirement corpus. At the chosen retirement stage, the accumulated funds can be used in accordance with the selected product structure to support regular income and other financial requirements.
+"
         />
         <ServiceCoverageGrid
           label="Coverage Components"
-          title="Comprehensive Protection At Every Level"
+          title="Comprehensive Retirement Protection"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Retirement Corpus", description: "Build a dedicated financial corpus to support your post-retirement requirements." },
+            { title: "Pension Income", description: "Create a potential stream of regular income during retirement through suitable pension or annuity solutions." },
+            { title: "Long-Term Wealth Accumulation", description: "Adopt a disciplined approach to saving and investing for long-term financial objectives." },
+            { title: "Financial Independence", description: "Strengthen your ability to meet future expenses without relying entirely on active employment income." },
+            { title: "Life & Family Protection", description: "Where applicable, selected products can combine retirement planning with life protection benefits." },
+            { title: "Flexible Retirement Planning", description: "Structure your retirement strategy around your age, financial goals, expected retirement lifestyle and risk preferences." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Secure Your Future Before Retirement Arrives</>}
+          description="Our specialists help you build a retirement strategy based on your current financial position, future goals and expected lifestyle."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Retirement / Pension Plans advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "Retirement Needs & Financial Assessment", description: "We understand your current financial position, retirement goals, expected expenses and desired retirement lifestyle." },
+            { title: "Plan Comparison & Structuring", description: "We evaluate suitable retirement and pension solutions based on your objectives, investment preferences and financial horizon." },
+            { title: "Policy / Plan Placement", description: "We coordinate the application, documentation and placement process for the selected solution." },
+            { title: "Ongoing Financial Support", description: "We assist with policy servicing, documentation and applicable benefit-related requirements throughout the policy lifecycle." },
+            { title: "Retirement Plan Review", description: "We periodically review your retirement strategy to ensure it remains aligned with changing financial circumstances and long-term goals." },
           ]}
         />
         <ServiceCta
-          title="Ready To Explore Retirement / Pension Plans?"
-          description="Speak with a specialist for a no-obligation assessment."
+          title={<>Start Planning for the Life <br/> You Want After Retirement</>}
+          description="Build a retirement strategy designed to provide greater financial confidence for the years ahead."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

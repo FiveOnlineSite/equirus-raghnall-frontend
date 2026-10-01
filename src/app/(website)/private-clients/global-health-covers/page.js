@@ -41,12 +41,11 @@ export default function Page() {
           label="Global Health Covers"
           title={
             <>
-              Global healthcare. Personal protection. Wherever life
-              <br />
-              takes you.
+              Global Healthcare. Personal Protection. Wherever Life
+              Takes You.
             </>
           }
-          description="Access to quality healthcare should not be limited by geography. Global Health Covers provide comprehensive international health protection for individuals and families who require access to healthcare across countries and continents."
+          description="Access to quality healthcare should not be limited by geography. Global Health Covers provide comprehensive international health protection for individuals and families needing care across countries and continents."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Global Health Covers"
           imagePosition="center center"
@@ -78,17 +77,15 @@ export default function Page() {
           title="Understanding Global Health Covers"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Global Health Covers overview"
-          description="Global Health Covers are international health insurance solutions designed for individuals and families with global healthcare requirements.
-Whether you travel frequently, maintain residences across countries, work internationally or prefer access to leading medical facilities worldwide, these solutions can provide financial protection against eligible healthcare expenses outside your home country.
-Coverage can be structured around your geographical requirements, preferred healthcare providers, family needs and level of protection, subject to the terms and conditions of the selected policy.
-"
-          // coverageItems={[
-          //   "Covered financial losses",
-          //   "Relevant policy extensions",
-          //   "Eligible professional expenses",
-          //   "Claims coordination and advocacy",
-          // ]}
-          // example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Global Health Covers are international health insurance solutions for individuals and families with global healthcare needs, whether you travel frequently, live across countries or work internationally, providing financial protection against eligible healthcare expenses abroad."
+          coverageItems={[
+            "Hospitalisation Abroad",
+            "Day-care Procedures ",
+            "Pre- and Post-Hospitalisation",
+            "Emergency Medical Treatment",
+            "Medical Evacuation / Repatriation",
+          ]}
+          example="An employee of an Indian company is travelling to Singapore for business and suffers an unexpected medical emergency requiring hospitalisation. If the employee has a Global Health Cover that includes Singapore and overseas hospitalisation, the eligible medical expenses can be covered up to the applicable Sum Insured and subject to the policy terms."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
@@ -141,15 +138,15 @@ Coverage can be structured around your geographical requirements, preferred heal
           steps={[
             {
               title: "Global Healthcare Needs Assessment",
-              description: "We understand your travel patterns, countries of residence, family requirements, preferred healthcare locations and existing health insurance protection.",
+              description: "We understand your travel patterns, residence countries, family needs, preferred healthcare locations and existing health cover.",
             },
             {
               title: "International Plan Comparison",
               description:
-                "We evaluate suitable global health plans based on geographical coverage, medical limits, deductibles, healthcare networks and available benefits.",
+                "We evaluate global health plans on geographical coverage, medical limits, deductibles, networks and benefits.",
             },
             {
-              title: "Bespoke Policy StructuringCoverage Review",
+              title: "Coverage Review",
               description: "Our specialists help structure coverage around your family, lifestyle and international healthcare requirements.",
             },
             {
@@ -160,12 +157,12 @@ Coverage can be structured around your geographical requirements, preferred heal
             {
               title: "Annual Global Health Review",
               description:
-                "We periodically review your international health protection to ensure it continues to reflect changes in your travel, residence, family and healthcare requirements.",
+                "We periodically review your international health protection to reflect changes in your travel, residence, family and healthcare needs.",
             },
           ]}
         />
         <ServiceCta
-          title="Healthcare without borders. Protection without compromise."
+          title={<>Healthcare Without Borders. <br/>Protection Without Compromise.</>}
           description="Protect yourself and your family with global health coverage designed around the way you live, travel and access healthcare worldwide."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{

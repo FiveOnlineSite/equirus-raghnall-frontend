@@ -41,9 +41,9 @@ export default function Page() {
           label="Keyman Insurance"
           title={
             <>
-              Protect the people who
+              Protect The People Who
               <br />
-              drive your business forward
+              Drive Your Business Forward
             </>
           }
           description="Key Man Insurance helps businesses protect themselves against the financial impact of losing a key individual whose expertise, leadership, relationships or contribution is critical to the organisation’s success."
@@ -79,16 +79,13 @@ export default function Page() {
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Keyman Insurance overview"
           description="Key Man Insurance is a life insurance policy taken by a business on the life of an individual whose skills, experience, leadership, relationships or specialised knowledge are considered critical to the organisation.
-The company is generally the policyholder and beneficiary, subject to the policy structure and applicable regulations. If the insured key person dies during the policy term, the policy can provide a financial benefit to the business, helping it manages the resulting financial impact.
-Key Man Insurance is particularly relevant for businesses that depend heavily on founders, senior executives, specialised professionals, sales leaders or individuals with critical client and business relationships.
-"
+The company is generally the policyholder and beneficiary, subject to the policy structure and applicable regulations."
           coverageItems={[
             "Key Person Death Benefit",
             "Business Continuity Protection",
             "Revenue & Profit Protection",
             "Recruitment & Replacement Costs",
-            "Outstanding Financial Commitments",
-            "Stakeholder & Investor Confidence",
+            "Outstanding Financial Commitments"
           ]}
           example="A company relies heavily on its Managing Director, who is responsible for major client relationships, strategic decisions and a significant portion of the company’s revenue.
 If the Managing Director passes away unexpectedly during the policy term, the business may face revenue disruption, replacement costs and loss of key relationships.
@@ -140,33 +137,33 @@ A Key Man Insurance policy can provide a financial benefit to the company, helpi
           imagePosition="center"
           steps={[
             {
-              title: "Risk Assessment & Needs Analysis",
-              description: "We identify exposures and protection priorities.",
+              title: "Key Person Identification & Risk Assessment",
+              description: "We understand the organisation, identify critical individuals and assess the potential financial impact of losing them.",
             },
             {
-              title: "Policy Design & Placement",
+              title: "Coverage Structuring & Placement",
               description:
-                "We structure suitable limits, deductibles, and extensions.",
+                "We help determine an appropriate coverage structure based on the key person’s contribution and the business’s financial exposure.",
             },
             {
-              title: "Coverage Review",
-              description: "We review wording against expected protection.",
+              title: "Policy Documentation & Support",
+              description: "We coordinate the documentation and policy placement process to ensure smooth implementation.",
             },
             {
-              title: "Dedicated Claims Advocacy",
+              title: "Claims Assistance",
               description:
-                "We coordinate claims documentation and insurer discussions.",
+                "In the event of a claim, we assist with the claims process and coordinate with the insurer for timely resolution.",
             },
             {
-              title: "Annual Policy Review & Renewal",
+              title: "Annual Policy Review",
               description:
-                "We revisit coverage as circumstances and risks change.",
+                "We periodically review the coverage to keep it aligned with changes in the key person's role, business value and financial exposure.",
             },
           ]}
         />
         <ServiceCta
-          title="Ready To Explore Keyman Insurance?"
-          description="Speak with a specialist for a no-obligation assessment."
+          title={<>Protect the People Who <br/>Make Your Business Stronger</>}
+          description="Secure your business against the financial impact of losing a key individual."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

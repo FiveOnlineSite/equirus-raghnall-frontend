@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Health Insurance"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Protect Your Health. Secure Your Financial Well-Being</>}
+          description="Healthcare costs can be unpredictable. The right health insurance provides financial protection against covered medical expenses, helping you access quality healthcare without the burden of unexpected costs."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Health Insurance"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Hospitalisation Expense Cover", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Pre & Post-Hospitalisation Protection", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Cashless Treatment Options", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Family Health Protectione", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Critical Illness & Additional Covers", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,40 @@ export default function Page() {
           title="Understanding Health Insurance"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Health Insurance overview"
-          description="Health Insurance is designed to manage health risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Health Insurance is designed to provide financial protection against eligible medical and hospitalisation expenses arising from illness, injury or accidents, subject to the terms and conditions of the policy."
+          coverageItems={["Hospitalisation Expenses", "Pre & Post-Hospitalisation", "Day Care Procedures", "Cashless Hospitalisation", "Ambulance Expenses"]}
+          example="If an insured person requires hospitalisation following an illness or accident, the policy can cover eligible medical expenses such as hospital charges, treatment costs and other admissible expenses, subject to the applicable coverage, limits and exclusions."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
-          title="Comprehensive Protection At Every Level"
+          title="Comprehensive Protection for Your Health"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Hospitalisation", description: "Provides financial protection against eligible hospitalisation expenses arising from covered illnesses, injuries and medical procedures." },
+            { title: "Day Care ", description: "Covers eligible day care procedures included under the policy, subject to applicable terms and conditions." },
+            { title: "Pre & Post-Hospitalisation ", description: "Provides coverage for eligible medical expenses incurred before and after a covered hospitalisation." },
+            { title: "Family Floater", description: "A family floater policy can provide a shared sum insured for covered family members, depending on the policy structure." },
+            { title: "Critical Illness", description: "Provides a lump-sum benefit for covered critical illnesses when specifically included in the policy." },
+            { title: "Additional Covers ", description: "Depending on the insurer and policy, additional covers and optional benefits may be available to address specific healthcare requirements." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Protect Your Health Before the Unexpected Happens </>}
+          description="Healthcare needs differ for every individual and family. Our specialists help assess yours and identify suitable health insurance."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Health Insurance advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "Health Risk & Requirement Assessment", description: "We understand your family structure, healthcare needs, existing cover and finances to identify suitable protection." },
+            { title: "Plan Comparison & Policy Structuring", description: "We help evaluate available plans, sum insured options, deductibles, waiting periods, network hospitals and applicable benefits." },
+            { title: "Policy Placement & Documentation", description: "Our team supports you through documentation and policy issuance, helping ensure required information is accurately captured." },
+            { title: "Claims Assistance", description: "In the event of a covered medical claim, our team assists with the claims process and coordinates with the insurer as required." },
+            { title: "Annual Policy Review & Renewal", description: "We review your health insurance at renewal to help ensure it continues to meet your evolving healthcare and financial needs." },
           ]}
         />
         <ServiceCta
-          title="Ready To Explore Health Insurance?"
-          description="Speak with a specialist for a no-obligation assessment."
+          title="Protect Your Health. Plan for Tomorrow."
+          description="Choose the right health insurance protection for yourself and your family with support from experienced insurance specialists."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",
