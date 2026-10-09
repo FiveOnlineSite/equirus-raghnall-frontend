@@ -60,36 +60,36 @@ export default function ServiceHero({
   }, [imageAlt, pageSlug]);
 
   return (
-    <section className="min-h-[calc(100svh-88px)] overflow-hidden bg-[#EFF1F4] md:min-h-[560px]">
-      <div className="mx-auto flex min-h-[calc(100svh-88px)] max-w-[1440px] flex-col px-5 pb-9 pt-14 text-center md:min-h-[560px] md:px-10 md:pt-16 xl:px-20">
+    <section className="overflow-hidden bg-[#EFF1F4]">
+      <div className="mx-auto flex max-w-[1440px] flex-col px-5 pb-6 pt-8 text-center md:px-10 md:pb-8 md:pt-10 xl:px-20">
         <div className="mx-auto max-w-[900px]">
           <p className="text-sm font-medium uppercase tracking-[0.04em] text-[#376E00] sm:text-base">
             {label}
           </p>
-          <h1 className="mx-auto mt-6 max-w-[750px] text-[clamp(24px,7vw,30px)] font-semibold leading-[1.08] tracking-[-0.025em] text-[#080808] md:text-[48px]">
+          <h1 className="mx-auto mt-4 max-w-[750px] text-[clamp(24px,7vw,30px)] font-semibold leading-[1.08] tracking-[-0.025em] text-[#080808] md:text-[48px]">
             {title}
           </h1>
 
-          <p className="mx-auto mt-7 max-w-[850px] text-sm leading-6 text-[#555555] md:text-base md:leading-7">
+          <p className="mx-auto mt-4 max-w-[850px] text-sm leading-6 text-[#555555] md:text-base md:leading-7">
             {description}
           </p>
         </div>
 
-        <div className="flex min-h-32 flex-1 items-center justify-center px-6 py-8 md:min-h-40 md:py-10">
+        <div className="flex items-center justify-center px-6 py-1 md:py-2">
           {!activeLogo.resolved ? (
             <div
               className="h-20 w-48 animate-pulse rounded-2xl bg-white/65 md:h-28 md:w-72"
               aria-hidden="true"
             />
           ) : activeLogo.url ? (
-            <div className="relative h-32 w-full max-w-[480px] md:h-44">
+            <div className="relative h-28 w-full max-w-[480px] overflow-hidden md:h-32">
               <Image
                 src={activeLogo.url}
                 alt={activeLogo.alt}
                 fill
                 priority
                 sizes="(max-width: 768px) 70vw, 480px"
-                className="object-contain"
+                className="scale-[1.35] object-contain mix-blend-multiply"
               />
             </div>
           ) : null}
@@ -97,7 +97,7 @@ export default function ServiceHero({
 
         {features.length ? (
           <div
-            className={`mx-auto mb-10 grid w-full translate-y-3 gap-5 text-left md:mb-12 md:translate-y-0 ${
+            className={`mx-auto mb-6 grid w-full gap-3 text-left md:mb-8 ${
               features.length <= 3
                 ? "max-w-[720px] sm:grid-cols-3"
                 : "max-w-[1200px] sm:grid-cols-5"

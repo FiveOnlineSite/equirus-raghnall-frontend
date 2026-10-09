@@ -41,8 +41,7 @@ export default function Page() {
           label="Global Health Covers"
           title={
             <>
-              Global Healthcare. Personal Protection. Wherever Life
-              Takes You.
+              Global Healthcare. <br/>Personal Protection.
             </>
           }
           description="Access to quality healthcare should not be limited by geography. Global Health Covers provide comprehensive international health protection for individuals and families needing care across countries and continents."

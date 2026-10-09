@@ -25,7 +25,7 @@ export default function Page() {
         <ServiceHero
           label="Private Car Insurance"
           title={<>Drive With Confidence.<br />Protected For The Road Ahead.</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          description="Private Car Insurance protects your car against accidents, theft, fire and natural calamities, and covers your legal liability to third parties. It helps you manage repair costs and drive with confidence."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Private Car Insurance"
           imagePosition="center center"
