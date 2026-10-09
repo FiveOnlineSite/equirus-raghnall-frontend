@@ -78,7 +78,7 @@ export default function ServiceHero({
         <div className="flex items-center justify-center px-6 py-1 md:py-2">
           {!activeLogo.resolved ? (
             <div
-              className="h-20 w-48 animate-pulse rounded-2xl bg-white/65 md:h-28 md:w-72"
+              className="h-28 w-full max-w-[480px] md:h-32"
               aria-hidden="true"
             />
           ) : activeLogo.url ? (
