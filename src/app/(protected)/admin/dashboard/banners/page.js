@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { serviceSections } from "@/data/serviceMenus";
 import { ApiError, apiRequest } from "@/lib/api";
@@ -9,14 +10,14 @@ export default function BannersPage() {
     serviceSections[0]?.categories[0]?.links[0]?.slug || "",
   );
 
-  const [imageKey, setImageKey] = useState("");
+  const [logoKey, setLogoKey] = useState("");
   const [altText, setAltText] = useState("");
 
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewUrl, setPreviewUrl] = useState("");
 
   const [loading, setLoading] = useState(false);
-  const [fetching, setFetching] = useState(false);
+  const [fetching, setFetching] = useState(true);
   const [successMessage, setSuccessMessage] = useState("");
   const fileInputRef = useRef(null);
   const successTimerRef = useRef(null);
@@ -25,16 +26,53 @@ export default function BannersPage() {
     process.env.NEXT_PUBLIC_AWS_CDN_URL || ""
   ).replace(/\/$/, "");
 
-  const currentImageUrl =
-    imageKey && cloudFrontUrl
-      ? `${cloudFrontUrl}/${imageKey.replace(/^\//, "")}`
+  const currentLogoUrl =
+    logoKey && cloudFrontUrl
+      ? `${cloudFrontUrl}/${logoKey.replace(/^\//, "")}`
       : "";
 
   // Load existing banner whenever page changes
   useEffect(() => {
     if (!selectedPage) return;
 
+    const controller = new AbortController();
+
+    async function loadBanner() {
+      try {
+        const data = await apiRequest(
+          `/api/admin/banners/${selectedPage}`,
+          {
+            cache: "no-store",
+            signal: controller.signal,
+          }
+        );
+
+        if (data.success && data.banner) {
+          setLogoKey(data.banner.logoKey || "");
+          setAltText(data.banner.altText || "");
+        } else {
+          setLogoKey("");
+          setAltText("");
+        }
+      } catch (error) {
+        if (error.name === "AbortError") return;
+
+        if (!(error instanceof ApiError && error.status === 404)) {
+          console.error("Center logo fetch error:", error);
+        }
+
+        setLogoKey("");
+        setAltText("");
+      } finally {
+        if (!controller.signal.aborted) {
+          setFetching(false);
+        }
+      }
+    }
+
     loadBanner();
+
+    return () => controller.abort();
   }, [selectedPage]);
 
   // Cleanup preview URL
@@ -59,53 +97,11 @@ export default function BannersPage() {
       window.clearTimeout(successTimerRef.current);
     }
 
-    setSuccessMessage("Banner updated successfully.");
+    setSuccessMessage("Center logo updated successfully.");
     successTimerRef.current = window.setTimeout(() => {
       setSuccessMessage("");
       successTimerRef.current = null;
     }, 4000);
-  }
-
-  async function loadBanner() {
-    try {
-      setFetching(true);
-
-      setSelectedFile(null);
-
-      if (previewUrl) {
-        URL.revokeObjectURL(previewUrl);
-      }
-
-      setPreviewUrl("");
-
-      const data = await apiRequest(
-        `/api/admin/banners/${selectedPage}`,
-        {
-          cache: "no-store",
-        }
-      );
-
-      if (data.success && data.banner) {
-        setImageKey(data.banner.imageKey || "");
-        setAltText(data.banner.altText || "");
-      } else {
-        setImageKey("");
-        setAltText("");
-      }
-    } catch (error) {
-      if (error instanceof ApiError && error.status === 404) {
-        setImageKey("");
-        setAltText("");
-        return;
-      }
-
-      console.error("Banner fetch error:", error);
-
-      setImageKey("");
-      setAltText("");
-    } finally {
-      setFetching(false);
-    }
   }
 
   function handleImageChange(event) {
@@ -146,7 +142,7 @@ export default function BannersPage() {
 
   async function uploadImageToS3() {
     if (!selectedFile) {
-      return imageKey;
+      return logoKey;
     }
 
     // 1. Ask backend for presigned S3 URL
@@ -158,6 +154,7 @@ export default function BannersPage() {
           fileType: selectedFile.type,
           fileSize: selectedFile.size,
           page: selectedPage,
+          assetType: "service-logo",
         }),
       }
     );
@@ -200,8 +197,8 @@ export default function BannersPage() {
       return;
     }
 
-    if (!selectedFile && !imageKey) {
-      alert("Please select a banner image.");
+    if (!selectedFile && !logoKey) {
+      alert("Please select a center logo.");
       return;
     }
 
@@ -209,10 +206,10 @@ export default function BannersPage() {
       setLoading(true);
 
       // 1. Upload newly selected image
-      let finalImageKey = imageKey;
+      let finalLogoKey = logoKey;
 
       if (selectedFile) {
-        finalImageKey =
+        finalLogoKey =
           await uploadImageToS3();
       }
 
@@ -222,7 +219,7 @@ export default function BannersPage() {
         {
           method: "PUT",
           body: JSON.stringify({
-            imageKey: finalImageKey,
+            logoKey: finalLogoKey,
             altText: altText.trim(),
           }),
         }
@@ -236,7 +233,7 @@ export default function BannersPage() {
       }
 
       // 3. Update local state
-      setImageKey(finalImageKey);
+      setLogoKey(finalLogoKey);
       setSelectedFile(null);
 
       if (previewUrl) {
@@ -275,7 +272,7 @@ export default function BannersPage() {
         </h1>
 
         <p className="mt-2 text-gray-500">
-          Manage banners for service pages.
+          Manage the center logo shown on each service page banner.
         </p>
       </div>
 
@@ -286,8 +283,15 @@ export default function BannersPage() {
           <select
             value={selectedPage}
             onChange={(e) => {
+              const nextPage = e.target.value;
+
               setSuccessMessage("");
-              setSelectedPage(e.target.value);
+              setFetching(Boolean(nextPage));
+              setSelectedFile(null);
+              setPreviewUrl("");
+              setLogoKey("");
+              setAltText("");
+              setSelectedPage(nextPage);
             }}
             className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none focus:border-[#0A4E08]"
           >
@@ -313,31 +317,34 @@ export default function BannersPage() {
           </div>
         ) : (
           <>
-            {/* Banner Preview */}
+            {/* Center logo preview */}
             <div className="mb-8">
               <label className="mb-3 block text-sm font-medium text-gray-700">
-                Banner Preview
+                Center Logo Preview
               </label>
 
               {previewUrl ||
-              currentImageUrl ? (
-                <div className="overflow-hidden rounded-xl border border-gray-200 bg-gray-100">
-                  <img
+              currentLogoUrl ? (
+                <div className="relative h-72 overflow-hidden rounded-xl border border-gray-200 bg-[#EFF1F4] p-8">
+                  <Image
                     src={
                       previewUrl ||
-                      currentImageUrl
+                      currentLogoUrl
                     }
                     alt={
                       altText ||
-                      "Banner preview"
+                      "Center logo preview"
                     }
-                    className="h-72 w-full object-cover"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 960px"
+                    unoptimized={Boolean(previewUrl)}
+                    className="object-contain p-8"
                   />
                 </div>
               ) : (
-                <div className="flex h-72 items-center justify-center rounded-xl border-2 border-dashed border-gray-300 bg-gray-50">
+                <div className="flex h-72 items-center justify-center rounded-xl border-2 border-dashed border-gray-300 bg-[#EFF1F4]">
                   <p className="text-sm text-gray-400">
-                    No banner uploaded for
+                    No center logo uploaded for
                     this page.
                   </p>
                 </div>
@@ -347,9 +354,9 @@ export default function BannersPage() {
             {/* Upload */}
             <div className="mb-6">
               <label className="mb-2 block text-sm font-medium text-gray-700">
-                {imageKey
-                  ? "Change Banner Image"
-                  : "Upload Banner Image"}
+                {logoKey
+                  ? "Change Center Logo"
+                  : "Upload Center Logo"}
               </label>
 
               <input
@@ -379,8 +386,8 @@ export default function BannersPage() {
 
               <div className="mt-2 space-y-1 text-xs text-gray-400">
                 <p>
-                  Recommended banner size:
-                  1920 × 1080 px
+                  Recommended: a transparent PNG or WebP with
+                  minimal empty space around the logo
                 </p>
 
                 <p>
@@ -409,7 +416,7 @@ export default function BannersPage() {
             {/* Alt Text */}
             <div className="mb-8">
               <label className="mb-2 block text-sm font-medium text-gray-700">
-                Image Alt Text
+                Logo Alt Text
               </label>
 
               <input
@@ -419,7 +426,7 @@ export default function BannersPage() {
                   setSuccessMessage("");
                   setAltText(e.target.value);
                 }}
-                placeholder="Example: Private Car Insurance"
+                placeholder="Example: Private Car Insurance logo"
                 className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 outline-none transition focus:border-[#0A4E08] focus:ring-2 focus:ring-[#0A4E08]/10"
               />
 
@@ -455,7 +462,7 @@ export default function BannersPage() {
                   ? selectedFile
                     ? "Uploading & Saving..."
                     : "Saving..."
-                  : "Save Banner"}
+                  : "Save Center Logo"}
               </button>
               </div>
             </div>

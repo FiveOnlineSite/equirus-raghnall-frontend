@@ -11,7 +11,7 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "d15zngbzwsyml4.cloudfront.net",
-        pathname: "/banners/**",
+        pathname: "/service-logos/**",
       },
       {
         protocol: "https",

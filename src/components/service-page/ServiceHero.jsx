@@ -9,52 +9,47 @@ export default function ServiceHero({
   label,
   title,
   description,
-  image,
   imageAlt = "",
   features = [],
-  imagePosition = "center center",
 }) {
   const pathname = usePathname();
-  const [bannerImage, setBannerImage] = useState("");
-  const [bannerAlt, setBannerAlt] = useState(imageAlt);
-  const [bannerResolved, setBannerResolved] = useState(false);
+  const pageSlug = pathname.split("/").filter(Boolean).at(-1) || "";
+  const [logo, setLogo] = useState({
+    pageSlug: "",
+    url: "",
+    alt: imageAlt,
+    resolved: false,
+  });
+  const activeLogo = logo.pageSlug === pageSlug
+    ? logo
+    : { url: "", alt: imageAlt, resolved: !pageSlug };
 
   useEffect(() => {
-    const pageSlug = pathname.split("/").filter(Boolean).at(-1);
-
-    setBannerImage("");
-    setBannerAlt(imageAlt);
-    setBannerResolved(false);
-
-    if (!pageSlug) {
-      setBannerImage(image);
-      setBannerResolved(true);
-      return;
-    }
+    if (!pageSlug) return;
 
     const controller = new AbortController();
 
     async function loadBanner() {
+      let url = "";
+      let alt = imageAlt;
+
       try {
         const data = await apiRequest(
           `/api/banners/${encodeURIComponent(pageSlug)}`,
           { signal: controller.signal },
         );
 
-        if (data.banner?.imageUrl) {
-          setBannerImage(data.banner.imageUrl);
-          setBannerAlt(data.banner.altText || imageAlt);
-        } else {
-          setBannerImage(image);
+        if (data.banner?.logoUrl) {
+          url = data.banner.logoUrl;
+          alt = data.banner.altText || imageAlt;
         }
       } catch (error) {
         if (error.name !== "AbortError") {
-          console.error("Unable to load service banner:", error);
-          setBannerImage(image);
+          console.error("Unable to load service logo:", error);
         }
       } finally {
         if (!controller.signal.aborted) {
-          setBannerResolved(true);
+          setLogo({ pageSlug, url, alt, resolved: true });
         }
       }
     }
@@ -62,29 +57,10 @@ export default function ServiceHero({
     loadBanner();
 
     return () => controller.abort();
-  }, [image, imageAlt, pathname]);
+  }, [imageAlt, pageSlug]);
 
   return (
-    <section className="relative isolate min-h-[calc(100svh-88px)] overflow-hidden bg-[#F7F8FA] md:min-h-[560px]">
-      {!bannerResolved ? (
-        <div
-          className="absolute inset-0 -z-20 animate-pulse bg-[#EEF0F3]"
-          aria-hidden="true"
-        />
-      ) : null}
-      {bannerResolved && bannerImage ? (
-        <Image
-          src={bannerImage}
-          alt={bannerAlt}
-          fill
-          priority
-          sizes="100vw"
-          className="-z-20 object-cover"
-          style={{ objectPosition: imagePosition }}
-        />
-      ) : null}
-      <div className="absolute inset-0 -z-10 bg-white/10" aria-hidden="true" />
-
+    <section className="min-h-[calc(100svh-88px)] overflow-hidden bg-[#EFF1F4] md:min-h-[560px]">
       <div className="mx-auto flex min-h-[calc(100svh-88px)] max-w-[1440px] flex-col px-5 pb-9 pt-14 text-center md:min-h-[560px] md:px-10 md:pt-16 xl:px-20">
         <div className="mx-auto max-w-[900px]">
           <p className="text-sm font-medium uppercase tracking-[0.04em] text-[#376E00] sm:text-base">
@@ -99,9 +75,29 @@ export default function ServiceHero({
           </p>
         </div>
 
+        <div className="flex min-h-32 flex-1 items-center justify-center px-6 py-8 md:min-h-40 md:py-10">
+          {!activeLogo.resolved ? (
+            <div
+              className="h-20 w-48 animate-pulse rounded-2xl bg-white/65 md:h-28 md:w-72"
+              aria-hidden="true"
+            />
+          ) : activeLogo.url ? (
+            <div className="relative h-32 w-full max-w-[480px] md:h-44">
+              <Image
+                src={activeLogo.url}
+                alt={activeLogo.alt}
+                fill
+                priority
+                sizes="(max-width: 768px) 70vw, 480px"
+                className="object-contain"
+              />
+            </div>
+          ) : null}
+        </div>
+
         {features.length ? (
           <div
-            className={`mx-auto mb-10 mt-auto grid w-full translate-y-3 gap-5 text-left md:mb-12 md:translate-y-0 md:pt-24 ${
+            className={`mx-auto mb-10 grid w-full translate-y-3 gap-5 text-left md:mb-12 md:translate-y-0 ${
               features.length <= 3
                 ? "max-w-[720px] sm:grid-cols-3"
                 : "max-w-[1200px] sm:grid-cols-5"
