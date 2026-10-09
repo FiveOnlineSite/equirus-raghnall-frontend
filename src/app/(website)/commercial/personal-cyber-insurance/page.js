@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Personal Cyber Insurance"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Protect Your Digital Life.<br/> Secure Your Identity.</>}
+          description="Personal cyber insurance that helps protect you and your family against online fraud, identity theft and data misuse. Get financial support and expert assistance to recover quickly and stay secure online."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Personal Cyber Insurance"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Identity Theft Protection", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Cyber Fraud Protection", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Online Privacy & Data Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Cyber Harassment & Reputation Support", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Personal Cyber Incident Assistance", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,41 @@ export default function Page() {
           title="Understanding Personal Cyber Insurance"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Personal Cyber Insurance overview"
-          description="Personal Cyber Insurance is designed to manage cyber risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Personal Cyber Insurance protects individuals and families against risks from cyber incidents, online fraud, identity theft and privacy breaches, providing financial protection and assistance for covered losses, subject to policy terms."
+          coverageItems={["Identity theft and restoration expenses", "Online financial fraud and cyber-enabled theft", "Cyber extortion and ransomware-related incidents", "Online privacy and data breach-related risks","Cyber harassment and online reputation risks"]}
+          example="If an individual becomes a victim of an online financial fraud or identity theft, Personal Cyber Insurance can help cover eligible financial losses and associated assistance or restoration expenses, subject to the policy terms and applicable limits."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
           title="Comprehensive Protection At Every Level"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Identity Theft Protection", description: "Supports covered identity theft incidents, including eligible expenses for restoring compromised personal identity information." },
+            { title: "Cyber Financial Fraud", description: "Protects against eligible financial losses arising from covered cyber-enabled fraudulent transactions or online theft." },
+            { title: "Cyber Extortion & Ransomware", description: "Provides protection and assistance for covered cyber extortion incidents involving threats to personal data, devices or digital information." },
+            { title: "Online Privacy Protection", description: "Supports individuals facing covered privacy breaches, misuse of personal information or unauthorised exposure of sensitive data." },
+            { title: "Cyber Harassment & Reputation Protection", description: "Provides assistance for covered cyber harassment, online abuse or reputation-related incidents, including eligible professional or legal support." },
+            { title: "Cyber Liability", description: "Provides protection against certain third-party claims arising from covered online activities, privacy breaches or other specified cyber-related liabilities." },
+            { title: "Additional Cyber Protection", description: "Additional extensions may be available for specific personal cyber exposures, subject to insurer availability and policy terms." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Protect Your Digital Life Before Risk Finds You</>}
+          description="Your digital identity is increasingly valuable and exposed. We structure Personal Cyber Insurance around your risk profile and digital lifestyle."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Personal Cyber Insurance advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "Cyber Risk Assessment & Needs Analysis", description: "We understand your digital exposure, online activities and personal cyber risks to identify relevant protection requirements." },
+            { title: "Policy Design & Placement", description: "Our specialists structure suitable coverage, limits and extensions and place the policy with appropriate insurers." },
+            { title: "Policy Documentation & Support", description: "We assist with policy documentation, coverage interpretation and ongoing support so you understand the protection available to you." },
+            { title: "Dedicated Claims Advocacy", description: "In the event of a covered cyber incident, we support you through the claims process and coordinate with the insurer for timely resolution." },
+            { title: "Annual Policy Review & Renewal", description: "We review your coverage periodically to ensure it continues to reflect changes in your digital exposure and evolving cyber risks." },
           ]}
         />
         <ServiceCta
           title="Ready To Explore Personal Cyber Insurance?"
-          description="Speak with a specialist for a no-obligation assessment."
+          description="Protect your digital identity, personal information and finances with cyber protection designed around your lifestyle."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

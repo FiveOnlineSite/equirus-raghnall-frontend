@@ -10,11 +10,46 @@ export default function ServiceCoverageGrid({
   const [selectedItem, setSelectedItem] = useState(null);
   const titleId = useId();
   const descriptionId = useId();
+  const getKnowMoreContent = (item) => {
+    const knowMore = item.knowMore;
+
+    if (typeof knowMore === "string" && knowMore.trim()) {
+      return { description: knowMore, points: [], closingDescription: "" };
+    }
+
+    if (knowMore && typeof knowMore === "object" && !Array.isArray(knowMore)) {
+      return {
+        description:
+          typeof knowMore.description === "string" ? knowMore.description : "",
+        closingDescription:
+          typeof knowMore.closingDescription === "string"
+            ? knowMore.closingDescription
+            : "",
+        points: Array.isArray(knowMore.points)
+          ? knowMore.points.filter(
+              (point) => typeof point === "string" && point.trim(),
+            )
+          : [],
+      };
+    }
+
+    return {
+      description:
+        typeof item.fullDescription === "string" ? item.fullDescription : "",
+      points: [],
+      closingDescription: "",
+    };
+  };
+  const hasKnowMoreContent = (item) => {
+    const { description, points, closingDescription } =
+      getKnowMoreContent(item);
+    return Boolean(description.trim() || points.length || closingDescription.trim());
+  };
+  const selectedKnowMore = selectedItem
+    ? getKnowMoreContent(selectedItem)
+    : null;
   const getPreviewDescription = (item) =>
     item.description.match(/^.*?[.!?](?:\s|$)/)?.[0].trim() || item.description;
-  const getFullDescription = (item) =>
-    item.fullDescription ||
-    `${item.description} Our specialists review the relevant exposures, policy terms, limits, exclusions, and supporting requirements to ensure this area of cover is clearly structured around your needs.`;
 
   useEffect(() => {
     if (!selectedItem) return undefined;
@@ -47,13 +82,15 @@ export default function ServiceCoverageGrid({
               <article key={item.title} className="group flex min-h-[190px] flex-col rounded-xl border border-[#E2E2E2] bg-white p-5 shadow-[0_5px_18px_rgba(0,0,0,0.03)] transition duration-300 hover:-translate-y-1 hover:border-[#0A4E08] hover:bg-[#0A4E08] hover:shadow-[0_14px_35px_rgba(10,78,8,0.18)] md:p-6">
                 <h3 className="text-lg font-semibold leading-6 text-[#242424] transition-colors group-hover:text-white sm:text-xl sm:leading-7">{item.title}</h3>
                 <p className="mt-4 text-sm leading-6 text-[#555555] transition-colors group-hover:text-white/90 md:text-base">{getPreviewDescription(item)}</p>
-                <button
-                  type="button"
-                  onClick={() => setSelectedItem(item)}
-                  className="mt-auto inline-flex cursor-pointer self-start pt-4 text-sm font-semibold text-[#376E00] decoration-1 underline-offset-4 group-hover:text-white hover:underline hover:decoration-white"
-                >
-                  Know more
-                </button>
+                {hasKnowMoreContent(item) ? (
+                  <button
+                    type="button"
+                    onClick={() => setSelectedItem(item)}
+                    className="mt-auto inline-flex cursor-pointer self-start pt-4 text-sm font-semibold text-[#376E00] decoration-1 underline-offset-4 group-hover:text-white hover:underline hover:decoration-white"
+                  >
+                    Know more
+                  </button>
+                ) : null}
               </article>
             ))}
           </div>
@@ -87,9 +124,19 @@ export default function ServiceCoverageGrid({
             <h3 id={titleId} className="mt-3 pr-10 text-2xl font-semibold text-[#111111] sm:text-[28px]">
               {selectedItem.title}
             </h3>
-            <p id={descriptionId} className="mt-5 text-base leading-7 text-[#555555]">
-              {getFullDescription(selectedItem)}
-            </p>
+            <div id={descriptionId} className="mt-5 space-y-4 text-base leading-7 text-[#555555]">
+              {selectedKnowMore.description ? <p>{selectedKnowMore.description}</p> : null}
+              {selectedKnowMore.points.length ? (
+                <ul className="list-disc space-y-2 pl-5 marker:text-[#376E00]">
+                  {selectedKnowMore.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              ) : null}
+              {selectedKnowMore.closingDescription ? (
+                <p>{selectedKnowMore.closingDescription}</p>
+              ) : null}
+            </div>
           </div>
         </div>
       ) : null}

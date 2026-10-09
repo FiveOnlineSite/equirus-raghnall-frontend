@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Miscellaneous"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Protect Your Business Against Risks Outside Standard Covers</>}
+          description="Specialty insurance solutions designed for risks that standard policies often don't address. Our specialists help you identify exposures and build tailored protection for your business."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Miscellaneous"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Flexible Risk Protection", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Specialised Commercial Covers", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Protection for Unique Business Exposures", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Tailored Insurance Solutions", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Comprehensive Risk Management", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,41 @@ export default function Page() {
           title="Understanding Miscellaneous"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Miscellaneous overview"
-          description="Miscellaneous is designed to manage property risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Miscellaneous Insurance offers specialised solutions that protect businesses against specific risks not covered by standard property, liability or commercial policies, structured around the nature of the business, its assets, contractual obligations and unique exposures."
+          coverageItems={["Specialised Risks Protection", "Asset & Contract Cover", "Accidental Loss Protection", "Business Liability","Custom Extensions"]}
+          example="If a business has a specialised operational exposure that is not adequately addressed under its standard insurance programme, a suitable Miscellaneous Insurance solution can provide targeted protection for that specific risk, subject to the policy terms and conditions."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
           title="Comprehensive Protection At Every Level"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Fidelity Guarantee Insurance", description: "Protects businesses against direct financial loss from fraud, dishonesty or specified fraudulent acts by covered employees, subject to policy terms." },
+            { title: "Money Insurance", description: "Protects against loss of money in transit, on business premises or in other specified situations, subject to the selected cover and conditions." },
+            { title: "Plate Glass Insurance", description: "Provides protection against accidental breakage of specified glass installed at insured premises. The cover can help address the cost of replacing insured glass, subject to the policy wording and exclusions." },
+            { title: "Electronic Equipment Insurance", description: "Protects specified electronic equipment against accidental physical loss or damage arising from covered events. It can be structured for equipment used in offices, commercial establishments, and specialised operations." },
+            { title: "Baggage Insurance", description: "Protects specified baggage and personal belongings against loss or damage while travelling, subject to selected cover, limits and exclusions." },
+            { title: "Personal Accident Insurance", description: "Protects against specified accidental bodily injury, including accidental death and permanent disability benefits, subject to policy terms." },
+            { title: "Additional Specialised Covers", description: "Other specialised solutions can be structured for business or individual risks that need protection beyond conventional insurance." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Protect Your Business Before Risk Finds You</>}
+          description="Every business has exposures that standard policies miss. We help identify these risks and structure suitable insurance around your needs."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Miscellaneous advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "Risk Assessment & Needs Analysis", description: "We understand your business activities, assets, contracts and specialised exposures to identify the right protection." },
+            { title: "Policy Design & Placement", description: "Our specialists structure suitable coverage, limits, deductibles, and extensions and place the risk with appropriate insurers." },
+            { title: "Policy Documentation & Support", description: "We coordinate policy documentation and ensure the selected coverage aligns with agreed requirements and policy terms." },
+            { title: "Dedicated Claims Advocacy", description: "Our team supports you through claims, from initial notification and documentation to insurer coordination and resolution." },
+            { title: "Annual Policy Review & Renewal", description: "Regular reviews keep your insurance programme aligned with changes in your business, assets, operations and risk exposures." },
           ]}
         />
         <ServiceCta
           title="Ready To Explore Miscellaneous?"
-          description="Speak with a specialist for a no-obligation assessment."
+          description="Protect your business with insurance solutions designed around your specific risk exposures."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

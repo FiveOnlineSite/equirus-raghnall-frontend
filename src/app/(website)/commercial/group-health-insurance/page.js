@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Group Health Insurance"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Protect Your People. <br/> Strengthen Your Business.</>}
+          description="Group health insurance that protects your employees and their families against medical expenses, supporting their wellbeing and your workplace. It helps you attract and retain talent while building a healthier business."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Group Health Insurance"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Employee Health Protection", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Cashless Hospitalisation", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Employee & Family Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Customised Benefit Structures", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Dedicated Claims Support", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,41 @@ export default function Page() {
           title="Understanding Group Health Insurance"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Group Health Insurance overview"
-          description="Group Health Insurance is designed to manage employee benefits risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Group Health Insurance is an employer-sponsored solution providing medical and hospitalisation cover to employees and, where selected, dependants, structured around the workforce, budget and benefit requirements."
+          coverageItems={["In-patient hospitalisation expenses", "Pre- and post-hospitalisation expenses", "Day-care procedures", "Cashless treatment at network hospitals, subject to policy terms","Ambulance expenses"]}
+          example="If an employee covered under the group health policy requires hospitalisation for a covered medical condition, the policy can help meet eligible hospitalisation expenses, subject to the applicable sum insured, policy terms, conditions, and exclusions."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
           title="Comprehensive Protection At Every Level"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Employee Hospitalisation Cover", description: "Covers eligible hospitalisation expenses incurred by insured employees for covered medical conditions, subject to policy terms and applicable limits." },
+            { title: "Family & Dependant Coverage", description: "Where selected, cover can extend to eligible dependants such as spouses, children and parents, depending on the employer's chosen benefit structure." },
+            { title: "Pre & Post-Hospitalisation", description: "Covers eligible medical expenses incurred before and after hospitalisation for a covered condition, subject to policy limits and period." },
+            { title: "Day-Care Procedures", description: "Covers eligible procedures needing a medical facility for a specified period, but not necessarily 24-hour hospitalisation, subject to policy terms." },
+            { title: "Cashless Hospitalisation", description: "Provides access to cashless treatment at applicable network hospitals, subject to insurer processes, pre-authorisation requirements, and policy conditions." },
+            { title: "Maternity Benefits", description: "Where selected, maternity hospitalisation and related expenses may be covered for eligible employees or dependants." },
+            { title: "Additional Health Benefits", description: "Organisations can consider additional benefits such as critical illness, room-rent enhancements or higher limits, depending on workforce needs." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Protect Your Employees Before Risk Finds You</>}
+          description="A well-structured Group Health Insurance programme supports employee healthcare and builds a sustainable benefits framework."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Group Health Insurance advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "Workforce Risk Assessment & Needs Analysis", description: "We understand your workforce, existing benefits and budget to identify suitable health insurance solutions." },
+            { title: "Plan Design & Placement", description: "Our specialists structure the sum insured, eligibility, benefits and extensions, and negotiate suitable terms with insurers." },
+            { title: "Policy Documentation & Employee Support", description: "We coordinate policy documentation, employee data, enrolment and benefit communication to support smooth implementation." },
+            { title: "Dedicated Claims Assistance", description: "Our team supports employees and the organisation through claims, including documentation, insurer coordination and assistance." },
+            { title: "Annual Policy Review & Renewal", description: "We review utilisation, claims experience and benefits at renewal to keep the programme aligned with your needs." },
           ]}
         />
         <ServiceCta
           title="Ready To Explore Group Health Insurance?"
-          description="Speak with a specialist for a no-obligation assessment."
+          description="Build a health insurance programme that protects your employees and supports your organisation's people strategy."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

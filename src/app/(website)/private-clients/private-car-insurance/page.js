@@ -46,7 +46,7 @@ export default function Page() {
         />
         <ServiceCoverageGrid
           label="Coverage Components"
-          title="Comprehensive Protection At Every Level"
+          title="Comprehensive Protection for Your Car"
           items={[
             { title: "Own Damage", description: "Covers accidental loss or damage to your insured car arising from covered events such as accidents, fire, theft and specified natural or man-made perils." },
             { title: "Third-Party Liability", description: "Provides coverage for your legal liability towards third parties for bodily injury, death or property damage arising from the use of your insured vehicle." },

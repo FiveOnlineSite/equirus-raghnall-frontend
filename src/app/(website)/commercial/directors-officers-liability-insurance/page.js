@@ -48,12 +48,10 @@ export default function DirectorsOfficersLiabilityPage() {
           label="Directors’ & Officers’ Liability Insurance"
           title={
             <>
-              Protect Your Leadership
-              <br />
-              with Confidence
+             Protect Your Leaders From Personal Liability
             </>
           }
-          description="Protect your leadership from legal risks and personal liability—so they can lead with confidence."
+          description="Directors & Officers (D&O) Liability Insurance protects your directors and senior management against legal claims and personal liability from their decisions and actions, helping cover legal defence costs."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Leadership protection and confidence"
           imagePosition="center center"
@@ -77,9 +75,9 @@ export default function DirectorsOfficersLiabilityPage() {
           title="Understanding D&O Insurance"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Business leaders discussing corporate risk"
-          description="Directors’ & Officers’ Liability Insurance (D&O) is a specialized policy designed to protect company leaders from personal liability arising out of their managerial actions. Whether it’s an error in judgment, an alleged breach of duty, or a regulatory investigation—D&O insurance ensures financial and legal protection."
+          description="Directors' & Officers' Liability Insurance (D&O) protects company leaders from personal liability arising from managerial actions, covering errors in judgment, alleged breaches of duty and regulatory investigations with financial and legal protection."
           coverageItems={[
-            "Legal defence costs",
+            "Legal defence costs ",
             "Settlements and court judgments",
             "Regulatory investigations",
             "Claims from shareholders, employees, customers, or authorities",
@@ -93,7 +91,7 @@ export default function DirectorsOfficersLiabilityPage() {
             {
               title: "Individual Coverage",
               description:
-                "Directly protects directors and officers when the company cannot indemnify them. Covers defence costs, judgments, and settlements.",
+                "Repays the organisation when it advances defence costs or indemnifies a director against a covered wrongful act claim by shareholders or regulators.",
               href: "#individual-coverage",
             },
             {
@@ -165,7 +163,7 @@ export default function DirectorsOfficersLiabilityPage() {
         />
 
         <ServiceCta
-          title="Ready To Protect Your Leadership Team?"
+          title="Ready To Protect Your Leadership Team? "
           description="Speak with a specialist today and receive a no-obligation D&O coverage assessment tailored to your organisation's risk profile."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{

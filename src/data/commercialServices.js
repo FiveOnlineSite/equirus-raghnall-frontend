@@ -50,10 +50,9 @@ export const commercialMenu = [
     links: [
       { label: "Surety Bonds", slug: "surety-bonds" },
       { label: "Trade Credit Insurance", slug: "trade-credit-insurance" },
-      {
-        label: "Marine Hull & Aviation",
-        slug: "marine-hull-aviation-insurance",
-      },
+      { label: "Marine Hull & Aviation",slug: "marine-hull-aviation-insurance"},
+      { label: "Mergers & Acquisitions",slug: "mergers-acquisitions"},
+      { label: "Representation and Warranties Insurance",slug: "representation-warranties-insurance"},
     ],
   },
   {
@@ -80,7 +79,7 @@ export const commercialMenu = [
     links: [
       { label: "Corporate Cyber Insurance", slug: "corporate-cyber-insurance" },
       { label: "Personal Cyber Insurance", slug: "personal-cyber-insurance" },
-      { label: "Group Cyber Insurance", slug: "group-cyber-insurance" },
+      // { label: "Group Cyber Insurance", slug: "group-cyber-insurance" },
     ],
   },
   {

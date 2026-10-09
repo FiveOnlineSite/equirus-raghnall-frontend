@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Marine Hull & Aviation"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Protect Your Vessels. Secure Your Aircraft.</>}
+          description="Specialist marine and aviation insurance that protects your vessels, aircraft and related operations against accidental loss, damage and liability. Tailored to your assets, it helps keep your operations moving."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Marine Hull & Aviation"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Marine Hull Protection", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Aviation Asset Protection", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Physical Damage Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Liability Protection Options", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Specialised Risk Solutions", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,41 @@ export default function Page() {
           title="Understanding Marine Hull & Aviation"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Marine Hull & Aviation overview"
-          description="Marine Hull & Aviation is designed to manage speciality risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Marine Hull & Aviation Insurance protects vessels, aircraft and related operational risks against accidental physical loss or damage, with Aviation also offering liability protection for aviation-related risks, subject to policy terms."
+          coverageItems={["Physical loss or damage to insured vessels and aircraft", "Marine hull and machinery protection", "Aircraft hull protection", "Third-party liability protection","Protection against specified marine and aviation risks"]}
+          example="If an insured vessel suffers accidental damage during its operation or an aircraft sustains covered physical damage, the relevant policy can help meet eligible repair or reinstatement costs, subject to the applicable policy terms, conditions, and exclusions."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
           title="Comprehensive Protection At Every Level"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Marine Hull Protection", description: "Covers accidental physical loss or damage to insured vessels, subject to policy wording, insured value and geographical limits." },
+            { title: "Hull & Machinery", description: "Can provide protection for the vessel's hull, machinery, equipment, and associated marine property against covered physical loss or damage." },
+            { title: "Marine War & Related Risks", description: "Where arranged, cover may be available for war and related marine risks excluded from standard hull terms, subject to policy wording." },
+            { title: "Aviation Hull Protection", description: "Protects insured aircraft and specified equipment and components against accidental physical loss or damage, subject to policy terms." },
+            { title: "Aviation Liability", description: "Protects against covered liabilities from aviation operations, including third-party injury or property damage, subject to policy terms." },
+            { title: "Passenger & Third-Party Liability", description: "Where applicable, provides liability protection for covered claims involving passengers and third parties arising from insured aviation operations." },
+            { title: "Additional Marine & Aviation Extensions", description: "Depending on the vessel, aircraft and operations, additional extensions can be considered, subject to underwriting and policy wording." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Protect Your Assets Before Risk Finds You</>}
+          description="Marine and aviation assets carry complex risks. We structure solutions around your vessel or aircraft, operations, geography and liability needs."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Marine Hull & Aviation advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "Risk Assessment & Needs Analysis", description: "We understand your vessel or aircraft specifications, values, usage, territories, ownership structure and liability exposures." },
+            { title: "Policy Design & Placement", description: "Our specialists structure suitable insured values, deductibles and liability limits, and place the risk with appropriate insurers." },
+            { title: "Policy Documentation & Support", description: "We coordinate policy documentation to ensure asset details, values, geographical limits and agreed coverage are accurately reflected." },
+            { title: "Dedicated Claims Advocacy", description: "Our team supports claims from notification through documentation, survey coordination and insurer engagement to resolution." },
+            { title: "Annual Policy Review & Renewal", description: "Regular reviews ensure changes in asset values, fleet, operations, routes and risk exposures are reflected in the insurance programme." },
           ]}
         />
         <ServiceCta
           title="Ready To Explore Marine Hull & Aviation?"
-          description="Speak with a specialist for a no-obligation assessment."
+          description="Protect your marine and aviation assets with specialised insurance solutions designed around your operational risks."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

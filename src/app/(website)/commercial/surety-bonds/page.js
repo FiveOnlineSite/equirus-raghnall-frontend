@@ -40,26 +40,32 @@ export default function Page() {
           label="Surety Bonds"
           title={
             <>
-              Protect What Matters
-              <br />
-              with Confidence
+             Secure Your Commitments. Build Business Credibility.
             </>
           }
-          description="Tailored protection structured around your requirements and risk exposures."
+          description="Surety bonds and guarantee solutions help you meet contractual obligations and win more business, giving clients assurance of performance without tying up your cash."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Surety Bonds"
           imagePosition="center center"
           features={[
             {
-              title: "Financial Protection",
+              title: "Contractual Obligation Support",
               icon: "/assets/services/directors-officers/personal.svg",
             },
             {
-              title: "Claims Support",
+              title: "Performance & Financial Guarantees",
               icon: "/assets/services/directors-officers/legal.svg",
             },
             {
-              title: "Risk-Led Coverage",
+              title: "Enhanced Business Credibility",
+              icon: "/assets/services/directors-officers/management.svg",
+            },
+            {
+              title: "Flexible Bond Solutions",
+              icon: "/assets/services/directors-officers/management.svg",
+            },
+            {
+              title: "Support Across Project Lifecycles",
               icon: "/assets/services/directors-officers/management.svg",
             },
           ]}
@@ -69,87 +75,93 @@ export default function Page() {
           title="Understanding Surety Bonds"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Surety Bonds overview"
-          description="Surety Bonds is designed to manage speciality risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
+          description="Surety Bonds guarantee performance of contractual or statutory obligations among the Principal, Obligee and Surety, offering an alternative to traditional security that helps businesses preserve banking limits and working capital."
           coverageItems={[
-            "Covered financial losses",
-            "Relevant policy extensions",
-            "Eligible professional expenses",
-            "Claims coordination and advocacy",
+            "Performance obligations under contracts",
+            "Advance payment obligations",
+            "Bid and tender requirements",
+            "Contractual and statutory obligations",
+            "Financial and commercial commitments"
           ]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          example="If a contractor is awarded a project and the contract requires a performance security, a Surety Bond can be issued in favour of the project owner to provide the required security, subject to the bond wording and applicable terms."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
           title="Comprehensive Protection At Every Level"
           items={[
             {
-              title: "Core Protection",
+              title: "Performance Bonds",
               description:
-                "Foundational coverage aligned with the principal insured exposures.",
+                "Provide security to the obligee for the principal's performance of specified contractual obligations. These are commonly used in construction, infrastructure, engineering, and other project-based contracts.",
             },
             {
-              title: "Financial Loss",
+              title: "Advance Payment Bonds",
               description:
-                "Support for eligible financial loss following a covered event.",
+                "Provide security in respect of an advance payment made to the principal under a contract, subject to the terms and conditions of the bond.",
             },
             {
-              title: "Liability Protection",
+              title: "Bid & Tender Bonds",
               description:
-                "Protection for covered liabilities and related defence expenses.",
+                "Provides security for tender or bidding requirements and demonstrates the bidder's commitment to proceed under the tender conditions.",
             },
             {
-              title: "Policy Extensions",
+              title: "Retention Money Bonds",
               description:
-                "Selected extensions for relevant operational and contractual risks.",
+                "Can replace retention of funds under eligible contracts, helping businesses preserve working capital while providing the required security.",
             },
             {
-              title: "Risk Management",
+              title: "Customs Bonds",
               description:
-                "Review of loss scenarios, controls, deductibles, and retained risk.",
+                "Provides security for customs-related obligations where a bond is required by the authority, subject to regulations and bond conditions.",
             },
             {
-              title: "Claims Advocacy",
+              title: "Statutory & Regulatory Bonds",
               description:
-                "Assistance from notification and documentation through settlement.",
+                "Can provide security for statutory, regulatory or other obligations where bonds are permitted or required by the authority.",
+            },
+            {
+              title: "Other Contractual Bonds",
+              description:
+                "Depending on the contract and obligation, customised bond structures may be considered for specific commercial or project requirements.",
             },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Secure Your Commitments Before Risk Finds You</>}
+          description="Every contract carries obligations. We help businesses structure suitable Surety Bond solutions around their contract and obligee requirements."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Surety Bonds advisory support"
           imagePosition="center"
           steps={[
             {
-              title: "Risk Assessment & Needs Analysis",
-              description: "We identify exposures and protection priorities.",
+              title: "Contract & Obligation Assessment",
+              description: "We review the contract, tender requirements, bond amount, tenure, obligee requirements and nature of the obligation.",
             },
             {
-              title: "Policy Design & Placement",
+              title: "Bond Structuring & Placement",
               description:
-                "We structure suitable limits, deductibles, and extensions.",
+                "Our specialists structure the right bond solution and coordinate with suitable surety providers.",
             },
             {
-              title: "Coverage Review",
-              description: "We review wording against expected protection.",
+              title: "Documentation & Issuance Support",
+              description: "We coordinate the required financial, contractual, KYC, and other documentation to facilitate the bond issuance process.",
             },
             {
-              title: "Dedicated Claims Advocacy",
+              title: "Dedicated Bond Support",
               description:
-                "We coordinate claims documentation and insurer discussions.",
+                "Our team supports amendments, extensions, cancellations, claims coordination and other bond requirements throughout the lifecycle.",
             },
             {
-              title: "Annual Policy Review & Renewal",
+              title: "Bond Review & Renewal",
               description:
-                "We revisit coverage as circumstances and risks change.",
+                "We monitor bond expiry dates, project timelines, contractual changes and extension needs to help ensure continuity of security.",
             },
           ]}
         />
         <ServiceCta
           title="Ready To Explore Surety Bonds?"
-          description="Speak with a specialist for a no-obligation assessment."
+          description="Strengthen your contractual commitments with Surety Bond solutions designed around your business and project requirements."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

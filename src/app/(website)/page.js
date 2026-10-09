@@ -27,7 +27,7 @@ const services = [
     description:
       "Specialized reinsurance solutions designed to optimize risk transfer and strengthen financial stability.",
     icon: "/assets/home/reinsurance.svg",
-    href: "/reinsurance/transactional-risk-covers",
+    href: "/reinsurance/risk-analytics",
   },
 ];
 
@@ -72,7 +72,7 @@ const serviceSnapshots = [
     title: "Treaty & Facultative",
     description:
       "Structured reinsurance placements via our global network across Lloyd's, European, and Asian markets.",
-    href: "/reinsurance/transactional-risk-covers",
+    href: "/reinsurance/risk-analytics",
   },
 ];
 

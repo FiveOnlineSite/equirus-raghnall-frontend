@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Errection All Risk (EAR)"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Protect Every Stage Of Erection. Keep Your Project Moving.</>}
+          description="Erection All Risk (EAR) Insurance protects the erection, installation and commissioning of machinery, plant and equipment against accidental loss or damage, and can also cover third-party liability."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Errection All Risk (EAR)"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Installation Risk Protection", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Material Damage Coverage", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Commissioning Cover", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Third-Party Liability Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Flexible Project Specific Extensions", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,42 @@ export default function Page() {
           title="Understanding Errection All Risk (EAR)"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Errection All Risk (EAR) overview"
-          description="Errection All Risk (EAR) is designed to manage engineering risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Erection All Risk (EAR) Insurance protects the erection, installation and commissioning of machinery, plant and equipment against accidental physical loss or damage, and can also include third-party liability protection."
+          coverageItems={["Accidental physical loss or damage during erection and installation", "Machinery, plant, equipment, and materials at the project site", "Risks arising during testing and commissioning", "Temporary works and installation-related property","Third-party bodily injury or property damage liability"]}
+          example="If newly installed machinery is accidentally damaged during testing and commissioning, EAR Insurance can help cover the eligible cost of repairing or replacing the damaged equipment, subject to the policy terms and conditions."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
           title="Comprehensive Protection At Every Level"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Material Damage Protection", description: "Protects machinery, plant, equipment and materials involved in the erection or installation project against accidental physical loss or damage." },
+            { title: "Testing & Commissioning Protection", description: "Covers specified accidental loss or damage during testing and commissioning of installed machinery or equipment, subject to policy conditions." },
+            { title: "Third-Party Liability Protection", description: "Protects against legal liability for accidental bodily injury or property damage to third parties arising from the insured erection or installation project." },
+            { title: "Construction & Erection Equipment", description: "Can provide protection for specified tools, equipment, temporary structures, and other property used in connection with the erection and installation work." },
+            { title: "Debris Removal", description: "Covers eligible expenses for removing debris after insured loss or damage at the project site, subject to limits and conditions." },
+            { title: "Escalation", description: "Allows for increases in the value of equipment, materials or project costs during the policy period, subject to the selected limit and conditions." },
+            { title: "Maintenance Period Protection", description: "Where selected, cover can extend into the maintenance period for specified loss or damage under the maintenance clause." },
+            { title: "Additional Project Extensions", description: "Depending on the project, additional extensions may be considered for specific erection and installation exposures, subject to underwriting." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Protect Your Project Before Risk Finds You</>}
+          description="Erection projects involve complex equipment, testing and timelines. We structure EAR solutions around your project's risks."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Errection All Risk (EAR) advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "Project Risk Assessment & Needs Analysis", description: "We understand the project scope, equipment, contract value, erection period, testing schedule and site conditions." },
+            { title: "Policy Design & Placement", description: "Our specialists structure appropriate limits, deductibles, extensions, and liability protection and place the risk with suitable insurers." },
+            { title: "Policy Documentation & Support", description: "We coordinate policy documentation to ensure project details, insured property and coverage are accurately reflected." },
+            { title: "Dedicated Claims Advocacy", description: "Our team supports the claims process from initial notification through documentation, insurer coordination, assessment, and resolution." },
+            { title: "Project Review & Policy Closure", description: "We monitor project changes and support amendments, extensions, maintenance-period needs and final closure." },
           ]}
         />
         <ServiceCta
           title="Ready To Explore Errection All Risk (EAR)?"
-          description="Speak with a specialist for a no-obligation assessment."
+          description="Protect your erection and installation project with coverage designed around its specific risks and requirements."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",

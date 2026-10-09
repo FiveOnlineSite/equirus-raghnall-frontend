@@ -48,9 +48,7 @@ export default function AffinityPartnershipInsurancePage() {
           label="Affinity & Partnership Insurance"
           title={
             <>
-              Protection That Fits
-              <br />
-              Every Partnership
+             Build Connections. <br/> Deliver Protection.
             </>
           }
           description="Create relevant, accessible insurance experiences for your customers, members, employees, or platform users."
@@ -59,111 +57,125 @@ export default function AffinityPartnershipInsurancePage() {
           imagePosition="center center"
           features={[
             {
-              title: "Tailored Programmes",
+              title: "Insurance Programmes",
               icon: "/assets/services/directors-officers/personal.svg",
             },
             {
-              title: "Seamless Distribution",
+              title: "Embedded & Affinity Insurance Solutions",
               icon: "/assets/services/directors-officers/management.svg",
             },
             {
-              title: "Claims Support",
+              title: "Partner-Led Distribution Models",
+              icon: "/assets/services/directors-officers/legal.svg",
+            },
+             {
+              title: "Scalable Customer Protection",
+              icon: "/assets/services/directors-officers/legal.svg",
+            },
+             {
+              title: "Seamless Digital & Service Integration",
               icon: "/assets/services/directors-officers/legal.svg",
             },
           ]}
         />
 
         <ServiceOverview
-          label="What Is Affinity & Partnership Insurance?"
+          label="What is Affinity & Partnership?"
           title="Insurance Designed Around Your Community"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Team designing a partnership insurance solution"
-          description="Affinity & Partnership Insurance brings tailored protection to a defined group through a trusted brand or platform. We work with partners to understand their audience, design relevant benefits, identify suitable insurers, and create a programme that complements the existing customer journey."
+          description="Affinity & Partnership solutions enable organisations to offer relevant insurance to their customers, members, employees or communities. We work with businesses, institutions and platforms to design programmes aligned with their customer proposition, distribution model and risk requirements."
           coverageItems={[
-            "Customised products and benefits",
-            "Group and embedded insurance models",
-            "Digital enrolment and policy servicing",
-            "Claims coordination and programme oversight",
+            "Customer-focused insurance programmes",
+            "Employee and member benefit solutions",
+            "Embedded insurance propositions",
+            "Co-branded and affinity programmes",
+            "Digital insurance distribution",
           ]}
-          example="A digital platform can offer relevant protection within its existing customer journey, giving users convenient access to cover while strengthening the platform's value proposition."
+          example="A digital platform or financial institution can integrate a relevant insurance product into its customer journey, allowing eligible customers to access protection as part of the overall service proposition."
         />
 
         <ServiceCoverageGrid
           label="Programme Capabilities"
-          title="End-To-End Partnership Solutions"
+          title="Comprehensive Partnership Solutions"
           items={[
             {
-              title: "Programme Design",
+              title: "Affinity Insurance",
               description:
-                "Audience insights, risk assessment, benefit design, limits, and eligibility structured around your commercial objectives.",
+                "Customised insurance programmes designed around the needs of a defined customer, member or employee community.",
             },
             {
-              title: "Product & Insurer Selection",
+              title: "Embedded Insurance",
               description:
-                "Access to suitable insurance products and insurer partners based on the programme's risk and service requirements.",
+                "Insurance solutions integrated into existing products, platforms or customer journeys to provide relevant protection at the point of need.",
             },
             {
-              title: "Embedded Distribution",
+              title: "Corporate Partnerships",
               description:
-                "Insurance journeys designed to fit naturally within a purchase, membership, subscription, or onboarding experience.",
+                "Insurance programmes developed with corporates, institutions and partners to meet specific customer or employee needs.",
             },
             {
-              title: "Customer Experience",
+              title: "Employee & Member Benefits",
               description:
-                "Clear communication, simple enrolment, and responsive servicing that reflect and protect your brand experience.",
+                "Tailored insurance benefits that organisations can extend to employees, members or associated communities as part of their broader benefits proposition.",
             },
             {
-              title: "Governance & Compliance",
+              title: "Digital Distribution Solutions",
               description:
-                "Programme structures and operating processes aligned with insurer requirements and the applicable regulatory framework.",
+                "Technology-enabled distribution models that simplify customer engagement, policy issuance, servicing and claims support.",
             },
-            {
-              title: "Claims & Performance",
+               {
+              title: "Co-Branded Insurance Solutions",
               description:
-                "Claims advocacy, service monitoring, and programme insights to support customers and improve performance over time.",
+                "Insurance propositions designed around the partner's brand and customer experience while maintaining appropriate insurance and regulatory frameworks.",
+            },
+               {
+              title: "Customised Product & Digital Distribution Solutions",
+              description:
+                "Bespoke insurance structures developed around the partner's customer profile, business model, distribution requirements and risk exposures.",
             },
           ]}
         />
 
         <ServiceAdvisorySupport
           label="Partnership Approach"
-          title={<>From Opportunity To Ongoing Programme</>}
-          description="We bring together product, placement, distribution, and service expertise to build a programme that works for you and your audience."
+          title={<>Build Partnerships That Create Lasting Value</>}
+          description="We combine insurance expertise, product knowledge and distribution to build partnership models that work for businesses and their customers."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Advisors and partners reviewing an affinity insurance programme"
           imagePosition="center"
           steps={[
             {
-              title: "Audience & Opportunity Assessment",
+              title: "Partnership & Requirement Assessment",
               description:
-                "We study your audience, customer journey, priorities, and commercial goals to define the opportunity.",
+                "We understand your customer base, business model, distribution ecosystem and strategic objectives.",
             },
             {
-              title: "Solution Design",
+              title: "Product & Programme Design",
               description:
-                "We shape the product, benefits, eligibility, pricing approach, and service model around your needs.",
+                "Our specialists structure relevant insurance products, benefits, coverage limits and programme features around your requirements.",
             },
             {
-              title: "Insurer Placement & Implementation",
+              title: "Distribution & Implementation",
               description:
-                "We identify suitable capacity and coordinate the operating, technology, and launch requirements.",
+                "We support the integration and implementation of the insurance programme across the agreed customer or partner journey.",
             },
             {
-              title: "Customer & Claims Support",
+              title: "Ongoing Servicing & Claims Support",
               description:
-                "We help establish clear service pathways and advocate for customers throughout the claims process.",
+                "Our team provides ongoing policy servicing, customer support and claims assistance throughout the programme lifecycle.",
             },
             {
-              title: "Performance Review & Optimisation",
+              title: "Programme Review & Optimisation",
               description:
-                "We review programme outcomes and refine coverage, servicing, and engagement as your partnership evolves.",
+                "We periodically review programme performance, customer needs and changing risks to identify opportunities for refinement.",
             },
           ]}
         />
 
         <ServiceCta
-          title="Ready To Build An Insurance Programme Together?"
-          description="Speak with our specialists about a tailored affinity or embedded insurance solution for your organisation and audience."
+          title={<>Ready To Build An <br/> Insurance Programme Together?</>}
+          description="Create insurance propositions that strengthen partnerships and deliver meaningful protection to your customers."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{ label: "Download Brochure", href: "/contact-us" }}
         />

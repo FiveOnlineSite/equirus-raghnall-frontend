@@ -24,15 +24,17 @@ export default function Page() {
       <main>
         <ServiceHero
           label="Electronic Equipment"
-          title={<>Protect What Matters<br />with Confidence</>}
-          description="Tailored protection structured around your requirements and risk exposures."
+          title={<>Protect Your Technology. Keep Your Business Connected.</>}
+          description="Insurance that protects your computers, servers and electronic equipment against accidental damage, breakdown and loss, helping you avoid costly disruption."
           image="/assets/services/directors-officers/banners.png"
           imageAlt="Electronic Equipment"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Electronic Equipment Protection", icon: "/assets/services/directors-officers/personal.svg" },
+            { title: "Accidental Damage Coverage", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Data & External Media Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Increased Cost of Working Options", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Protection for Critical Technology", icon: "/assets/services/directors-officers/management.svg" },
           ]}
         />
         <ServiceOverview
@@ -40,40 +42,41 @@ export default function Page() {
           title="Understanding Electronic Equipment"
           image="/assets/services/directors-officers/overview.png"
           imageAlt="Electronic Equipment overview"
-          description="Electronic Equipment is designed to manage engineering risks. Its scope can be tailored to the insured's circumstances, exposures, and expected financial impact."
-          coverageItems={["Covered financial losses", "Relevant policy extensions", "Eligible professional expenses", "Claims coordination and advocacy"]}
-          example="The policy can respond to an insured event subject to its agreed terms, conditions, limits, deductibles, and exclusions."
+          description="Electronic Equipment Insurance (EEI) protects electronic equipment against sudden, unforeseen loss or damage, covering repair or replacement costs and, where selected, data, external media and increased operating costs."
+          coverageItems={["Sudden and unforeseen physical loss or damage to electronic equipment", "Computers, servers and other electronic systems", "Accidental damage arising from covered external or internal causes", "External data media and data-related risks, where selected","Increased costs of working following insured damage"]}
+          example="If a server or critical electronic system is damaged due to a covered accidental event, EEI can help cover the eligible repair or replacement cost. Where selected, additional cover may also respond to eligible costs incurred to continue operations while the damaged equipment is being restored."
         />
         <ServiceCoverageGrid
           label="Coverage Components"
           title="Comprehensive Protection At Every Level"
           items={[
-            { title: "Core Protection", description: "Foundational coverage aligned with the principal insured exposures." },
-            { title: "Financial Loss", description: "Support for eligible financial loss following a covered event." },
-            { title: "Liability Protection", description: "Protection for covered liabilities and related defence expenses." },
-            { title: "Policy Extensions", description: "Selected extensions for relevant operational and contractual risks." },
-            { title: "Risk Management", description: "Review of loss scenarios, controls, deductibles, and retained risk." },
-            { title: "Claims Advocacy", description: "Assistance from notification and documentation through settlement." },
+            { title: "Electronic Equipment Protection", description: "Protects insured electronic equipment against sudden and unforeseen physical loss or damage, subject to applicable policy terms, conditions and exclusions." },
+            { title: "Computers & IT Equipment", description: "Protects specified computers, servers, workstations, networking equipment, and other IT infrastructure against covered accidental physical damage." },
+            { title: "Communication & Electronic Systems", description: "Can provide protection for specified communication systems, electronic installations, and specialised equipment used in business operations." },
+            { title: "External Data Media", description: "Where selected, protects specified external data media against covered physical loss or damage, subject to applicable policy conditions and limits." },
+            { title: "Increased Cost of Working", description: "Where selected, protects eligible additional expenditure to continue operations after insured damage to electronic equipment." },
+            { title: "Data Reconstitution", description: "Where covered, eligible costs of restoring or reconstructing data after insured physical damage to covered data media may be protected." },
+            { title: "Additional Extensions", description: "Depending on the equipment, additional extensions may be considered for specific exposures, subject to underwriting and policy wording." },
           ]}
         />
         <ServiceAdvisorySupport
           label="Advisory Support"
-          title={<>Protect Yourself Before Risk Finds You</>}
-          description="Our specialists structure cover around your needs rather than relying on a standard policy."
+          title={<>Protect Your Technology Before Risk Finds You</>}
+          description="Electronic systems are critical to business. We structure EEI solutions around your equipment's type, value, usage and importance."
           image="/assets/services/directors-officers/advisory-support.png"
           imageAlt="Electronic Equipment advisory support"
           imagePosition="center"
           steps={[
-            { title: "Risk Assessment & Needs Analysis", description: "We identify exposures and protection priorities." },
-            { title: "Policy Design & Placement", description: "We structure suitable limits, deductibles, and extensions." },
-            { title: "Coverage Review", description: "We review wording against expected protection." },
-            { title: "Dedicated Claims Advocacy", description: "We coordinate claims documentation and insurer discussions." },
-            { title: "Annual Policy Review & Renewal", description: "We revisit coverage as circumstances and risks change." },
+            { title: "Technology Risk Assessment & Needs Analysis", description: "We understand your equipment, values, locations, usage and operational dependencies to identify appropriate protection." },
+            { title: "Policy Design & Placement", description: "Our specialists structure suitable sums insured, deductibles and optional covers, and place the risk with appropriate insurers." },
+            { title: "Policy Documentation & Support", description: "We coordinate policy documentation to ensure the insured equipment, values and coverage are accurately reflected." },
+            { title: "Dedicated Claims Advocacy", description: "Our team supports the claims process from initial notification through documentation, survey coordination, assessment, and resolution." },
+            { title: "Annual Policy Review & Renewal", description: "Regular reviews ensure changes in technology, equipment values and business needs are reflected in the insurance programme." },
           ]}
         />
         <ServiceCta
           title="Ready To Explore Electronic Equipment?"
-          description="Speak with a specialist for a no-obligation assessment."
+          description="Protect your critical electronic equipment with coverage designed around your technology and business requirements."
           primaryAction={{ label: "Get a Quote", href: "/contact-us" }}
           secondaryAction={{
             label: "Download Brochure",
