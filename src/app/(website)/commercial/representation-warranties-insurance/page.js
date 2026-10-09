@@ -6,15 +6,15 @@ import ServiceHero from "@/components/service-page/ServiceHero";
 import ServiceOverview from "@/components/service-page/ServiceOverview";
 
 export const metadata = {
-  title: "Surety Bonds | Equirus Raghnall",
-  description: "Tailored Surety Bonds solutions.",
+  title: "Representation Warranties Insurance | Equirus Raghnall",
+  description: "Tailored Representation Warranties Insurance solutions.",
 };
 
 const faqs = [
   {
-    question: "Who should consider Surety Bonds?",
+    question: "Who should consider Representation Warranties Insurance?",
     answer:
-      "Surety Bonds can be tailored to the needs and risk profile of the insured.",
+      "Representation Warranties Insurance can be tailored to the needs and risk profile of the insured.",
   },
   {
     question: "What does this policy cover?",
@@ -45,7 +45,7 @@ export default function Page() {
           }
           description="Protect your transaction from unexpected financial risks arising from breaches of representations and warranties so you can transact with greater certainty."
           image="/assets/services/directors-officers/banners.png"
-          imageAlt="Surety Bonds"
+          imageAlt="Representation Warranties Insurance"
           imagePosition="center center"
           features={[
             {
@@ -63,10 +63,10 @@ export default function Page() {
           ]}
         />
         <ServiceOverview
-          label="What Is Surety Bonds?"
-          title="Understanding Surety Bonds"
+          label="What Is Representation Warranties Insurance?"
+          title="Understanding Representation Warranties Insurance"
           image="/assets/services/directors-officers/overview.png"
-          imageAlt="Surety Bonds overview"
+          imageAlt="Representation Warranties Insurance overview"
           description="Representations & Warranties (R&W) Insurance protects buyers or sellers against financial losses from breaches of transaction warranties, providing an extra layer of protection against unknown post-completion risks, subject to policy terms and exclusions."
           coverageItems={[
             "Breach of representations and warranties",
@@ -108,7 +108,7 @@ export default function Page() {
           title={<>Protect Your Transaction Before Risk Finds You</>}
           description="Every contract carries obligations. We help businesses structure suitable Surety Bond solutions around their contract and obligee requirements."
           image="/assets/services/directors-officers/advisory-support.png"
-          imageAlt="Surety Bonds advisory support"
+          imageAlt="Representation Warranties Insurance advisory support"
           imagePosition="center"
           steps={[
             {

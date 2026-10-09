@@ -6,15 +6,15 @@ import ServiceHero from "@/components/service-page/ServiceHero";
 import ServiceOverview from "@/components/service-page/ServiceOverview";
 
 export const metadata = {
-  title: "Surety Bonds | Equirus Raghnall",
-  description: "Tailored Surety Bonds solutions.",
+  title: "Mergers Acquisitions | Equirus Raghnall",
+  description: "Tailored Mergers Acquisitions solutions.",
 };
 
 const faqs = [
   {
-    question: "Who should consider Surety Bonds?",
+    question: "Who should consider Mergers Acquisitions?",
     answer:
-      "Surety Bonds can be tailored to the needs and risk profile of the insured.",
+      "Mergers Acquisitions can be tailored to the needs and risk profile of the insured.",
   },
   {
     question: "What does this policy cover?",
@@ -45,7 +45,7 @@ export default function Page() {
           }
           description="Protect your transaction from unforeseen risks, undisclosed liabilities and post-deal surprises, so you can pursue mergers and acquisitions with greater confidence."
           image="/assets/services/directors-officers/banners.png"
-          imageAlt="Surety Bonds"
+          imageAlt="Mergers Acquisitions"
           imagePosition="center center"
           features={[
             {
@@ -63,10 +63,10 @@ export default function Page() {
           ]}
         />
         <ServiceOverview
-          label="What Is Surety Bonds?"
-          title="Understanding Surety Bonds"
+          label="What Is Mergers Acquisitions?"
+          title="Understanding Mergers Acquisitions"
           image="/assets/services/directors-officers/overview.png"
-          imageAlt="Surety Bonds overview"
+          imageAlt="Mergers Acquisitions overview"
           description="M&A Insurance protects parties in mergers, acquisitions and other corporate transactions against specified financial risks, such as breaches of representations and warranties, unexpected liabilities or transaction-related risks, subject to policy terms."
           coverageItems={[
             "Representations & warranties",
@@ -108,7 +108,7 @@ export default function Page() {
           title={<>Protect Your Transaction Before Risk Finds You</>}
           description="Every transaction has its own risk profile. Our specialists identify key exposures and structure suitable protection."
           image="/assets/services/directors-officers/advisory-support.png"
-          imageAlt="Surety Bonds advisory support"
+          imageAlt="Mergers Acquisitions advisory support"
           imagePosition="center"
           steps={[
             {
