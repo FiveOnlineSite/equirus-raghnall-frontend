@@ -37,7 +37,7 @@ export default function FaqSection({
     return () => controller.abort();
   }, [pathname]);
 
-  const displayedItems = managedItems || [];
+  const displayedItems = managedItems?.length ? managedItems : items;
 
   if (!displayedItems.length) return null;
 

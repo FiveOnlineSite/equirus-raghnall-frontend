@@ -1,0 +1,80 @@
+@media (min-width: 1024px) {
+  .voiceSection {
+    height: 36.88vw;
+    padding-block: 0;
+  }
+
+  .voiceInner {
+    display: block;
+    height: 100%;
+    padding-inline: 0;
+  }
+
+  .voiceArt {
+    position: absolute;
+    top: 4.86vw;
+    left: 10.56vw;
+    width: 30.42vw;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .voiceCopy {
+    position: absolute;
+    top: 12.99vw;
+    left: 49.51vw;
+  }
+
+  .voiceEyebrow {
+    font-size: 1.11vw;
+    line-height: 2.08vw;
+  }
+
+  .voiceHeading {
+    margin-top: 1.11vw;
+    font-size: 2.22vw;
+    line-height: 3.06vw;
+  }
+
+  .voiceBody {
+    max-width: 36.25vw;
+    margin-top: 1.39vw;
+    font-size: 1.11vw;
+    line-height: 1.94vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .voiceSection {
+    height: 531px;
+  }
+
+  .voiceArt {
+    top: 70px;
+    left: 152px;
+    width: 438px;
+  }
+
+  .voiceCopy {
+    top: 187px;
+    left: 713px;
+  }
+
+  .voiceEyebrow {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .voiceHeading {
+    margin-top: 16px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .voiceBody {
+    max-width: 522px;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

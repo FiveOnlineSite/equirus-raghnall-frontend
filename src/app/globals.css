@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "./(website)/career/CareerJobs.jsx";
 
 :root {
   --background: #ffffff;

@@ -1,0 +1,176 @@
+@media (min-width: 1024px) {
+  .lifeSection {
+    height: 37.36vw;
+    padding-block: 0;
+  }
+
+  .lifeInner {
+    height: 100%;
+    padding-inline: 0;
+  }
+
+  .lifeCopy {
+    position: absolute;
+    top: 5.56vw;
+    left: 5.56vw;
+  }
+
+  .lifeEyebrow {
+    font-size: 1.11vw;
+    line-height: 2.08vw;
+  }
+
+  .lifeHeading {
+    margin-top: 1.11vw;
+    font-size: 2.22vw;
+    line-height: 3.06vw;
+  }
+
+  .lifeBody {
+    max-width: 36.25vw;
+    margin-top: 1.39vw;
+    font-size: 1.11vw;
+    line-height: 1.94vw;
+  }
+
+  .lifeFeatures {
+    position: absolute;
+    top: 22.64vw;
+    left: 5.56vw;
+    display: flex;
+    width: 42.78vw;
+    max-width: none;
+    margin-top: 0;
+    gap: 0.69vw;
+  }
+
+  .lifeFeature {
+    width: 10.35vw;
+    min-height: 6.94vw;
+    flex-shrink: 0;
+    align-items: flex-start;
+    padding-inline: 0;
+  }
+
+  .lifeFeatureFirst {
+    width: 9.65vw;
+  }
+
+  .lifeIcon {
+    width: 2.22vw;
+    height: 2.22vw;
+    margin-left: 3.68vw;
+  }
+
+  .lifeFeatureText {
+    width: 9.65vw;
+    margin-top: 1.11vw;
+    font-size: 1.11vw;
+    line-height: 1.67vw;
+    text-align: center;
+  }
+
+  .lifeDivider {
+    right: 0;
+    display: block;
+    width: 0.6px;
+    height: 6.67vw;
+  }
+
+  .lifeDividerFirst {
+    right: -0.69vw;
+  }
+
+  .lifeMedia {
+    position: absolute;
+    top: 4.17vw;
+    right: 5.56vw;
+    width: 42.71vw;
+    max-width: none;
+    margin-top: 0;
+    padding-bottom: 0.83vw;
+  }
+
+  .lifeAccent {
+    top: 2.43vw;
+    right: -0.83vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .lifeSection {
+    height: 538px;
+  }
+
+  .lifeCopy {
+    top: 80px;
+    left: 80px;
+  }
+
+  .lifeEyebrow {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .lifeHeading {
+    margin-top: 16px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .lifeBody {
+    max-width: 522px;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .lifeFeatures {
+    top: 326px;
+    left: 80px;
+    width: 616px;
+    gap: 10px;
+  }
+
+  .lifeFeature {
+    width: 149px;
+    min-height: 100px;
+  }
+
+  .lifeFeatureFirst {
+    width: 139px;
+  }
+
+  .lifeIcon {
+    width: 32px;
+    height: 32px;
+    margin-left: 53px;
+  }
+
+  .lifeFeatureText {
+    width: 139px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .lifeDivider {
+    height: 96px;
+  }
+
+  .lifeDividerFirst {
+    right: -10px;
+  }
+
+  .lifeMedia {
+    top: 60px;
+    right: 80px;
+    width: 615px;
+    padding-bottom: 12px;
+  }
+
+  .lifeAccent {
+    top: 35px;
+    right: -12px;
+  }
+}

@@ -23,14 +23,12 @@ const mobileServiceMenus = {
 
 export default function Navbar() {
   const pathname = usePathname();
+  const usesTallHeader = pathname === "/claim-advocacy" || pathname === "/career";
   const [isOpen, setIsOpen] = useState(false);
   const [expandedMobileMenu, setExpandedMobileMenu] = useState(null);
   const [isDesktopMenuDismissed, setIsDesktopMenuDismissed] = useState(false);
 
   useEffect(() => {
-    setIsOpen(false);
-    setExpandedMobileMenu(null);
-
     if (document.activeElement instanceof HTMLElement) {
       document.activeElement.blur();
     }
@@ -57,8 +55,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 h-[88px] bg-white shadow-[0_1px_12px_rgba(0,0,0,0.08)]">
-      <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-4 md:px-8 xl:px-16">
+    <header className={`sticky top-0 z-50 bg-white shadow-[0_1px_12px_rgba(0,0,0,0.08)] ${usesTallHeader ? "h-[100px]" : "h-[88px]"}`}>
+      <div className={`mx-auto flex h-full max-w-[1440px] items-center justify-between px-4 md:px-8 ${usesTallHeader ? "xl:px-20" : "xl:px-16"}`}>
         <Link href="/" aria-label="Equirus Raghnall home" className="shrink-0">
           <Image
             src="/assets/shared/raghnall-logo.png"
@@ -224,8 +222,8 @@ export default function Navbar() {
           )}
         </nav>
         <Link
-          href="/contact-us"
-          className="hidden h-11 w-[158px] items-center justify-center rounded-lg bg-[#0a4e08] px-3 text-sm font-semibold text-white transition hover:opacity-90 lg:flex"
+          href="/claim-advocacy"
+          className={`hidden items-center justify-center rounded-lg bg-[#0a4e08] px-3 text-white transition hover:opacity-90 lg:flex ${usesTallHeader ? "h-12 w-[172px] text-base font-semibold" : "h-11 w-[158px] text-sm font-semibold"}`}
         >
           Claim Advocacy
         </Link>
@@ -252,7 +250,7 @@ export default function Navbar() {
       {isOpen && (
         <nav
           aria-label="Mobile navigation"
-          className="absolute inset-x-0 top-full max-h-[calc(100dvh-88px)] overflow-y-auto overscroll-contain border-t border-black/5 bg-white px-5 py-5 shadow-lg lg:hidden"
+          className={`absolute inset-x-0 top-full overflow-y-auto overscroll-contain border-t border-black/5 bg-white px-5 py-5 shadow-lg lg:hidden ${usesTallHeader ? "max-h-[calc(100dvh-100px)]" : "max-h-[calc(100dvh-88px)]"}`}
         >
           <div className="mx-auto flex max-w-[1440px] flex-col">
             {navigation.map((item) => {
@@ -322,7 +320,7 @@ export default function Navbar() {
               );
             })}
             <Link
-              href="/contact-us"
+              href="/claim-advocacy"
               onClick={closeMobileMenu}
               className="mt-5 flex h-11 items-center justify-center rounded-lg bg-[#0a4e08] text-sm font-semibold text-white transition hover:opacity-90"
             >

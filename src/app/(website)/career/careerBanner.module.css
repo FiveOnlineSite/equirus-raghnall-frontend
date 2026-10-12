@@ -1,0 +1,102 @@
+@media (min-width: 1024px) {
+  .hero {
+    height: 37.15vw;
+  }
+
+  .fade {
+    display: block;
+    width: 68%;
+    background: linear-gradient(
+      90deg,
+      #fff 64%,
+      rgb(255 255 255 / 95%) 70%,
+      rgb(255 255 255 / 65%) 80%,
+      rgb(255 255 255 / 20%) 92%,
+      rgb(255 255 255 / 0%) 100%
+    );
+  }
+
+  .content {
+    padding-top: 5.76vw;
+    padding-bottom: 0;
+  }
+
+  .eyebrow {
+    font-size: 1.11vw;
+    line-height: 1.875;
+  }
+
+  .heading {
+    max-width: 40vw;
+    font-size: 2.78vw;
+    line-height: 1.3;
+  }
+
+  .body {
+    max-width: 40vw;
+    font-size: 1.11vw;
+    line-height: 1.75;
+  }
+
+  .buttonWrap {
+    margin-top: 2.78vw;
+  }
+
+  .button {
+    width: 13.68vw;
+    height: 3.33vw;
+    font-size: 1.11vw;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55.7%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    height: 535px;
+  }
+
+  .fade {
+    width: 900px;
+  }
+
+  .content {
+    padding: 83px 80px 0;
+  }
+
+  .eyebrow {
+    font-size: 16px;
+  }
+
+  .heading {
+    max-width: 579px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .body {
+    max-width: 522px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .buttonWrap {
+    margin-top: 40px;
+  }
+
+  .button {
+    width: 197px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .image {
+    width: 802px;
+  }
+}

@@ -51,8 +51,6 @@ export const commercialMenu = [
       { label: "Surety Bonds", slug: "surety-bonds" },
       { label: "Trade Credit Insurance", slug: "trade-credit-insurance" },
       { label: "Marine Hull & Aviation",slug: "marine-hull-aviation-insurance"},
-      { label: "Mergers & Acquisitions",slug: "mergers-acquisitions"},
-      { label: "Representation and Warranties Insurance",slug: "representation-warranties-insurance"},
     ],
   },
   {

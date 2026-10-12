@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
+  { label: "Claim Advocacy", href: "/claim-advocacy" },
   { label: "Travel Insurance", href: "/private-clients/travel-insurance" },
   { label: "Private Car Insurance", href: "/private-clients/private-car-insurance" },
   { label: "Health Insurance", href: "/private-clients/health-insurance" },
@@ -32,7 +33,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#2c2f71] text-white">
       <div className="mx-auto max-w-[1440px] px-5 py-12 md:px-10 xl:px-20 xl:py-[60px]">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[276px_176px_187px_343px] lg:justify-between">
+        <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-[276px_176px_187px_343px] xl:justify-between">
           <section className="text-sm leading-6">
             <h2 className="mb-[18px] font-bold text-base leading-7">Contact Details</h2>
             <div className="space-y-4">

@@ -1,0 +1,200 @@
+@media (min-width: 1024px) {
+  .section {
+    height: 51.1vw;
+    padding-block: 0;
+  }
+
+  .inner {
+    height: 100%;
+  }
+
+  .heading {
+    padding-top: 4.51vw;
+  }
+
+  .eyebrow {
+    font-size: 1.11vw;
+    line-height: 2.08vw;
+  }
+
+  .title {
+    margin-top: 1.11vw;
+    font-size: 2.22vw;
+    line-height: 3.06vw;
+  }
+
+  .mobileGrid {
+    display: none;
+  }
+
+  .desktopJourney {
+    display: block;
+  }
+
+  .curve {
+    position: absolute;
+    top: 14.86vw;
+    left: 7.71vw;
+    width: 88.66vw;
+    height: 21.37vw;
+  }
+
+  .step {
+    position: absolute;
+    width: 13.68vw;
+    height: 19.1vw;
+  }
+
+  .stepJoin {
+    top: 26.67vw;
+    left: 4.79vw;
+  }
+
+  .stepLearn {
+    top: 23.75vw;
+    left: 23.82vw;
+  }
+
+  .stepContribute {
+    top: 19.86vw;
+    left: 41.81vw;
+  }
+
+  .stepGrow {
+    top: 15.63vw;
+    left: 60.14vw;
+  }
+
+  .stepLead {
+    top: 12.01vw;
+    left: 78.47vw;
+  }
+
+  .stepImage {
+    width: 13.68vw;
+    height: 13.68vw;
+  }
+
+  .badge {
+    left: 4.38vw;
+    top: 11.18vw;
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .contributeIcon {
+    left: 1.67vw;
+    top: 1.74vw;
+    width: 1.67vw;
+    height: 1.53vw;
+  }
+
+  .label {
+    top: 16.32vw;
+    height: 2.78vw;
+    min-width: 8.68vw;
+    padding-inline: 1.39vw;
+    font-size: 1.11vw;
+  }
+
+  .labelWide {
+    min-width: 10.56vw;
+  }
+
+  .labelContribute {
+    margin-left: 0.63vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    height: 736px;
+  }
+
+  .heading {
+    padding-top: 65px;
+  }
+
+  .eyebrow {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .title {
+    margin-top: 16px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .curve {
+    top: 214px;
+    left: 111px;
+    width: 1277px;
+    height: 308px;
+  }
+
+  .step {
+    width: 197px;
+    height: 275px;
+  }
+
+  .stepJoin {
+    top: 384px;
+    left: 69px;
+  }
+
+  .stepLearn {
+    top: 342px;
+    left: 343px;
+  }
+
+  .stepContribute {
+    top: 286px;
+    left: 602px;
+  }
+
+  .stepGrow {
+    top: 225px;
+    left: 866px;
+  }
+
+  .stepLead {
+    top: 173px;
+    left: 1130px;
+  }
+
+  .stepImage {
+    width: 197px;
+    height: 197px;
+  }
+
+  .badge {
+    left: 63px;
+    top: 161px;
+    width: 72px;
+    height: 72px;
+  }
+
+  .contributeIcon {
+    left: 24px;
+    top: 25px;
+    width: 24px;
+    height: 22px;
+  }
+
+  .label {
+    top: 235px;
+    height: 40px;
+    min-width: 125px;
+    padding-inline: 20px;
+    font-size: 16px;
+  }
+
+  .labelWide {
+    min-width: 152px;
+  }
+
+  .labelContribute {
+    margin-left: 9px;
+  }
+}
