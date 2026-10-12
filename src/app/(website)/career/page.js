@@ -46,7 +46,7 @@ export default function CareerPage() {
   return (
     <main>
       <section className="overflow-hidden bg-white">
-        <div className={`${styles.hero} relative mx-auto max-w-[1440px]`}>
+        <div className={`${styles.hero} relative w-full`}>
           <div className={`${styles.fade} absolute inset-y-0 left-0 z-[1] hidden`} aria-hidden="true" />
           <div className={`${styles.content} relative z-10 px-5 pb-10 pt-12 md:px-10`}>
             <Eyebrow className={styles.eyebrow}>People &amp; Culture</Eyebrow>
@@ -54,8 +54,8 @@ export default function CareerPage() {
             <p className={`${styles.body} mt-4 max-w-[522px] text-base leading-7 text-[#3d3d3d]`}>At Equirus Raghnall, our people are at the heart of our success. We foster a culture built on collaboration, ownership, integrity and continuous growth—empowering every individual to contribute and make an impact.</p>
             <div className={`${styles.buttonWrap} mt-10`}><GreenButton href="#open-positions" className={styles.button}>View Jobs</GreenButton></div>
           </div>
-          <div className={`${styles.image} relative h-[320px] w-full`}>
-            <Image src={asset("hero.png")} alt="Colleagues collaborating around a laptop" fill preload sizes="(max-width: 1023px) 100vw, (max-width: 1399px) 55.7vw, 802px" className="object-contain object-bottom" />
+          <div className={`${styles.image} relative min-h-[320px] w-full flex-1`}>
+            <Image src={asset("hero.png")} alt="Colleagues collaborating around a laptop" fill preload sizes="(max-width: 1023px) 100vw, 55.7vw" className="object-contain object-bottom" />
           </div>
         </div>
       </section>
