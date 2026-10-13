@@ -234,14 +234,11 @@ export default function CareerJobs() {
       return;
     }
 
-    formData.set("organization", "Career application");
-    formData.set("service", "career-application");
     formData.set("position", activeJob.title);
-    formData.set("message", `Application for ${activeJob.title}\n\n${coverNote}`);
     formData.set("website", "");
 
     try {
-      await apiRequest("/api/contact", {
+      await apiRequest("/api/careers", {
         method: "POST",
         body: formData,
       });
