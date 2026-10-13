@@ -129,6 +129,7 @@ section[data-reveal-hero="true"]
   display: flex;
   height: 76px;
   flex-direction: column;
+  overflow: hidden;
   background: linear-gradient(90deg, #00000052 0%, #000000b8 100%);
   transition: height 350ms ease, padding 350ms ease, background 350ms ease;
 }
@@ -156,8 +157,28 @@ section[data-reveal-hero="true"]
 .group:hover > .team-card-label,
 .group:focus-visible > .team-card-label {
   height: 100%;
-  padding: 16px 12px;
+  padding: 16px 12px 20px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
   background: linear-gradient(90deg, #00000084 100%);
+}
+
+.group:hover > .team-card-label::-webkit-scrollbar,
+.group:focus-visible > .team-card-label::-webkit-scrollbar {
+  width: 6px;
+}
+
+.group:hover > .team-card-label::-webkit-scrollbar-thumb,
+.group:focus-visible > .team-card-label::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background-color: white;
+}
+
+.group:hover > .team-card-label::-webkit-scrollbar-track,
+.group:focus-visible > .team-card-label::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .group:hover > .team-card-label::before,
@@ -186,7 +207,7 @@ section[data-reveal-hero="true"]
 
   .group:hover > .team-card-label,
   .group:focus-visible > .team-card-label {
-    padding: 8px;
+    padding: 8px 8px 12px;
   }
 }
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AboutCounters from "./AboutCounters";
+import TeamMemberCard from "./TeamMemberCard";
 
 export const metadata = {
   title: "About Us | Equirus Raghnall",
@@ -13,46 +14,42 @@ const expertFaces = [
 ];
 
 const directors = [
-  { name: "Amit Goel", role: "Co-founder Director & Principal Officer", description:"Amit Goel is an XLRI alumnus with over 20 years of experience in the insurance industry, with extensive expertise across large commercial insurance and claims. As Director and Principal Officer, he plays a key role in shaping Equirus Raghnall’s strategic and operational direction.", image: "/assets/team/amit-goel.jpg", position: "center top" },
-  { name: "Arun Garg", role: "Director", image: "/assets/team/arun-garg.jpg", description:"Arun Garg is a Mechanical Engineer and IIM Bangalore alumnus with 29 years of experience in large-scale infrastructure development. He has led infrastructure projects exceeding INR 10,000 crore and held senior leadership positions across Reliance Group, UPL and GMR. He is an IBBI-registered Insolvency Professional and a Broker Qualified Person.", position: "center top" },
+  { name: "Amit Goel", role: "Co-founder Director & Principal Officer", description:"Amit Goel is an XLRI alumnus with over 20 years of experience in the insurance industry, with extensive expertise across large commercial insurance and claims. As Director and Principal Officer, he plays a key role in shaping Equirus Raghnall’s strategic and operational direction.", image: "/assets/team/amit-goel.jpg", position: "center" },
+  { name: "Arun Garg", role: "Director", image: "/assets/team/arun-garg.jpg", description:"Arun Garg is a Mechanical Engineer and IIM Bangalore alumnus with 29 years of experience in large-scale infrastructure development. He has led infrastructure projects exceeding INR 10,000 crore and held senior leadership positions across Reliance Group, UPL and GMR. He is an IBBI-registered Insolvency Professional and a Broker Qualified Person.", position: "center" },
   { name: "Yagnesh Dosshi", role: "Co-founder & Director", description:"Yagnesh Dosshi is an IIM Calcutta alumnus with over 20 years of experience across insurance sales, marketing and channel development. As Co-founder and Director, he brings extensive industry knowledge and strategic insight to Equirus Raghnall’s growth and client-focused approach.", image: "/assets/team/yagnesh-doshi.jpg", position: "center" },
   { name: "Bhavesh A Shah", role: "Managing Director & Head – Investment Banking", description:"Bhavesh A. Shah brings over 22 years of investment banking experience, specialising in deal origination and execution across sectors. He has held senior positions at Avener Capital, JM Financial and Morgan Stanley and is a CFA charter holder from ICFAI, India, and the CFA Institute, USA.", image: "/assets/team/demo.png", position: "center bottom" },
 ];
 
 const managementTeam = [
   { name: "Esha Bajaj", role: "President – Operations",description:"Esha Bajaj is an insurance industry veteran with over two decades of experience spanning operations, HR, finance and administration. She leads Operations and Placement for the Non-EB business, with a strong focus on operational excellence, process efficiency and sustainable business growth.", image: "/assets/team/esha-bajaj.jpg", position: "center" },
-  { name: "Prashant Mirchandani", role: "President – Corporate Solution", description: "Prashant Mirchandani is a seasoned insurance professional with over 19 years of experience across Commercial Lines, Liability, Credit Insurance and complex corporate insurance solutions. A qualified lawyer specialising in Insurance Law, he leads Corporate Solutions with a focus on programme structuring, risk management and complex claims.", image: "/assets/team/prashant-mirchandani.jpg", position: "center top" },
+  { name: "Prashant Mirchandani", role: "President – Corporate Solution", description: "Prashant Mirchandani is a seasoned insurance professional with over 19 years of experience across Commercial Lines, Liability, Credit Insurance and complex corporate insurance solutions. A qualified lawyer specialising in Insurance Law, he leads Corporate Solutions with a focus on programme structuring, risk management and complex claims.", image: "/assets/team/prashant-mirchandani.jpg", position: "center" },
   { name: "Pritam Barkataki", role: "President – Business Development & Client Relations",description:"Pritam Barkataki brings over 24 years of experience across insurance, banking, pensions, investments and advisory. An MBA in Finance & Marketing and Fellow of the Insurance Institute of India (FIII), he has held leadership roles across ICICI Group, Axis Bank and JLT Insurance Broking, driving institutional and corporate business growth.", image: "/assets/team/pritam-bharkatki.jpg", position: "center bottom" },
+  { name: "Varun Vashishth", role: "Partner & Global Head – Reinsurance",description:"Varun Vashishth has over 18 years of experience across reinsurance strategy, market development, client relationships and reinsurance technology. With leadership experience across Turtlemint, ICICI and Max Group, he brings a strategic and technology-led perspective to Equirus Raghnall’s reinsurance business.", image: "/assets/team/varun-vashishth.jpg", position: "center" },
   { name: "Durga Prasad Vattimilli", role: "Sr. VP – Business Development & Client Relations",description:"Durga Prasad Vattimilli brings over 23 years of insurance industry experience across agency, broking, health and commercial insurance. He specialises in business strategy, client relationships and growth, with a strong track record of leading teams and developing sustainable business opportunities.", image: "/assets/team/durgaprasad-vattimili.jpg", position: "center" },
-  { name: "Visheshank Shukla", role: "Sr. VP – Corporate Solutions",description:"Visheshank Shukla brings over 21 years of experience across strategic sales, P&L management, corporate and institutional business, distribution and digital transformation. Having held senior positions at ICICI Lombard and Bharti AXA, he focuses on strategic growth, client relationships and building high-performing teams.", image: "/assets/team/visheshank-shukla.jpg", position: "center top" },
+  { name: "Visheshank Shukla", role: "Sr. VP – Corporate Solutions",description:"Visheshank Shukla brings over 21 years of experience across strategic sales, P&L management, corporate and institutional business, distribution and digital transformation. Having held senior positions at ICICI Lombard and Bharti AXA, he focuses on strategic growth, client relationships and building high-performing teams.", image: "/assets/team/visheshank-shukla.jpg", position: "center" },
   { name: "Rakesh Thakur", role: "VP – Corporate Solutions",description:"Rakesh Thakur has over 19 years of experience across commercial insurance, broker management and multi-channel business development. His experience spans direct and broking channels, profit centre management and SME business, with a strong focus on partner relationships, retention and sustainable growth.", image: "/assets/team/demo.png", position: "center" },
-  { name: "Rohan Purohit", role: "VP – Corporate Solutions",description:"Rohan Purohit heads the Nagpur branch of Equirus Raghnall and brings over 10 years of experience in the insurance industry. A graduate of Christ College, Bangalore, with an MBA from Mumbai University, he focuses on corporate solutions, business growth and long-term client relationships.", image: "/assets/team/rohan-purohit.jpg", position: "center top" },
-  { name: "Amrit Pal Singh", role: "VP – Corporate Solutions",description:"", image: "/assets/team/amritpal-singh.jpg", position: "center top" },
-  { name: "Anand Podar", role: "National Head – Non-EB Claims",description:"A detail-oriented Chartered Accountant with 13+ years of insurance industry experience, specialising in diverse claims including fire, marine, loss of profit, burglary and theft. Strong expertise in claim inspection, loss assessment, asset verification, document analysis and survey report finalisation, with additional experience in financial reporting, taxation, GST compliance, stakeholder coordination, salvage disposal and risk valuation.", image: "/assets/team/anand-poddar.jpg", position: "center top" },
-  { name: "Dr. Vrushank Shah", role: "National Head – Health Insurance",description:"Dr. Vrushank Shah is a health insurance professional with over 17 years of experience across Corporate and Retail Health Insurance. Having worked with leading organisations including Care Health Insurance, ManipalCigna, Future Generali and Royal Sundaram General Insurance, he brings comprehensive expertise across underwriting, claims, risk assessment, portfolio management and business development.", image: "/assets/team/dr-vrushank-shah.jpg", position: "center top" },
+  { name: "Rohan Purohit", role: "VP – Corporate Solutions",description:"Rohan Purohit heads the Nagpur branch of Equirus Raghnall and brings over 10 years of experience in the insurance industry. A graduate of Christ College, Bangalore, with an MBA from Mumbai University, he focuses on corporate solutions, business growth and long-term client relationships.", image: "/assets/team/rohan-purohit.jpg", position: "center" },
+  { name: "Amrit Pal Singh", role: "VP – Corporate Solutions",description:"", image: "/assets/team/amritpal-singh.jpg", position: "center" },
+  { name: "Anand Podar", role: "National Head – Non-EB Claims",description:"A detail-oriented Chartered Accountant with 13+ years of insurance industry experience, specialising in diverse claims including fire, marine, loss of profit, burglary and theft. Strong expertise in claim inspection, loss assessment, asset verification, document analysis and survey report finalisation, with additional experience in financial reporting, taxation, GST compliance, stakeholder coordination, salvage disposal and risk valuation.", image: "/assets/team/anand-poddar.jpg", position: "center" },
+  { name: "Dr. Vrushank Shah", role: "National Head – Health Insurance",description:"Dr. Vrushank Shah is a health insurance professional with over 17 years of experience across Corporate and Retail Health Insurance. Having worked with leading organisations including Care Health Insurance, ManipalCigna, Future Generali and Royal Sundaram General Insurance, he brings comprehensive expertise across underwriting, claims, risk assessment, portfolio management and business development.", image: "/assets/team/dr-vrushank-shah.jpg", position: "center" },
   { name: "Vinaykumar Rai", role: "Sr. VP – Techno Marketing",description:"Vinaykumar Rai is a seasoned insurance professional with over 20 years of experience across major commercial lines, including Property, Engineering and Marine. His experience across insurers and broking firms enables him to bring strong technical expertise and market understanding to Equirus Raghnall’s techno-marketing initiatives.", image: "/assets/team/vinay-rai.jpg", position: "center" },
-  { name: "Zubin Dadhich", role: "VP – Corporate Solutions",description:"Zubin Dadhich brings over 10 years of experience in business development and strategic partnerships within the insurance industry. His expertise spans embedded insurance, product placement, digital process design, stakeholder management and system integrations, with a strong focus on building scalable insurance solutions.", image: "/assets/team/zubin-dadhich.jpg", position: "center top" },
+  { name: "Zubin Dadhich", role: "VP – Corporate Solutions",description:"Zubin Dadhich brings over 10 years of experience in business development and strategic partnerships within the insurance industry. His expertise spans embedded insurance, product placement, digital process design, stakeholder management and system integrations, with a strong focus on building scalable insurance solutions.", image: "/assets/team/zubin-dadhich.jpg", position: "center" },
   { name: "Charlotte Fernandes", role: "VP – Placement & Servicing",description:"Charlotte Fernandes brings over 19 years of experience in insurance broking, with extensive expertise in placement and servicing. Her experience with Emedlife Insurance Broking and Mahindra Insurance Broking adds significant depth to Equirus Raghnall’s placement capabilities.", image: "/assets/team/charlotte-fernandes.jpg", position: "center bottom" },
-  { name: "Aman Gaur", role: "National Head – Risk Engineering",description:"Aman Gaur is a Risk Engineer and Insurance Professional with extensive expertise across industrial risk assessment, loss prevention, risk engineering and claims advisory. He holds qualifications in Engineering, Management, Law and Industrial Safety and is a Licentiate of the Insurance Institute of India. His specialised experience includes FM Global-certified loss prevention and business interruption mitigation.", image: "/assets/team/aman-gaur.jpg", position: "center top" },
-  { name: "Apurva Gangdev", role: "National Head – Risk Engineering",description:"Apurva Gangdev brings over 15 years of experience in the insurance industry, with expertise across Property, Marine, Affinity and Parametric insurance. A qualified Telecommunications Engineer, he combines strong technical knowledge with extensive insurance experience to deliver tailored corporate solutions and placement strategies.", image: "/assets/team/apurva-gangadev.jpg", position: "center top" },
-  { name: "Shilpa Mahajan", role: "National Head – Risk Engineering",description:"Shilpa Mahajan is insurance professional with over 21 years of extensive experience with business development, operations, and corporate insurance solutions across ICICI group, Bajaj Finserv & Broking Industries.Known for building high-performing relationships with clients and stakeholders, navigating complex business challenges, result-oriented strategies. Passionate about driving sustainable growth, improving processes, and creating long-term value for clients and organizations.", image: "/assets/team/shilpa-mahajan.jpg", position: "center top" },
-  { name: "Shreyas Chauhan", role: "VP – Non EB Claims",description:"", image: "/assets/team/sreyash-chauhan.jpg", position: "center top" },
-  { name: "Sonu Kumar Gupta", role: "VP – Non EB Claims",description:"", image: "/assets/team/demo.png", position: "center top" },
+  { name: "Aman Gaur", role: "National Head – Risk Engineering",description:"Aman Gaur is a Risk Engineer and Insurance Professional with extensive expertise across industrial risk assessment, loss prevention, risk engineering and claims advisory. He holds qualifications in Engineering, Management, Law and Industrial Safety and is a Licentiate of the Insurance Institute of India. His specialised experience includes FM Global-certified loss prevention and business interruption mitigation.", image: "/assets/team/aman-gaur.jpg", position: "center" },
+  { name: "Abhishek Patnaik", role: "AVP – Reinsurance",description:"Abhishek Patnaik is an insurance professional with experience across reinsurance, regulatory compliance and insurance broking. Having worked with SBI General Insurance and Turtlemint Insurance Brokers, he brings expertise in reinsurance operations, governance and risk management. He is an Associate of the Insurance Institute of India and holds an MBA in Insurance and Analytics from IIRM, Hyderabad.", image: "/assets/team/abhishek-patnaik.jpg", position: "center" },
+  { name: "Apurva Gangdev", role: "National Head – Risk Engineering",description:"Apurva Gangdev brings over 15 years of experience in the insurance industry, with expertise across Property, Marine, Affinity and Parametric insurance. A qualified Telecommunications Engineer, he combines strong technical knowledge with extensive insurance experience to deliver tailored corporate solutions and placement strategies.", image: "/assets/team/apurva-gangadev.jpg", position: "center" },
+  { name: "Shilpa Mahajan", role: "National Head – Risk Engineering",description:"Shilpa Mahajan is insurance professional with over 21 years of extensive experience with business development, operations, and corporate insurance solutions across ICICI group, Bajaj Finserv & Broking Industries.Known for building high-performing relationships with clients and stakeholders, navigating complex business challenges, result-oriented strategies. Passionate about driving sustainable growth, improving processes, and creating long-term value for clients and organizations.", image: "/assets/team/shilpa-mahajan.jpg", position: "center" },
+  { name: "Shreyas Chauhan", role: "VP – Non EB Claims",description:"", image: "/assets/team/sreyash-chauhan.jpg", position: "center" },
   { name: "Gaurav Palliwal", role: "Business Head – Retail",description:"", image: "/assets/team/gaurav-palliwal.jpg", position: "center bottom" },
-  { name: "M. Javed Ansari", role: "Compliance Officer",description:"", image: "/assets/team/demo.png", position: "center" },
 ];
 
-const reinsuranceTeam = [
-  { name: "Abhishek Patnaik", role: "AVP – Reinsurance",description:"Abhishek Patnaik is an insurance professional with experience across reinsurance, regulatory compliance and insurance broking. Having worked with SBI General Insurance and Turtlemint Insurance Brokers, he brings expertise in reinsurance operations, governance and risk management. He is an Associate of the Insurance Institute of India and holds an MBA in Insurance and Analytics from IIRM, Hyderabad.", image: "/assets/team/abhishek-patnaik.jpg", position: "center" },
-  { name: "Abhyudaya Das", role: "Partner & CBO – Reinsurance", image: "/assets/team/demo.png", position: "center" },
-  { name: "Varun Vashishth", role: "Partner & Global Head – Reinsurance",description:"Varun Vashishth has over 18 years of experience across reinsurance strategy, market development, client relationships and reinsurance technology. With leadership experience across Turtlemint, ICICI and Max Group, he brings a strategic and technology-led perspective to Equirus Raghnall’s reinsurance business.", image: "/assets/team/varun-vashishth.jpg", position: "center top" },
-];
+
 
 const awards = [
-  { name: "Excellence in Insurance Advisory", organizer: "Organizer", image: "/assets/about/award-insurance-advisory.png", position: "center top" },
+  { name: "Excellence in Insurance Advisory", organizer: "Organizer", image: "/assets/about/award-insurance-advisory.png", position: "center" },
   { name: "Trusted Insurance Partner Award", organizer: "Organizer", image: "/assets/about/award-trusted-partner.png", position: "center" },
-  { name: "Industry Leadership Recognition", organizer: "Organizer", image: "/assets/about/award-industry-leadership.png", position: "center top" },
-  { name: "Innovation in Insurance Solutions", organizer: "Organizer", image: "/assets/about/award-innovation.png", position: "center top" },
+  { name: "Industry Leadership Recognition", organizer: "Organizer", image: "/assets/about/award-industry-leadership.png", position: "center" },
+  { name: "Innovation in Insurance Solutions", organizer: "Organizer", image: "/assets/about/award-innovation.png", position: "center" },
 ];
 
 export default function AboutUsPage() {
@@ -194,21 +191,11 @@ export default function AboutUsPage() {
 
             <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-5 lg:grid-cols-4">
               {directors.map((director) => (
-                <article key={director.name} tabIndex={0} className="group relative aspect-[0.9/1] overflow-hidden rounded-lg bg-[#d7d9db] outline-none">
-                  <Image
-                    src={director.image}
-                    alt={director.name}
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 25vw"
-                    className="object-cover transition duration-500 group-hover:scale-[1.03] group-hover:blur-sm group-focus-visible:scale-[1.03] group-focus-visible:blur-sm"
-                    style={{ objectPosition: director.position }}
-                  />
-                  <div className="team-card-label absolute inset-x-0 bottom-0 px-4 py-2.5 text-white">
-                    <h3 className="text-[13px] font-semibold leading-4 sm:text-base sm:leading-6">{director.name}</h3>
-                    <p className="mt-1 text-[11px] leading-4 text-white/95 sm:text-sm sm:leading-5">{director.role}</p>
-                    <p className="team-card-description whitespace-pre-line text-[11px] leading-4 text-white/95 sm:text-sm sm:leading-6">{director.description ?? `${director.name} provides strategic leadership and expertise as ${director.role}.`}</p>
-                  </div>
-                </article>
+                <TeamMemberCard
+                  key={director.name}
+                  member={director}
+                  fallbackDescription={`${director.name} provides strategic leadership and expertise as ${director.role}.`}
+                />
               ))}
             </div>
           </div>
@@ -222,27 +209,17 @@ export default function AboutUsPage() {
 
             <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-5 lg:grid-cols-4">
               {managementTeam.map((member, index) => (
-                <article key={`${member.name}-${index}`} tabIndex={0} className="group relative aspect-[0.9/1] overflow-hidden rounded-lg bg-[#d7d9db] outline-none">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 25vw"
-                    className="object-cover transition duration-500 group-hover:scale-[1.03] group-hover:blur-sm group-focus-visible:scale-[1.03] group-focus-visible:blur-sm"
-                    style={{ objectPosition: member.position }}
-                  />
-                  <div className="team-card-label absolute inset-x-0 bottom-0 px-4 py-2.5 text-white">
-                    <h3 className="text-[13px] font-semibold leading-4 sm:text-base sm:leading-6">{member.name}</h3>
-                    <p className="mt-1 text-[11px] leading-4 text-white/95 sm:text-sm sm:leading-5">{member.role}</p>
-                    <p className="team-card-description whitespace-pre-line text-[11px] leading-4 text-white/95 sm:text-sm sm:leading-6">{member.description ?? `${member.name} brings specialist experience and leadership to the role of ${member.role}.`}</p>
-                  </div>
-                </article>
+                <TeamMemberCard
+                  key={`${member.name}-${index}`}
+                  member={member}
+                  fallbackDescription={`${member.name} brings specialist experience and leadership to the role of ${member.role}.`}
+                />
               ))}
             </div>
           </div>
         </section>
 
-        <section className="bg-[#F8F9FF] pb-20 pt-12">
+        {/* <section className="bg-[#F8F9FF] pb-20 pt-12">
           <div className="mx-auto max-w-[1440px] px-5 md:px-10 xl:px-20">
             <div className="text-center">
               <h2 className="mt-2 text-[clamp(24px,7vw,30px)] font-semibold tracking-[-0.02em] text-[#111111] md:text-[32px]">Management Team- Reinsurance</h2>
@@ -250,25 +227,15 @@ export default function AboutUsPage() {
 
             <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-5 lg:grid-cols-4">
               {reinsuranceTeam.map((member) => (
-                <article key={member.name} tabIndex={0} className="group relative aspect-[0.9/1] overflow-hidden rounded-lg bg-[#d7d9db] outline-none">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 25vw"
-                    className="object-cover transition duration-500 group-hover:scale-[1.03] group-hover:blur-sm group-focus-visible:scale-[1.03] group-focus-visible:blur-sm"
-                    style={{ objectPosition: member.position }}
-                  />
-                  <div className="team-card-label absolute inset-x-0 bottom-0 px-4 py-2.5 text-white">
-                    <h3 className="text-[13px] font-semibold leading-4 sm:text-base sm:leading-6">{member.name}</h3>
-                    <p className="mt-1 text-[11px] leading-4 text-white/95 sm:text-sm sm:leading-5">{member.role}</p>
-                    <p className="team-card-description whitespace-pre-line text-[11px] leading-4 text-white/95 sm:text-sm sm:leading-6">{member.description ?? `${member.name} contributes deep market expertise and leadership as ${member.role}.`}</p>
-                  </div>
-                </article>
+                <TeamMemberCard
+                  key={member.name}
+                  member={member}
+                  fallbackDescription={`${member.name} contributes deep market expertise and leadership as ${member.role}.`}
+                />
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="bg-white py-16 md:py-20">
           <div className="mx-auto max-w-[1440px] px-5 md:px-10 xl:px-20">
