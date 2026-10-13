@@ -26,7 +26,7 @@ const journey = [
 ];
 
 const risks = [
-  { title: "Property & Engineering", icon: "property.svg", iconSize: 32, description: "Support for complex claims involving property damage, machinery breakdown, fire, flood, and major industrial losses." },
+  { title: "Property & Engineering", icon: "property.svg", iconSize: 24, description: "Support for complex claims involving property damage, machinery breakdown, fire, flood, and major industrial losses." },
   { title: "Marine", icon: "marine.svg", iconSize: 24, description: "Specialist support for cargo damage, transit losses, theft, contamination, and other marine-related claims." },
   { title: "Business Interruption", icon: "business.svg", iconSize: 24, description: "Expert guidance for loss of profit, increased operating costs, indemnity periods, and financial loss assessment." },
   { title: "Liability & Financial Lines", icon: "liability.svg", iconSize: 24, description: "Claims expertise across D&O, public liability, product liability, professional indemnity, and related exposures." },
@@ -202,7 +202,7 @@ export default function ClaimAdvocacyPage() {
         </div>
       </section>
 
-      <section className="bg-[linear-gradient(186deg,#fff_16%,#f6f7fe_91%)] pb-[60px] pt-[60px]">
+      <section className="bg-[#F8F9FF] pb-[60px] pt-[60px]">
         <div className="mx-auto max-w-[1440px] px-5 text-center md:px-10 xl:px-20">
           <Eyebrow>Claim Insights</Eyebrow>
           <h2 className="mt-4 text-[32px] font-semibold leading-[44px] text-[#080808]">Insights Backed by Experience</h2>
@@ -249,7 +249,7 @@ export default function ClaimAdvocacyPage() {
           <Eyebrow light>Our Commitment</Eyebrow>
           <h2 className="mt-4 text-[32px] font-semibold leading-[44px]">When A Loss Happens, We’re Ready</h2>
           <p className="mx-auto mt-6 max-w-[591px] text-base leading-7">From first notification to final recovery, our Claims Advisory team is here with the expertise, structure and advocacy you can rely on.</p>
-          <div className="mt-[64px] flex flex-wrap justify-center gap-4">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Action onDark>Report a Claim</Action>
             <Action onDark outline>Speak to an Expert</Action>
           </div>

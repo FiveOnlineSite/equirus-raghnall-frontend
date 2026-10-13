@@ -147,7 +147,7 @@ export default function CareerPage() {
             <div className="absolute left-[1.2%] top-[1.25%] z-10 aspect-[304/365] w-[72%] overflow-hidden rounded-xl">
               <Image src={asset("voice-main.png")} alt="Team members collaborating around a table" fill sizes="(max-width: 1023px) 72vw, (max-width: 1399px) 21.9vw, 315px" className="object-cover" />
             </div>
-            <div className="absolute rounded-xl bg-[#2c2f71]" style={{ left: "74%", top: "62.75%", width: "27%", height: "39.25%" }} aria-hidden="true" />
+            <div className="absolute rounded-xl bg-[#2c2f71]" style={{ left: "81%", top: "62.75%", width: "20%", height: "39.25%" }} aria-hidden="true" />
             <div className="absolute left-[58%] top-[47%] z-20 aspect-[172/207] w-[41%] overflow-hidden rounded-xl shadow-[0_1px_12px_rgba(0,0,0,0.1)]">
               <Image src={asset("voice-detail.png")} alt="Colleagues working together on a laptop" fill sizes="(max-width: 1023px) 41vw, (max-width: 1399px) 12.47vw, 180px" className="object-cover" />
             </div>

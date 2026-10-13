@@ -129,7 +129,7 @@ section[data-reveal-hero="true"]
   display: flex;
   height: 76px;
   flex-direction: column;
-  background: linear-gradient(90deg, #66666600 0%, #00000054 100%);
+  background: linear-gradient(90deg, #00000052 0%, #000000b8 100%);
   transition: height 350ms ease, padding 350ms ease, background 350ms ease;
 }
 
@@ -157,7 +157,7 @@ section[data-reveal-hero="true"]
 .group:focus-visible > .team-card-label {
   height: 100%;
   padding: 16px 12px;
-  background: linear-gradient(90deg, #66666600 0%, #00000054 100%);
+  background: linear-gradient(90deg, #00000084 100%);
 }
 
 .group:hover > .team-card-label::before,
