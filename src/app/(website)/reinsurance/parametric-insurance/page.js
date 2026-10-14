@@ -30,9 +30,9 @@ export default function Page() {
           imageAlt="Parametric Insurance"
           imagePosition="center center"
           features={[
-            { title: "Trigger-Based Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Faster Payouts", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Financial Resilience", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Trigger-Based Protection", iconName: "FaBolt" },
+            { title: "Faster Payouts", iconName: "FaStopwatch" },
+            { title: "Financial Resilience", iconName: "FaSackDollar" },
           ]}
         />
         <ServiceOverview

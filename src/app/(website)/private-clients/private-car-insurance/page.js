@@ -30,9 +30,9 @@ export default function Page() {
           imageAlt="Private Car Insurance"
           imagePosition="center center"
           features={[
-            { title: "Protection Against Accidental Damage", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Third-Party Liability Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Protection Against Theft & Natural Perils", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Protection Against Accidental Damage", iconName: "FaUserShield" },
+            { title: "Third-Party Liability Protection", iconName: "FaScaleBalanced" },
+            { title: "Protection Against Theft & Natural Perils", iconName: "FaLock" },
           ]}
         />
         <ServiceOverview

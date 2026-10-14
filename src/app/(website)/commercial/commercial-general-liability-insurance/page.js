@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Commercial General Liability"
           imagePosition="center center"
           features={[
-            { title: "Third-Party Bodily Injury Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Third-Party Property Damage Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Legal Liability & Defence Costs", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Product & Premises Liability Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Liability Solutions", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Third-Party Bodily Injury Protection", iconName: "FaUserShield" },
+            { title: "Third-Party Property Damage Protection", iconName: "FaHouse" },
+            { title: "Legal Liability & Defence Costs", iconName: "FaScaleBalanced" },
+            { title: "Product & Premises Liability Protection", iconName: "FaBuilding" },
+            { title: "Flexible Liability Solutions", iconName: "FaChartLine" },
           ]}
         />
         <ServiceOverview

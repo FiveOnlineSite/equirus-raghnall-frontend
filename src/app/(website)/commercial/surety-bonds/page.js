@@ -50,23 +50,23 @@ export default function Page() {
           features={[
             {
               title: "Contractual Obligation Support",
-              icon: "/assets/services/directors-officers/personal.svg",
+              iconName: "FaFileContract",
             },
             {
               title: "Performance & Financial Guarantees",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaSackDollar",
             },
             {
               title: "Enhanced Business Credibility",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaBuilding",
             },
             {
               title: "Flexible Bond Solutions",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaClipboardCheck",
             },
             {
               title: "Support Across Project Lifecycles",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaShieldHalved",
             },
           ]}
         />

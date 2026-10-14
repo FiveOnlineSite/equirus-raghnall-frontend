@@ -30,9 +30,9 @@ export default function Page() {
           imageAlt="Liability & Financial Lines "
           imagePosition="center center"
           features={[
-            { title: "Portfolio Risk Transfer", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Capacity Enhancement", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Balance Sheet Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Portfolio Risk Transfer", iconName: "FaExchangeAlt" },
+            { title: "Capacity Enhancement", iconName: "FaChartLine" },
+            { title: "Balance Sheet Protection", iconName: "FaShieldAlt" },
           ]}
         />
         <ServiceOverview

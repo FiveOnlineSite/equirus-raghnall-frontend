@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Employer Employee Insurance"
           imagePosition="center center"
           features={[
-            { title: "Employee Financial Protection ", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Enhanced Employee Benefits ", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Talent Retention & Attraction ", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Business Continuity Support  ", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Customised Benefit Structures  ", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Employee Financial Protection ", iconName: "FaCoins" },
+            { title: "Enhanced Employee Benefits ", iconName: "FaChartLine" },
+            { title: "Talent Retention & Attraction ", iconName: "FaUsers" },
+            { title: "Business Continuity Support  ", iconName: "FaBuilding" },
+            { title: "Customised Benefit Structures  ", iconName: "FaLayerGroup" },
           ]}
         />
         <ServiceOverview

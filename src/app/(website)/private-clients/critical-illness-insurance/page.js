@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Critical Illness Insurance"
           imagePosition="center center"
           features={[
-            { title: "Lump-Sum Financial Benefit", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Protection Against Major Illnesses", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Financial Support During Recovery", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Coverage Options", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Individual & Family Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Lump-Sum Financial Benefit", iconName: "FaSackDollar" },
+            { title: "Protection Against Major Illnesses", iconName: "FaHeartPulse" },
+            { title: "Financial Support During Recovery", iconName: "FaCoins" },
+            { title: "Flexible Coverage Options", iconName: "FaShieldHalved" },
+            { title: "Individual & Family Protection", iconName: "FaUsers" },
           ]}
         />
         <ServiceOverview

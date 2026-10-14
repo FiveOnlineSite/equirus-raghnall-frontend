@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="MBD"
           imagePosition="center center"
           features={[
-            { title: "Sudden Breakdown Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Machinery Repair & Replacement", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Protection for Critical Equipment", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Business Interruption Protection Options", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Machinery Specific Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Sudden Breakdown Protection", iconName: "FaLayerGroup" },
+            { title: "Machinery Repair & Replacement", iconName: "FaToolbox" },
+            { title: "Protection for Critical Equipment", iconName: "FaShieldHalved" },
+            { title: "Business Interruption Protection Options", iconName: "FaBuilding" },
+            { title: "Flexible Machinery Specific Coverage", iconName: "FaExchangeAlt" },
           ]}
         />
         <ServiceOverview

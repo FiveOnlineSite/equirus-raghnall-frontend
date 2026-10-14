@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Health Insurance"
           imagePosition="center center"
           features={[
-            { title: "Hospitalisation Expense Cover", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Pre & Post-Hospitalisation Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Cashless Treatment Options", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Family Health Protectione", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Critical Illness & Additional Covers", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Hospitalisation Expense Cover", iconName: "FaHeartPulse" },
+            { title: "Pre & Post-Hospitalisation Protection", iconName: "FaShieldAlt" },
+            { title: "Cashless Treatment Options", iconName: "FaCoins" },
+            { title: "Family Health Protectione", iconName: "FaUsers" },
+            { title: "Critical Illness & Additional Covers", iconName: "FaUserShield" },
           ]}
         />
         <ServiceOverview

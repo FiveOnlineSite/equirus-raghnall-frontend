@@ -47,23 +47,23 @@ export default function Page() {
           features={[
             {
               title: "Wide-Ranging All Risk Protection",
-              icon: "/assets/services/directors-officers/personal.svg",
+              iconName: "FaShieldHalved",
             },
             {
               title: "Comprehensive Asset Protection",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaLock",
             },
             {
               title: "Flexible Policy Structure",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaLayerGroup",
             },
             {
               title: "Optional Business Protection",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaBuilding",
             },
             {
               title: "Differentiated Risk Solutions",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaStopwatch",
             },
           ]}
         />

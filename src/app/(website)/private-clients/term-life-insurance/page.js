@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Term Life Insurance"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection for Your Family", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "High Life Cover at Affordable Premiums", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Flexible Policy Tenures", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Optional Protection Benefits", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Income & Liability Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Financial Protection for Your Family", iconName: "FaUsers" },
+            { title: "High Life Cover at Affordable Premiums", iconName: "FaSackDollar" },
+            { title: "Flexible Policy Tenures", iconName: "FaLayerGroup" },
+            { title: "Optional Protection Benefits", iconName: "FaShieldHalved" },
+            { title: "Income & Liability Protection", iconName: "FaCoins" },
           ]}
         />
         <ServiceOverview

@@ -49,23 +49,23 @@ export default function Page() {
           features={[
             {
               title: "Wider Asset Protection ",
-              icon: "/assets/services/directors-officers/personal.svg",
+              iconName: "FaShieldHalved",
             },
             {
               title: "Business Continuity Protection ",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaBuilding",
             },
             {
               title: "Comprehensive Risk Coverage ",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaClipboardCheck",
             },
             {
               title: "Protection for Critical Assets  ",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaLock",
             },
             {
               title: "Tailored Insurance Solutions  ",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaLayerGroup",
             },
           ]}
         />

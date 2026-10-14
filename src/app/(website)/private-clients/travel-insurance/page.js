@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Travel Insurance"
           imagePosition="center center"
           features={[
-            { title: "Overseas Medical Expense Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Trip Cancellation & Interruption", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Baggage & Personal Belongings Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Travel Delay & Missed Connections", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Personal Accident Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Overseas Medical Expense Protection", iconName: "FaShip" },
+            { title: "Trip Cancellation & Interruption", iconName: "FaUmbrella" },
+            { title: "Baggage & Personal Belongings Protection", iconName: "FaSuitcase" },
+            { title: "Travel Delay & Missed Connections", iconName: "FaPlane" },
+            { title: "Personal Accident Protection", iconName: "FaUserShield" },
           ]}
         />
         <ServiceOverview

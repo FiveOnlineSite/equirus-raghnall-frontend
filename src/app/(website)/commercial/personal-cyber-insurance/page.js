@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Personal Cyber Insurance"
           imagePosition="center center"
           features={[
-            { title: "Identity Theft Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Cyber Fraud Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Online Privacy & Data Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Cyber Harassment & Reputation Support", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Personal Cyber Incident Assistance", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Identity Theft Protection", iconName: "FaLock" },
+            { title: "Cyber Fraud Protection", iconName: "FaUserLock" },
+            { title: "Online Privacy & Data Protection", iconName: "FaLaptopCode" },
+            { title: "Cyber Harassment & Reputation Support", iconName: "FaNetworkWired" },
+            { title: "Personal Cyber Incident Assistance", iconName: "FaLifeRing" },
           ]}
         />
         <ServiceOverview

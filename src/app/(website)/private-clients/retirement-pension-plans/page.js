@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Retirement / Pension Plans"
           imagePosition="center center"
           features={[
-            { title: "Retirement Income Planning ", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Long-Term Financial Security ", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Systematic Wealth Accumulation ", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Retirement Solutions ", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Financial Independence ", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Retirement Income Planning ", iconName: "FaSackDollar" },
+            { title: "Long-Term Financial Security ", iconName: "FaChartLine" },
+            { title: "Systematic Wealth Accumulation ", iconName: "FaCoins" },
+            { title: "Flexible Retirement Solutions ", iconName: "FaPuzzlePiece" },
+            { title: "Financial Independence ", iconName: "FaPiggyBank" },
           ]}
         />
         <ServiceOverview

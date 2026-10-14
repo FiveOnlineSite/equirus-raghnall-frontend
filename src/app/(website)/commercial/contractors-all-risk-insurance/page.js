@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Contractors All Risk (CAR)"
           imagePosition="center center"
           features={[
-            { title: "Comprehensive Project Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Material Damage Coverage", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Third-Party Liability Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Protection During Construction", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Project-Specific Extensions", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Comprehensive Project Protection", iconName: "FaShieldHalved" },
+            { title: "Material Damage Coverage", iconName: "FaToolbox" },
+            { title: "Third-Party Liability Protection", iconName: "FaUserShield" },
+            { title: "Protection During Construction", iconName: "FaBuilding" },
+            { title: "Flexible Project-Specific Extensions", iconName: "FaClipboardCheck" },
           ]}
         />
         <ServiceOverview

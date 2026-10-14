@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Miscellaneous"
           imagePosition="center center"
           features={[
-            { title: "Flexible Risk Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Specialised Commercial Covers", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Protection for Unique Business Exposures", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Tailored Insurance Solutions", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Comprehensive Risk Management", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Flexible Risk Protection", iconName: "FaShieldHalved" },
+            { title: "Specialised Commercial Covers", iconName: "FaLayerGroup" },
+            { title: "Protection for Unique Business Exposures", iconName: "FaBuilding" },
+            { title: "Tailored Insurance Solutions", iconName: "FaPuzzlePiece" },
+            { title: "Comprehensive Risk Management", iconName: "FaClipboardCheck" },
           ]}
         />
         <ServiceOverview

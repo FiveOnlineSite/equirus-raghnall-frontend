@@ -30,9 +30,9 @@ export default function Page() {
           imageAlt="Treaties"
           imagePosition="center center"
           features={[
-            { title: "Risk Transfer Solutions", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Capacity Optimisation", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Portfolio Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Risk Transfer Solutions", iconName: "FaExchangeAlt" },
+            { title: "Capacity Optimisation", iconName: "FaTachometerAlt" },
+            { title: "Portfolio Protection", iconName: "FaShieldAlt" },
           ]}
         />
         <ServiceOverview

@@ -66,7 +66,7 @@ export const commercialMenu = [
         slug: "professional-indemnity-insurance",
       },
       {
-        label: "Directors & Office (D & O)",
+        label: "Directors & Officers (D & O)",
         slug: "directors-officers-liability-insurance",
       },
       { label: "Employers Liability", slug: "employers-liability-insurance" },

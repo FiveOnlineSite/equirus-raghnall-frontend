@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Group Gratuity & Superannuation"
           imagePosition="center center"
           features={[
-            { title: "Employee Gratuity Funding Solutions", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Structured Retirement Benefits", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Long-Term Employee Financial Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Benefit Structures", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Employer-Sponsored Employee Benefits", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Employee Gratuity Funding Solutions", iconName: "FaUsers" },
+            { title: "Structured Retirement Benefits", iconName: "FaSackDollar" },
+            { title: "Long-Term Employee Financial Protection", iconName: "FaChartLine" },
+            { title: "Flexible Benefit Structures", iconName: "FaLayerGroup" },
+            { title: "Employer-Sponsored Employee Benefits", iconName: "FaHandHoldingHeart" },
           ]}
         />
         <ServiceOverview

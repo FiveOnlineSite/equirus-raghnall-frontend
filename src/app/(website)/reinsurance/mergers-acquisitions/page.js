@@ -50,15 +50,15 @@ export default function Page() {
           features={[
             {
               title: "Transaction Risk Protection",
-              icon: "/assets/services/directors-officers/personal.svg",
+              iconName: "FaShieldAlt",
             },
             {
               title: "Financial Loss Protection",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaMoneyBillTrendUp",
             },
             {
               title: "Deal Certainty",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaFileContract",
             },
           ]}
         />

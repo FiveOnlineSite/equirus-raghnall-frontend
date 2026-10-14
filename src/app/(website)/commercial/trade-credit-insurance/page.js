@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Trade Credit Insurance"
           imagePosition="center center"
           features={[
-            { title: "Protection Against Buyer Default", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Receivables & Cash Flow Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Insolvency Risk Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Credit Risk Management", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Support for Business Growth", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Protection Against Buyer Default", iconName: "FaShieldHalved" },
+            { title: "Receivables & Cash Flow Protection", iconName: "FaMoneyBillTrendUp" },
+            { title: "Insolvency Risk Protection", iconName: "FaSackDollar" },
+            { title: "Credit Risk Management", iconName: "FaTachometerAlt" },
+            { title: "Support for Business Growth", iconName: "FaBuilding" },
           ]}
         />
         <ServiceOverview

@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Group Health Insurance"
           imagePosition="center center"
           features={[
-            { title: "Employee Health Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Cashless Hospitalisation", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Employee & Family Coverage", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Customised Benefit Structures", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Dedicated Claims Support", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Employee Health Protection", iconName: "FaHeartPulse" },
+            { title: "Cashless Hospitalisation", iconName: "FaSackDollar" },
+            { title: "Employee & Family Coverage", iconName: "FaUsers" },
+            { title: "Customised Benefit Structures", iconName: "FaShieldHalved" },
+            { title: "Dedicated Claims Support", iconName: "FaFileContract" },
           ]}
         />
         <ServiceOverview

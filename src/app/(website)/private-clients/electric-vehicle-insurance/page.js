@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Electric Vehicle (EV) Insurance"
           imagePosition="center center"
           features={[
-            { title: "Accident & Damage Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Battery & EV Component Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Third-Party Liability Cover", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Theft & Total Loss Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Personal Accident Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Accident & Damage Protection", iconName: "FaShieldAlt" },
+            { title: "Battery & EV Component Protection", iconName: "FaCar" },
+            { title: "Third-Party Liability Cover", iconName: "FaScaleBalanced" },
+            { title: "Theft & Total Loss Protection", iconName: "FaLock" },
+            { title: "Personal Accident Protection", iconName: "FaUserShield" },
           ]}
         />
         <ServiceOverview

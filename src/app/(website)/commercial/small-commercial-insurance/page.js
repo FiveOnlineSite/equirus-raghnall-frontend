@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Small Commercial"
           imagePosition="center center"
           features={[
-            { title: "Business Property Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Stock & Contents Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Flexible Coverage Solutions", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Business Interruption Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Liability Protection", icon: "/assets/services/directors-officers/legal.svg" },
+            { title: "Business Property Protection", iconName: "FaHouse" },
+            { title: "Stock & Contents Protection", iconName: "FaChartLine" },
+            { title: "Flexible Coverage Solutions", iconName: "FaShieldHalved" },
+            { title: "Business Interruption Protection", iconName: "FaBuilding" },
+            { title: "Liability Protection", iconName: "FaScaleBalanced" },
           ]}
         />
         <ServiceOverview

@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Group Personal Accident"
           imagePosition="center center"
           features={[
-            { title: "Accidental Death Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Disability Benefit Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Accidental Medical Expense Options", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Employer-Sponsored Employee Cover", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Employee Benefit Structures", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Accidental Death Protection", iconName: "FaUserShield" },
+            { title: "Disability Benefit Protection", iconName: "FaShieldHalved" },
+            { title: "Accidental Medical Expense Options", iconName: "FaHeartPulse" },
+            { title: "Employer-Sponsored Employee Cover", iconName: "FaUsers" },
+            { title: "Flexible Employee Benefit Structures", iconName: "FaChartLine" },
           ]}
         />
         <ServiceOverview

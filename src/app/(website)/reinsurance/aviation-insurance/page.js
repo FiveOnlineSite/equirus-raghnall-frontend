@@ -29,9 +29,9 @@ export default function Page() {
           imageAlt="Aviation Insurance"
           imagePosition="center center"
           features={[
-            { title: "Aircraft Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Liability Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Aircraft Protection", iconName: "FaPlane" },
+            { title: "Liability Protection", iconName: "FaScaleBalanced" },
+            { title: "Risk Protection", iconName: "FaShieldHalved" },
           ]}
         />
         <ServiceOverview

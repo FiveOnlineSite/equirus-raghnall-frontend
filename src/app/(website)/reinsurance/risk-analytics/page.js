@@ -30,9 +30,9 @@ export default function Page() {
           imageAlt="Risk Analytics, Structuring, and Advisory"
           imagePosition="center center"
           features={[
-            { title: "Risk & Portfolio Analytics", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Tailored Reinsurance Structures", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Strategic Risk Advisory", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Risk And Portfolio Analytics", iconName: "FaChartLine" },
+            { title: "Tailored Reinsurance Structures", iconName: "FaShieldHalved" },
+            { title: "Strategic Risk Advisory", iconName: "FaChessKnight" },
           ]}
         />
         <ServiceOverview

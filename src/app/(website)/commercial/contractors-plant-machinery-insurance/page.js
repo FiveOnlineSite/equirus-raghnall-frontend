@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Contractors Plant & Machinery (CPM)"
           imagePosition="center center"
           features={[
-            { title: "Comprehensive CPM Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Accidental Damage Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Protection During Operation & Use", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Third-Party Liability Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Equipment-Specific Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Comprehensive CPM Protection", iconName: "FaShieldHalved" },
+            { title: "Accidental Damage Protection", iconName: "FaToolbox" },
+            { title: "Protection During Operation & Use", iconName: "FaLayerGroup" },
+            { title: "Third-Party Liability Protection", iconName: "FaUserShield" },
+            { title: "Flexible Equipment-Specific Coverage", iconName: "FaExchangeAlt" },
           ]}
         />
         <ServiceOverview

@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Electronic Equipment"
           imagePosition="center center"
           features={[
-            { title: "Electronic Equipment Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Accidental Damage Coverage", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Data & External Media Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Increased Cost of Working Options", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Protection for Critical Technology", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Electronic Equipment Protection", iconName: "FaMicrochip" },
+            { title: "Accidental Damage Coverage", iconName: "FaUserShield" },
+            { title: "Data And External Media Protection", iconName: "FaLaptopCode" },
+            { title: "Increased Cost of Working Options", iconName: "FaChartLine" },
+            { title: "Protection for Critical Technology", iconName: "FaShieldAlt" },
           ]}
         />
         <ServiceOverview

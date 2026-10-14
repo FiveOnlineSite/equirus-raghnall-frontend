@@ -30,9 +30,9 @@ export default function Page() {
           imageAlt="Two - Wheeler Insurance"
           imagePosition="center center"
           features={[
-            { title: "Accident & Damage Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Third-Party Liability Cover", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Protection Against Theft", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Accident & Damage Protection", iconName: "FaUserShield" },
+            { title: "Third-Party Liability Cover", iconName: "FaScaleBalanced" },
+            { title: "Protection Against Theft", iconName: "FaLock" },
           ]}
         />
         <ServiceOverview

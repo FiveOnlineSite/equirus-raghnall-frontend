@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Employers Liability"
           imagePosition="center center"
           features={[
-            { title: "Employee Injury Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Compensation Benefits", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Employer’s Legal Liability Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Death & Disability Benefits", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Legal Defence Cost Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Employee Injury Protection", iconName: "FaUsers" },
+            { title: "Compensation Benefits", iconName: "FaShieldHalved" },
+            { title: "Employer’s Legal Liability Protection", iconName: "FaScaleBalanced" },
+            { title: "Death & Disability Benefits", iconName: "FaShieldHalved" },
+            { title: "Legal Defence Cost Protection", iconName: "FaScaleBalanced" },
           ]}
         />
         <ServiceOverview

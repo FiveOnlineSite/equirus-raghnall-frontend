@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Marine Hull & Aviation"
           imagePosition="center center"
           features={[
-            { title: "Marine Hull Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Aviation Asset Protection", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Physical Damage Coverage", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Liability Protection Options", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Specialised Risk Solutions", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Marine Hull Protection", iconName: "FaShip" },
+            { title: "Aviation Asset Protection", iconName: "FaPlane" },
+            { title: "Physical Damage Coverage", iconName: "FaShieldHalved" },
+            { title: "Liability Protection Options", iconName: "FaScaleBalanced" },
+            { title: "Specialised Risk Solutions", iconName: "FaShieldHalved" },
           ]}
         />
         <ServiceOverview

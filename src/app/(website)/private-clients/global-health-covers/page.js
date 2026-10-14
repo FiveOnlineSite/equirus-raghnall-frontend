@@ -51,23 +51,23 @@ export default function Page() {
           features={[
             {
               title: "Worldwide Medical Protection",
-              icon: "/assets/services/directors-officers/personal.svg",
+              iconName: "FaHeartPulse",
             },
             {
               title: "International Hospitalisation Cover",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaBuilding",
             },
             {
               title: "Global Cashless Healthcare Access",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaSackDollar",
             },
             {
               title: "Emergency Medical Assistance",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaStethoscope",
             },
             {
               title: "Flexible International Coverage",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaGlobe",
             },
           ]}
         />

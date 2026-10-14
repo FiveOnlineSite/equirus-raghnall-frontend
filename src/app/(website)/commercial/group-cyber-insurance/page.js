@@ -30,9 +30,9 @@ export default function Page() {
           imageAlt="Group Cyber Insurance"
           imagePosition="center center"
           features={[
-            { title: "Financial Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Claims Support", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Risk-Led Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Financial Protection", iconName: "FaSackDollar" },
+            { title: "Claims Support", iconName: "FaShieldHalved" },
+            { title: "Risk-Led Coverage", iconName: "FaShieldHalved" },
           ]}
         />
         <ServiceOverview

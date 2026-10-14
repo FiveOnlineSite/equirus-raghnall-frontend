@@ -58,23 +58,23 @@ export default function AffinityPartnershipInsurancePage() {
           features={[
             {
               title: "Insurance Programmes",
-              icon: "/assets/services/directors-officers/personal.svg",
+              iconName: "FaFileContract",
             },
             {
               title: "Embedded & Affinity Insurance Solutions",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaPuzzlePiece",
             },
             {
               title: "Partner-Led Distribution Models",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaHandshake",
             },
              {
               title: "Scalable Customer Protection",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaShieldAlt",
             },
              {
               title: "Seamless Digital & Service Integration",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaLaptopCode",
             },
           ]}
         />

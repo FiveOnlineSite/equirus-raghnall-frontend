@@ -53,23 +53,23 @@ export default function Page() {
           features={[
             {
               title: "Business Continuity Protection",
-              icon: "/assets/services/directors-officers/personal.svg",
+              iconName: "FaBuilding",
             },
             {
               title: "Protection Against Revenue Loss",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaCoins",
             },
             {
               title: "Key Person Replacement Support ",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaUserShield",
             },
             {
               title: "Protection of Business Interests ",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaChartLine",
             },
             {
               title: "Customised Coverage  ",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaShieldHalved",
             },
           ]}
         />

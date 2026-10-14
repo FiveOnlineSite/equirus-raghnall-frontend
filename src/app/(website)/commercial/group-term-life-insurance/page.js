@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Group Term Life Insurance"
           imagePosition="center center"
           features={[
-            { title: "Employee Life Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Financial Security for Families", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Employer-Sponsored Benefit", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Sum Insured Options", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Customised Employee Coverage", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Employee Life Protection", iconName: "FaUsers" },
+            { title: "Financial Security for Families", iconName: "FaSackDollar" },
+            { title: "Employer-Sponsored Benefit", iconName: "FaUsers" },
+            { title: "Flexible Sum Insured Options", iconName: "FaCoins" },
+            { title: "Customised Employee Coverage", iconName: "FaShieldAlt" },
           ]}
         />
         <ServiceOverview

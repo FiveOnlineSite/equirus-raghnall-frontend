@@ -29,9 +29,9 @@ export default function Page() {
           imageAlt="Terrorism & Political Violence "
           imagePosition="center center"
           features={[
-            { title: "Catastrophe Risk Transfer", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Capacity Enhancement", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Portfolio Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Catastrophe Risk Transfer", iconName: "FaCloudBolt" },
+            { title: "Capacity Enhancement", iconName: "FaChartLine" },
+            { title: "Portfolio Protection", iconName: "FaShieldAlt" },
           ]}
         />
         <ServiceOverview

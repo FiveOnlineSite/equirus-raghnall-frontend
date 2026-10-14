@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Errection All Risk (EAR)"
           imagePosition="center center"
           features={[
-            { title: "Installation Risk Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Material Damage Coverage", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Commissioning Cover", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Third-Party Liability Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Flexible Project Specific Extensions", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Installation Risk Protection", iconName: "FaShieldHalved" },
+            { title: "Material Damage Coverage", iconName: "FaToolbox" },
+            { title: "Commissioning Cover", iconName: "FaClipboardCheck" },
+            { title: "Third-Party Liability Protection", iconName: "FaUserShield" },
+            { title: "Flexible Project Specific Extensions", iconName: "FaLink" },
           ]}
         />
         <ServiceOverview

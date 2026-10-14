@@ -52,23 +52,23 @@ export default function Page() {
           features={[
             {
               title: "Bespoke Risk Protection",
-              icon: "/assets/services/directors-officers/personal.svg",
+              iconName: "FaShieldHalved",
             },
             {
               title: "High-Value Asset Coverage",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaChartLine",
             },
             {
               title: "Personal Liability Protection",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaScaleBalanced",
             },
             {
               title: "Lifestyle & Family Protection",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaUsers",
             },
             {
               title: "Dedicated Private Client Service",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaPuzzlePiece",
             },
           ]}
         />

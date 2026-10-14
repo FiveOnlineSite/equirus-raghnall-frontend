@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Cyber & Crime"
           imagePosition="center center"
           features={[
-            { title: "Cyber Incident Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Data & Privacy Liability", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Cyber Extortion Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Financial Crime & Fraud Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Business Interruption Support", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Cyber Incident Protection", iconName: "FaShieldAlt" },
+            { title: "Data And Privacy Liability", iconName: "FaUserLock" },
+            { title: "Cyber Extortion Protection", iconName: "FaLaptopCode" },
+            { title: "Financial Crime & Fraud Protection", iconName: "FaLifeRing" },
+            { title: "Business Interruption Support", iconName: "FaBuilding" },
           ]}
         />
         <ServiceOverview
@@ -51,7 +51,7 @@ export default function Page() {
           title="Comprehensive Protection At Every Level"
           items={[
             { title: "Cyber Incident Response", description: "Covers eligible costs of responding to a covered cyber incident, including investigation, incident management and specialist support." },
-            { title: "Data & Privacy Liability", description: "Protects against covered third-party claims from a data breach, privacy incident or failure to protect confidential information, subject to policy wording." },
+            { title: "Data And Privacy Liability", description: "Protects against covered third-party claims from a data breach, privacy incident or failure to protect confidential information, subject to policy wording." },
             { title: "Cyber Business Interruption", description: "Can protect against eligible loss of income or additional expenses from an insured cyber event that disrupts business operations." },
             { title: "Cyber Extortion & Ransomware", description: "Where covered, protects eligible expenses from cyber extortion events, including certain response and recovery costs, subject to policy terms." },
             { title: "Data Restoration & Recovery", description: "Provides protection for eligible costs associated with restoring or recovering data and systems following a covered cyber incident." },

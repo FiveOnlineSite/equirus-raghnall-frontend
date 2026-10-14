@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Professional Indemnity"
           imagePosition="center center"
           features={[
-            { title: "Professional Liability Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Errors & Omissions Coverage", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Legal Defence Cost Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Client Claim Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Tailored Professional Risk Solutions", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Professional Liability Protection", iconName: "FaUserShield" },
+            { title: "Errors & Omissions Coverage", iconName: "FaClipboardCheck" },
+            { title: "Legal Defence Cost Protection", iconName: "FaScaleBalanced" },
+            { title: "Client Claims Protection", iconName: "FaFileContract" },
+            { title: "Tailored Professional Risk Solutions", iconName: "FaShieldHalved" },
           ]}
         />
         <ServiceOverview

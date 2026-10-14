@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Super- Top- Up Insurance"
           imagePosition="center center"
           features={[
-            { title: "Additional Health Insurance Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Higher Sum Insured Options", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Protection Against Major Medical Expenses", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Individual & Family Coverage", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Cost-Effective Additional Cover", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Additional Health Insurance Protection", iconName: "FaHeartPulse" },
+            { title: "Higher Sum Insured Options", iconName: "FaSackDollar" },
+            { title: "Protection Against Major Medical Expenses", iconName: "FaShieldAlt" },
+            { title: "Individual & Family Coverage", iconName: "FaUsers" },
+            { title: "Cost-Effective Additional Cover", iconName: "FaCoins" },
           ]}
         />
         <ServiceOverview

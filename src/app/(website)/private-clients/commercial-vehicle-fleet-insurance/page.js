@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Commercial Vehicle & Fleet"
           imagePosition="center center"
           features={[
-            { title: "Accident & Damage Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Third-Party Liability Cover", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Theft & Total Loss Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Fleet Insurance Solutions", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Personal Accident Protection", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Accident & Damage Protection", iconName: "FaUserShield" },
+            { title: "Third-Party Liability Cover", iconName: "FaScaleBalanced" },
+            { title: "Theft & Total Loss Protection", iconName: "FaLock" },
+            { title: "Fleet Insurance Solutions", iconName: "FaPlane" },
+            { title: "Personal Accident Protection", iconName: "FaShieldAlt" },
           ]}
         />
         <ServiceOverview

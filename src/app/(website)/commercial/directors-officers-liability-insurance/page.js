@@ -6,7 +6,7 @@ import ServiceCta from "@/components/service-page/ServiceCta";
 import FaqSection from "@/components/FaqSection";
 
 export const metadata = {
-  title: "Directors’ & Officers’ Liability Insurance | Equirus Raghnall",
+  title: "Director’s & Officer’s Liability Insurance | Equirus Raghnall",
   description:
     "Protect directors and officers from legal risks and personal liability with tailored D&O insurance coverage.",
 };
@@ -45,7 +45,7 @@ export default function DirectorsOfficersLiabilityPage() {
       
       <main>
         <ServiceHero
-          label="Directors’ & Officers’ Liability Insurance"
+          label="Director’s & Officer’s Liability Insurance"
           title={
             <>
              Protect Your Leaders From Personal Liability
@@ -58,15 +58,15 @@ export default function DirectorsOfficersLiabilityPage() {
           features={[
             {
               title: "Personal Asset Protection",
-              icon: "/assets/services/directors-officers/personal.svg",
+              iconName: "FaUserShield",
             },
             {
               title: "Legal Defence Covered",
-              icon: "/assets/services/directors-officers/legal.svg",
+              iconName: "FaScaleBalanced",
             },
             {
               title: "Management Risk Protection",
-              icon: "/assets/services/directors-officers/management.svg",
+              iconName: "FaBuilding",
             },
           ]}
         />

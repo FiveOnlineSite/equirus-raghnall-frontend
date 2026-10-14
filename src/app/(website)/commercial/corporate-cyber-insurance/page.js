@@ -30,11 +30,11 @@ export default function Page() {
           imageAlt="Corporate Cyber Insurance"
           imagePosition="center center"
           features={[
-            { title: "Cyber Incident Protection", icon: "/assets/services/directors-officers/personal.svg" },
-            { title: "Data & Privacy Liability", icon: "/assets/services/directors-officers/legal.svg" },
-            { title: "Network Security Protection", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Cyber Business Interruption", icon: "/assets/services/directors-officers/management.svg" },
-            { title: "Incident Response & Recovery Support", icon: "/assets/services/directors-officers/management.svg" },
+            { title: "Cyber Incident Protection", iconName: "FaShieldAlt" },
+            { title: "Data And Privacy Liability", iconName: "FaUserLock" },
+            { title: "Network Security Protection", iconName: "FaNetworkWired" },
+            { title: "Cyber Business Interruption", iconName: "FaExclamationTriangle" },
+            { title: "Incident Response & Recovery Support", iconName: "FaLifeRing" },
           ]}
         />
         <ServiceOverview
@@ -51,7 +51,7 @@ export default function Page() {
           title="Comprehensive Protection At Every Level"
           items={[
             { title: "Cyber Incident Response", description: "Protects eligible costs of responding to a covered cyber incident, including investigation, incident management and specialist support." },
-            { title: "Data & Privacy Liability", description: "Protects against covered third-party claims from a data breach, privacy incident or failure to protect confidential or personal information." },
+            { title: "Data And Privacy Liability", description: "Protects against covered third-party claims from a data breach, privacy incident or failure to protect confidential or personal information." },
             { title: "Network Security Liability", description: "Protects against covered claims from a network security failure that results in third-party loss, damage or other covered liability." },
             { title: "Cyber Business Interruption", description: "Can protect against eligible loss of income and additional expenses from an insured cyber incident that disrupts business operations." },
             { title: "Data Restoration & Recovery", description: "Provides protection for eligible costs associated with restoring, recovering, or recreating data and systems following a covered cyber event." },
