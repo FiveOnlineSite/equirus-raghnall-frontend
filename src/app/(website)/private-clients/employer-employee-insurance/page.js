@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Employer Employee Insurance?"
           title="Understanding Employer Employee Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/employe1.png"
           imageAlt="Employer Employee Insurance overview"
           description="Employer Employee Insurance is a life insurance-based solution that enables employers to provide financial protection to their employees while aligning the benefit structure with the organisation’s business and workforce requirements."
           coverageItems={["Life Insurance Protection", "Financial Security for Employees & Families", "Employer-Sponsored Benefits", "Employee Retention Support", "Customised Coverage"]}
@@ -64,7 +64,7 @@ The organisation arranges an Employer Employee Insurance solution providing defi
           label="Advisory Support"
           title={<>Build a Stronger Benefits Programme</>}
           description="Our specialists structure cover around your needs rather than relying on a standard policy."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/employe2.png"
           imageAlt="Employer Employee Insurance advisory support"
           imagePosition="center"
           steps={[

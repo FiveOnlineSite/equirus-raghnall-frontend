@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Electric Vehicle (EV) Insurance?"
           title="Understanding Electric Vehicle (EV) Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/ev1.png"
           imageAlt="Electric Vehicle (EV) Insurance overview"
           description="Electric Vehicle Insurance protects your electric car, scooter or two-wheeler against financial losses from accidents, theft and third-party liabilities, with cover tailored to specialised components like high-value batteries, motors and charging equipment, subject to policy terms."
           coverageItems={["Own Damage Protection", "Battery & EV Component Protection", "Theft Protection", "Natural Calamities","Man-Made Events"]}
@@ -62,7 +62,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your EV Before the Unexpected Happens</>}
           description="Every EV has its own usage pattern and risk profile. Our specialists help you understand your needs and identify suitable coverage."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/ev2.png"
           imageAlt="Electric Vehicle (EV) Insurance advisory support"
           imagePosition="center"
           steps={[

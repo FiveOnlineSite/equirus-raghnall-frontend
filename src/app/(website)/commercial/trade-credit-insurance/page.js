@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Trade Credit Insurance?"
           title="Understanding Trade Credit Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/trade1.png"
           imageAlt="Trade Credit Insurance overview"
           description="Trade Credit Insurance protects businesses against customer non-payment on credit sales, covering eligible receivables against risks such as buyer insolvency or prolonged default, subject to policy terms, approved credit limits and exclusions."
           coverageItems={["Buyer insolvency", "Protracted or prolonged default", "Non-payment of eligible trade receivables", "Protection against selected commercial credit risks","Credit monitoring and risk assessment support"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Receivables Before Risk Finds You</>}
           description="Delayed payments strain cash flow. We structure Trade Credit Insurance around your customers, trading terms and credit exposures."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/trade2.png"
           imageAlt="Trade Credit Insurance advisory support"
           imagePosition="center"
           steps={[

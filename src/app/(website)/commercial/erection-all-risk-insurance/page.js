@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Errection All Risk (EAR)?"
           title="Understanding Errection All Risk (EAR)"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/ear1.png"
           imageAlt="Errection All Risk (EAR) overview"
           description="Erection All Risk (EAR) Insurance protects the erection, installation and commissioning of machinery, plant and equipment against accidental physical loss or damage, and can also include third-party liability protection."
           coverageItems={["Accidental physical loss or damage during erection and installation", "Machinery, plant, equipment, and materials at the project site", "Risks arising during testing and commissioning", "Temporary works and installation-related property","Third-party bodily injury or property damage liability"]}
@@ -64,7 +64,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Project Before Risk Finds You</>}
           description="Erection projects involve complex equipment, testing and timelines. We structure EAR solutions around your project's risks."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/ear2.png"
           imageAlt="Errection All Risk (EAR) advisory support"
           imagePosition="center"
           steps={[

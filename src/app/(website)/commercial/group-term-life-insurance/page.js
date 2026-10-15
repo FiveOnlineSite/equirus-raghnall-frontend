@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Group Term Life Insurance?"
           title="Understanding Group Term Life Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/term1.png"
           imageAlt="Group Term Life Insurance overview"
           description="Group Term Life Insurance provides employer-sponsored life cover to employees under a single policy, paying the life benefit to the designated beneficiary if a covered employee dies during the policy period."
           coverageItems={["Life cover for eligible employees", "Death benefit during the policy period", "Financial protection for employees' families", "Flexible sum insured structures","Coverage for eligible employee categories"]}
@@ -62,7 +62,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Employees Before Risk Finds You</>}
           description="Life cover is key to benefits. We structure Group Term Life Insurance around your workforce and budget."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/term2.png"
           imageAlt="Group Term Life Insurance advisory support"
           imagePosition="center"
           steps={[

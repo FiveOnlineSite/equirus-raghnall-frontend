@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Group Health Insurance?"
           title="Understanding Group Health Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/health1.png"
           imageAlt="Group Health Insurance overview"
           description="Group Health Insurance is an employer-sponsored solution providing medical and hospitalisation cover to employees and, where selected, dependants, structured around the workforce, budget and benefit requirements."
           coverageItems={["In-patient hospitalisation expenses", "Pre- and post-hospitalisation expenses", "Day-care procedures", "Cashless treatment at network hospitals, subject to policy terms","Ambulance expenses"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Employees Before Risk Finds You</>}
           description="A well-structured Group Health Insurance programme supports employee healthcare and builds a sustainable benefits framework."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/health2.png"
           imageAlt="Group Health Insurance advisory support"
           imagePosition="center"
           steps={[

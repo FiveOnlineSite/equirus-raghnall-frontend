@@ -74,7 +74,7 @@ export default function Page() {
         <ServiceOverview
           label="What Are Global Health Covers?"
           title="Understanding Global Health Covers"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/global-1.png"
           imageAlt="Global Health Covers overview"
           description="Global Health Covers are international health insurance solutions for individuals and families with global healthcare needs, whether you travel frequently, live across countries or work internationally, providing financial protection against eligible healthcare expenses abroad."
           coverageItems={[
@@ -131,7 +131,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protection Designed for a Global Lifestyle</>}
           description="Our specialists structure cover around your needs rather than relying on a standard policy."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/global-2.png"
           imageAlt="Global Health Covers advisory support"
           imagePosition="center"
           steps={[

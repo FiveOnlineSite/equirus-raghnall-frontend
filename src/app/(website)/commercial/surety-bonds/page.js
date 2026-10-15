@@ -73,7 +73,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Surety Bonds?"
           title="Understanding Surety Bonds"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/surety1.png"
           imageAlt="Surety Bonds overview"
           description="Surety Bonds guarantee performance of contractual or statutory obligations among the Principal, Obligee and Surety, offering an alternative to traditional security that helps businesses preserve banking limits and working capital."
           coverageItems={[
@@ -130,7 +130,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Secure Your Commitments Before Risk Finds You</>}
           description="Every contract carries obligations. We help businesses structure suitable Surety Bond solutions around their contract and obligee requirements."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/surety2.png"
           imageAlt="Surety Bonds advisory support"
           imagePosition="center"
           steps={[

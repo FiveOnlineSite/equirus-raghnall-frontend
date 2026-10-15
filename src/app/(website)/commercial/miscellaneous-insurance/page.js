@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Miscellaneous?"
           title="Understanding Miscellaneous"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/msc1.png"
           imageAlt="Miscellaneous overview"
           description="Miscellaneous Insurance offers specialised solutions that protect businesses against specific risks not covered by standard property, liability or commercial policies, structured around the nature of the business, its assets, contractual obligations and unique exposures."
           coverageItems={["Specialised Risks Protection", "Asset & Contract Cover", "Accidental Loss Protection", "Business Liability","Custom Extensions"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Business Before Risk Finds You</>}
           description="Every business has exposures that standard policies miss. We help identify these risks and structure suitable insurance around your needs."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/msc2.png"
           imageAlt="Miscellaneous advisory support"
           imagePosition="center"
           steps={[

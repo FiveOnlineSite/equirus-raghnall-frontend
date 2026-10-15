@@ -38,7 +38,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Private Car Insurance?"
           title="Understanding Private Car Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/car1.png"
           imageAlt="Private Car Insurance overview"
           description="Private Car Insurance protects your vehicle against financial losses from accidents, theft, natural calamities and other covered risks. Whether it's damage, theft, fire or third-party liability, the right cover reduces the impact of unexpected events and keeps you moving with confidence."
           coverageItems={["Accidental damage to the insured vehicle", "Theft of the insured vehicle", "Fire and explosion", "Natural calamities", "Man-made events "]}
@@ -60,7 +60,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protection That Moves<br/>With You</>}
           description="Every vehicle and driver is different. We help you choose the right cover and add-ons for your vehicle, usage and risk profile."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/car2.png"
           imageAlt="Private Car Insurance advisory support"
           imagePosition="center"
           steps={[

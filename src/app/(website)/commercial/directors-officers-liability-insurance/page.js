@@ -73,7 +73,7 @@ export default function DirectorsOfficersLiabilityPage() {
         <ServiceOverview
           label="What Is D&O Insurance?"
           title="Understanding D&O Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/directors1.png"
           imageAlt="Business leaders discussing corporate risk"
           description="Directors' & Officers' Liability Insurance (D&O) protects company leaders from personal liability arising from managerial actions, covering errors in judgment, alleged breaches of duty and regulatory investigations with financial and legal protection."
           coverageItems={[
@@ -130,7 +130,7 @@ export default function DirectorsOfficersLiabilityPage() {
           label="Advisory Support"
           title={<>Protect Your Leadership Before Risk Finds You</>}
           description="We understand that no two boards are alike. Our policies are crafted to meet the unique risk profile of your organisation and leadership structure."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/director2.png"
           imageAlt="Advisors reviewing documents with business leaders"
           imagePosition="center"
           steps={[

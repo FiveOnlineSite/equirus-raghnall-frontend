@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Group Gratuity & Superannuation?"
           title="Understanding Group Gratuity & Superannuation"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/gratuity1.png"
           imageAlt="Group Gratuity & Superannuation overview"
           description="Group Gratuity & Superannuation solutions help organisations fund long-term employee benefits, with gratuity solutions covering eligible gratuity liabilities and superannuation solutions creating structured retirement benefits, subject to applicable scheme terms and regulations."
           coverageItems={["Funding support for eligible gratuity liabilities", "Structured retirement benefit solutions", "Employer-sponsored employee benefit programmes", "Long-term financial planning for employees","Flexible contribution and benefit structures"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Employees Before Risk Finds You</>}
           description="Long-term employee benefits need careful planning and review. We help organisations structure solutions around their workforce and objectives."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/gratuity2.png"
           imageAlt="Group Gratuity & Superannuation advisory support"
           imagePosition="center"
           steps={[

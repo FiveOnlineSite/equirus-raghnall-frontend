@@ -82,7 +82,7 @@ export default function AffinityPartnershipInsurancePage() {
         <ServiceOverview
           label="What is Affinity & Partnership?"
           title="Insurance Designed Around Your Community"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/affinity-1.png"
           imageAlt="Team designing a partnership insurance solution"
           description="Affinity & Partnership solutions enable organisations to offer relevant insurance to their customers, members, employees or communities. We work with businesses, institutions and platforms to design programmes aligned with their customer proposition, distribution model and risk requirements."
           coverageItems={[
@@ -141,7 +141,7 @@ export default function AffinityPartnershipInsurancePage() {
           label="Partnership Approach"
           title={<>Build Partnerships That Create Lasting Value</>}
           description="We combine insurance expertise, product knowledge and distribution to build partnership models that work for businesses and their customers."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/affinity-2.png"
           imageAlt="Advisors and partners reviewing an affinity insurance programme"
           imagePosition="center"
           steps={[

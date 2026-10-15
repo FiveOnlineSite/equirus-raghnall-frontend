@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Professional Indemnity?"
           title="Understanding Professional Indemnity"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/professional1.png"
           imageAlt="Professional Indemnity overview"
           description="Professional Indemnity Insurance protects professionals and businesses against claims of errors, omissions or negligence, covering eligible legal defence costs and compensation from client or third-party claims, subject to policy terms, limits and exclusions."
           coverageItems={["Professional errors and omissions", "Alleged negligence in professional services", "Legal defence and litigation costs", "Claims for financial loss arising from professional services","Breach of professional duty, where covered"]}
@@ -64,7 +64,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Profession Before Risk Finds You</>}
           description="Even one error can create significant legal exposure. We structure Professional Indemnity solutions around your profession."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/professional2.png"
           imageAlt="Professional Indemnity advisory support"
           imagePosition="center"
           steps={[

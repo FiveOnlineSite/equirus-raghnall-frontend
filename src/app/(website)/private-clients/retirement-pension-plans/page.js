@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Retirement / Pension Plans?"
           title="Understanding Retirement / Pension Plans"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/retirement1.png"
           imageAlt="Retirement / Pension Plans overview"
           description="Retirement / Pension Plans are long-term solutions that help individuals build funds during their working years and create retirement income, through regular contributions, guaranteed or market-linked returns, and/or periodic post-retirement payouts."
           coverageItems={["Retirement Corpus Creation", "Regular Retirement Income","Long-Term Savings", "Financial Security After Retirement", "Life Insurance Protection"]}
@@ -64,7 +64,7 @@ Over time, the contributions and applicable returns help build a retirement corp
           label="Advisory Support"
           title={<>Secure Your Future Before Retirement Arrives</>}
           description="Our specialists help you build a retirement strategy based on your current financial position, future goals and expected lifestyle."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/retirement2.png"
           imageAlt="Retirement / Pension Plans advisory support"
           imagePosition="center"
           steps={[

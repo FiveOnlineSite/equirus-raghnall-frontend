@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is MBD?"
           title="Understanding MBD"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/mbd1.png"
           imageAlt="MBD overview"
           description="Machinery Breakdown (MBD) Insurance protects machinery against sudden, unforeseen damage from covered mechanical or electrical breakdowns, helping manage repair or replacement costs and, where selected, eligible loss of profit."
           coverageItems={["Sudden and unforeseen mechanical breakdown", "Electrical and machinery-related damage", "Damage to insured machinery and equipment", "Repair and replacement costs following covered breakdowns","Protection for critical production equipment"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Yourself Before Risk Finds You</>}
           description="Breakdowns can halt production and create heavy repair costs. We structure MBD solutions around your machinery and downtime impact."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/mbd2.png"
           imageAlt="MBD advisory support"
           imagePosition="center"
           steps={[

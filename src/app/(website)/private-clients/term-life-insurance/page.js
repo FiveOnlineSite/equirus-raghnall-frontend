@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Term Life Insurance?"
           title="Understanding Term Life Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/term1.png"
           imageAlt="Term Life Insurance overview"
           description="Term Life Insurance is a pure protection plan providing life cover for a specified period. If the insured dies during the term, the death benefit is paid to the nominee, helping your family meet expenses, liabilities and long-term needs."
           coverageItems={["Life Cover", "Financial Security for Your Family", "Income Replacement", "Liability Protection","Children's Future Protection"]}
@@ -62,7 +62,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Family Before Life Takes an Unexpected Turn</>}
           description="Every individual has different financial responsibilities and protection needs."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/term2.png"
           imageAlt="Term Life Insurance advisory support"
           imagePosition="center"
           steps={[

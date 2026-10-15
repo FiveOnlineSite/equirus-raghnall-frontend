@@ -76,7 +76,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Keyman Insurance?"
           title="Understanding Keyman Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/key1.png"
           imageAlt="Keyman Insurance overview"
           description="Key Man Insurance is a life insurance policy taken by a business on the life of an individual whose skills, experience, leadership, relationships or specialised knowledge are considered critical to the organisation.
 The company is generally the policyholder and beneficiary, subject to the policy structure and applicable regulations."
@@ -132,7 +132,7 @@ A Key Man Insurance policy can provide a financial benefit to the company, helpi
           label="Advisory Support"
           title={<>Protect Your Business Before the Unexpected Happens</>}
           description="Our specialists structure cover around your needs rather than relying on a standard policy."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/key2.png"
           imageAlt="Keyman Insurance advisory support"
           imagePosition="center"
           steps={[

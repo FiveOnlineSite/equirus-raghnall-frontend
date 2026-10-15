@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Electronic Equipment?"
           title="Understanding Electronic Equipment"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/electronic1.png"
           imageAlt="Electronic Equipment overview"
           description="Electronic Equipment Insurance (EEI) protects electronic equipment against sudden, unforeseen loss or damage, covering repair or replacement costs and, where selected, data, external media and increased operating costs."
           coverageItems={["Sudden and unforeseen physical loss or damage to electronic equipment", "Computers, servers and other electronic systems", "Accidental damage arising from covered external or internal causes", "External data media and data-related risks, where selected","Increased costs of working following insured damage"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Technology Before Risk Finds You</>}
           description="Electronic systems are critical to business. We structure EEI solutions around your equipment's type, value, usage and importance."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/electronic2.png"
           imageAlt="Electronic Equipment advisory support"
           imagePosition="center"
           steps={[

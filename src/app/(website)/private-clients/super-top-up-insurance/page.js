@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Super- Top- Up Insurance?"
           title="Understanding Super- Top- Up Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/super1.png"
           imageAlt="Super- Top- Up Insurance overview"
           description="Super Top-Up Insurance provides additional health cover once cumulative eligible medical expenses in a policy year exceed a deductible. Unlike regular top-ups, which apply the deductible per claim, it works alongside your existing policy for higher financial protection."
           coverageItems={["Hospitalisation Expenses", "Cumulative Medical Expenses", "Pre & Post-Hospitalisation", "Day Care Procedures","Family Floater Options"]}
@@ -62,7 +62,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Strengthen Your Health Cover Before Costs Rise</>}
           description="Super Top-Up Insurance suits those with existing health insurance who want extra protection against high medical expenses."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/super2.png"
           imageAlt="Super- Top- Up Insurance advisory support"
           imagePosition="center"
           steps={[

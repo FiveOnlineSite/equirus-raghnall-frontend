@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Group Personal Accident?"
           title="Understanding Group Personal Accident"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/accident1.png"
           imageAlt="Group Personal Accident overview"
           description="Group Personal Accident (GPA) Insurance is an employer-sponsored solution protecting employees against accidental injuries, with benefits for accidental death, permanent or temporary disability and eligible accident-related expenses, depending on policy terms."
           coverageItems={["Accidental death", "Permanent total disability", "Permanent partial disability", "Temporary total disability, where selected","Accidental medical expenses, where covered"]}
@@ -62,7 +62,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Employees Before Risk Finds You</>}
           description="Accidents can strain employees financially. A well-structured GPA programme adds financial protection to your benefits framework."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/accident2.png"
           imageAlt="Group Personal Accident advisory support"
           imagePosition="center"
           steps={[

@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Contractors Plant & Machinery (CPM)?"
           title="Understanding Contractors Plant & Machinery (CPM)"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/cpm1.png"
           imageAlt="Contractors Plant & Machinery (CPM) overview"
           description="Contractors Plant & Machinery (CPM) Insurance protects construction and industrial equipment against accidental loss or damage during project activities, covering mobile and stationary equipment at construction sites and other locations."
           coverageItems={["Accidental physical loss or damage to insured machinery", "Construction and earthmoving equipment", "Mobile and stationary plant used for contracting activities", "Machinery while operating at specified project locations","Protection during movement within the insured premises, where covered"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Equipment Before Risk Finds You</>}
           description="Construction equipment is a major investment. We structure CPM solutions around your machinery's type, value, usage and location."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/cpm2.png"
           imageAlt="Contractors Plant & Machinery (CPM) advisory support"
           imagePosition="center"
           steps={[

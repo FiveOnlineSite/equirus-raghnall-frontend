@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Critical Illness Insurance?"
           title="Understanding Critical Illness Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/critical1.png"
           imageAlt="Critical Illness Insurance overview"
           description="Critical Illness Insurance pays a lump sum when the insured is diagnosed with a covered critical illness. Unlike regular health insurance, which reimburses eligible medical expenses, it pays a predetermined benefit once diagnosis and policy conditions are met, helping with medical costs and other obligations during recovery."
           coverageItems={["Covered Critical Illnesses", "Cancer", "Heart-Related Conditions", "Stroke", "Major Organ Conditions"]}
@@ -62,7 +62,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Finances Before a Critical Illness Happens</>}
           description="A critical illness can affect your health, income and savings. Our specialists help you find suitable protection."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/critical2.png"
           imageAlt="Critical Illness Insurance advisory support"
           imagePosition="center"
           steps={[

@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Marine Hull & Aviation?"
           title="Understanding Marine Hull & Aviation"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/marine-hull1.png"
           imageAlt="Marine Hull & Aviation overview"
           description="Marine Hull & Aviation Insurance protects vessels, aircraft and related operational risks against accidental physical loss or damage, with Aviation also offering liability protection for aviation-related risks, subject to policy terms."
           coverageItems={["Physical loss or damage to insured vessels and aircraft", "Marine hull and machinery protection", "Aircraft hull protection", "Third-party liability protection","Protection against specified marine and aviation risks"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Assets Before Risk Finds You</>}
           description="Marine and aviation assets carry complex risks. We structure solutions around your vessel or aircraft, operations, geography and liability needs."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/marine-hull2.png"
           imageAlt="Marine Hull & Aviation advisory support"
           imagePosition="center"
           steps={[

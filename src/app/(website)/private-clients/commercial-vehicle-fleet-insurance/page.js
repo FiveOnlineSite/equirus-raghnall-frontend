@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Commercial Vehicle & Fleet?"
           title="Understanding Commercial Vehicle & Fleet"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/commercial1.png"
           imageAlt="Commercial Vehicle & Fleet overview"
           description="Commercial Vehicle & Fleet Insurance protects business vehicles against financial losses from accidents, theft, natural or man-made events and third-party liabilities, whether you run a single vehicle or a large fleet, safeguarding your vehicles, drivers and operations."
           coverageItems={["Own Damage Protection", "Third-Party Liability", "Theft Protection", "Natural Calamities","Man-Made Events"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Keep Your Business Moving With the Right Protection</>}
           description="Every fleet has different vehicles, routes and needs. Our specialists help you structure insurance around your business."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/commercial1.png"
           imageAlt="Commercial Vehicle & Fleet advisory support"
           imagePosition="center"
           steps={[

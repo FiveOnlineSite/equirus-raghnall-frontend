@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Contractors All Risk (CAR)?"
           title="Understanding Contractors All Risk (CAR)"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/car1.png"
           imageAlt="Contractors All Risk (CAR) overview"
           description="Contractors All Risk (CAR) Insurance protects construction projects against accidental loss or damage during construction, and can also cover third-party liability for bodily injury or property damage, subject to policy terms."
           coverageItems={["Accidental physical loss or damage to works under construction", "Temporary works, construction materials, and equipment", "Plant and machinery used at the project site", "Third-party bodily injury or property damage liability","Debris removal and related expenses"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Yourself Before Risk Finds You</>}
           description="Every project has its own timeline, obligations, site conditions and risks. We structure CAR solutions around your requirements."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/car2.png"
           imageAlt="Contractors All Risk (CAR) advisory support"
           imagePosition="center"
           steps={[

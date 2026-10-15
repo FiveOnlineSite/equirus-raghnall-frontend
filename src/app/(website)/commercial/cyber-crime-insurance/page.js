@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Cyber & Crime?"
           title="Understanding Cyber & Crime"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/crime1.png"
           imageAlt="Cyber & Crime overview"
           description="Cyber & Crime Insurance protects businesses against exposures from cyber incidents, data breaches and fraud or crime, covering incident response, restoration, data recovery and covered claims, subject to policy terms."
           coverageItems={["Data breaches and privacy incidents", "Cyber attacks and network security events", "Business interruption caused by covered cyber incidents", "Cyber extortion and ransomware-related expenses","Data restoration and incident response costs"]}
@@ -64,7 +64,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Business Before Risk Finds You</>}
           description="Cyber and financial crime can hit operations, data and finances at once. We structure Cyber & Crime solutions around your exposures."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/crime2.png"
           imageAlt="Cyber & Crime advisory support"
           imagePosition="center"
           steps={[

@@ -38,7 +38,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Two - Wheeler Insurance?"
           title="Understanding Two - Wheeler Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/bike1.png"
           imageAlt="Two - Wheeler Insurance overview"
           description="Two-Wheeler Insurance protects your bike or scooter against financial losses from accidents, theft, natural or man-made events and third-party liabilities, helping you manage the impact and get back on the road with confidence."
           coverageItems={["Own Damage Protection", "Theft Protection", "Natural Calamities", "Man-Made Events", "Third-Party Liability"]}
@@ -59,7 +59,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Two-Wheeler</>}
           description="Every rider and vehicle is different. Our specialists help you understand your risks and choose insurance suited to your vehicle and usage"
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/bike2.png"
           imageAlt="Two - Wheeler Insurance advisory support"
           imagePosition="center"
           steps={[

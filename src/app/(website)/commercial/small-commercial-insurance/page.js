@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Small Commercial?"
           title="Understanding Small Commercial"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/small1.png"
           imageAlt="Small Commercial overview"
           description="Small Commercial Insurance protects eligible small businesses against accidental loss or damage to insured property, including premises, stock, contents and equipment, with solutions structured around the size, nature and requirements of the business."
           coverageItems={["Business premises and property", "Stock, contents and equipment", "Accidental physical loss or damage", "Burglary and theft-related risks, where opted", "Business interruption following covered property damage"]}
@@ -61,7 +61,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Yourself Before Risk Finds You</>}
           description="Every business has different assets, operations and risks. We help you identify the right protection as your needs change."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/small2.png"
           imageAlt="Small Commercial advisory support"
           imagePosition="center"
           steps={[

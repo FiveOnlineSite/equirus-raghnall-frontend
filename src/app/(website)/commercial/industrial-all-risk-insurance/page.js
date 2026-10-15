@@ -72,7 +72,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Industrial All Risk (IAR)?"
           title="Understanding Industrial All Risk (IAR)"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/iar1.png"
           imageAlt="Industrial All Risk (IAR) overview"
           description="Industrial All Risk (IAR) Insurance provides broad protection for large industrial units and manufacturing facilities against accidental physical loss or damage, except specified exclusions, and can also cover business interruption arising from an insured loss."
           coverageItems={[
@@ -160,7 +160,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Industrial Assets Before Risk Finds You</>}
           description="Our specialists structure cover around your needs rather than relying on a standard policy."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/iar2.png"
           imageAlt="Industrial All Risk (IAR) advisory support"
           imagePosition="center"
           steps={[

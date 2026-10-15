@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Employers Liability?"
           title="Understanding Employers Liability"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/commercial/employer1.png"
           imageAlt="Employers Liability overview"
           description="Employers' Liability / Workers' Compensation Insurance protects employees against the financial consequences of work-related injury, illness, disability or death, while helping employers manage compensation and legal liabilities from covered workplace accidents, subject to policy terms and applicable laws."
           coverageItems={["Accidental bodily injury to employees arising out of employment", "Death resulting from a covered workplace accident", "Permanent or temporary disability benefits", "Occupational injury or disease, where covered","Compensation payable under applicable legislation"]}
@@ -64,7 +64,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Workforce Before Risk Finds You</>}
           description="Workplace accidents carry legal consequences. We structure Worker's Compensation solutions around your workforce needs."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/commercial/employer2.png"
           imageAlt="Employers Liability advisory support"
           imagePosition="center"
           steps={[

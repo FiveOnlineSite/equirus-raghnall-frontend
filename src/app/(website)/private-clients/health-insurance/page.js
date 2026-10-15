@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Health Insurance?"
           title="Understanding Health Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/health1.png"
           imageAlt="Health Insurance overview"
           description="Health Insurance is designed to provide financial protection against eligible medical and hospitalisation expenses arising from illness, injury or accidents, subject to the terms and conditions of the policy."
           coverageItems={["Hospitalisation Expenses", "Pre & Post-Hospitalisation", "Day Care Procedures", "Cashless Hospitalisation", "Ambulance Expenses"]}
@@ -62,7 +62,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Health Before the Unexpected Happens </>}
           description="Healthcare needs differ for every individual and family. Our specialists help assess yours and identify suitable health insurance."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/health2.png"
           imageAlt="Health Insurance advisory support"
           imagePosition="center"
           steps={[
