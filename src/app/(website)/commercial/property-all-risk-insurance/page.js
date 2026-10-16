@@ -70,7 +70,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Property All Risk (PAR)?"
           title="Understanding Property All Risk (PAR)"
-          image="/assets/services/commercial/property1.png"
+          image="/assets/services/commercial/property-1.png"
           imageAlt="Property All Risk (PAR) overview"
           description="Property All Risk (PAR) Insurance protects buildings, machinery, inventory and equipment against accidental loss or damage, except specified exclusions, with optional cover for business interruption, machinery breakdown and loss of rent."
           coverageItems={[
@@ -170,7 +170,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Property Before Risk Finds You</>}
           description="Our specialists structure cover around your needs rather than relying on a standard policy."
-          image="/assets/services/commercial/property2.png"
+          image="/assets/services/commercial/property-2.png"
           imageAlt="Property All Risk (PAR) advisory support"
           imagePosition="center"
           steps={[

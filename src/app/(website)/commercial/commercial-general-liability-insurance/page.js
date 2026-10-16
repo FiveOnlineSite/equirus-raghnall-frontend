@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Commercial General Liability?"
           title="Understanding Commercial General Liability"
-          image="/assets/services/commercial/general1.png"
+          image="/assets/services/commercial/generals1.png"
           imageAlt="Commercial General Liability overview"
           description="Commercial General Liability (CGL) Insurance protects businesses against third-party bodily injury, property damage and related claims, covering eligible compensation and legal defence costs, subject to policy terms, limits and exclusions."
           coverageItems={["Third-party bodily injury", "Third-party property damage", "Legal defence and litigation expenses", "Premises and operations liability","Products and completed operations liability"]}
@@ -64,7 +64,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Yourself Before Risk Finds You</>}
           description="Third-party claims can mean significant legal costs. We structure CGL solutions around your operations, premises, products and contracts."
-          image="/assets/services/commercial/general2.png"
+          image="/assets/services/commercial/generals2.png"
           imageAlt="Commercial General Liability advisory support"
           imagePosition="center"
           steps={[

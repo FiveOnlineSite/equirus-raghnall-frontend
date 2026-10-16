@@ -38,7 +38,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Risk Analytics, Structuring, and Advisory?"
           title="Understanding Risk Analytics, Structuring, and Advisory"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/reinsurrance/risk1.png"
           imageAlt="Risk Analytics, Structuring, and Advisory overview"
           description="Risk Analytics, Structuring, and Advisory combines exposure analysis, portfolio modelling and reinsurance expertise to help insurers evaluate risks and develop risk transfer strategies, supporting decisions on retention, capacity, limits, pricing and programme structure."
           coverageItems={["Risk & Exposure Analytics ", "Portfolio Modelling ", "Reinsurance Structuring ", "Retention & Capacity Analysis","Programme Optimisation "]}
@@ -59,7 +59,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Turn Risk Insights Into Better Reinsurance Decisions</>}
           description="We combine analytics, structuring expertise and market knowledge to help insurers develop reinsurance strategies aligned with their portfolios."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/reinsurrance/risk2.png"
           imageAlt="Risk Analytics, Structuring, and Advisory advisory support"
           imagePosition="center"
           steps={[

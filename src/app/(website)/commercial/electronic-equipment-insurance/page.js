@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Technology Before Risk Finds You</>}
           description="Electronic systems are critical to business. We structure EEI solutions around your equipment's type, value, usage and importance."
-          image="/assets/services/commercial/electronic2.png"
+          image="/assets/services/commercial/electronics2.png"
           imageAlt="Electronic Equipment advisory support"
           imagePosition="center"
           steps={[

@@ -65,7 +65,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Mergers Acquisitions?"
           title="Understanding Mergers Acquisitions"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/reinsurrance/merge1.png"
           imageAlt="Mergers Acquisitions overview"
           description="M&A Insurance protects parties in mergers, acquisitions and other corporate transactions against specified financial risks, such as breaches of representations and warranties, unexpected liabilities or transaction-related risks, subject to policy terms."
           coverageItems={[
@@ -107,7 +107,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Transaction Before Risk Finds You</>}
           description="Every transaction has its own risk profile. Our specialists identify key exposures and structure suitable protection."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/reinsurrance/merge2.png"
           imageAlt="Mergers Acquisitions advisory support"
           imagePosition="center"
           steps={[

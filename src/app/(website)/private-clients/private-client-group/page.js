@@ -70,7 +70,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Private Client Group?"
           title="Understanding Private Client Group"
-          image="/assets/services/private/private-group1.png"
+          image="/assets/services/private/private1.png"
           imageAlt="Private Client Group overview"
           description="The Private Client Group (PCG) addresses the complex, evolving insurance needs of high-net-worth individuals and families. Multiple residences, luxury vehicles, fine art, jewellery, domestic staff, travel and liabilities create exposures standard insurance may not adequately address."
           coverageItems={[
@@ -138,7 +138,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Your Wealth. Your Lifestyle. Your Protection</>}
           description="Every client's assets, family and lifestyle differ. Our approach is built around your individual risk profile, not a standard template."
-          image="/assets/services/private/private-group2.png"
+          image="/assets/services/private/private2.png"
           imageAlt="Private Client Group advisory support"
           imagePosition="center"
           steps={[

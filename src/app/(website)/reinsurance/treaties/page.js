@@ -38,7 +38,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Treaties?"
           title="Understanding Treaties"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/reinsurrance/treat1.png"
           imageAlt="Treaties overview"
           description="Treaty reinsurance is an arrangement where an insurer transfers an agreed portion of its risks to a reinsurer under defined terms, helping manage exposures, enhance underwriting capacity and achieve stability."
           coverageItems={["Proportional Treaty", "Non-Proportional Treaty", "Quota Share", "Surplus Share","Excess of Loss"]}
@@ -60,7 +60,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Strengthen Your Reinsurance Programme</>}
           description="We understand your portfolio and risk appetite. Our specialists structure and place treaty solutions aligned with your needs."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/reinsurrance/treat2.png"
           imageAlt="Treaties advisory support"
           imagePosition="center"
           steps={[

@@ -126,7 +126,7 @@ export default function ClaimAdvocacyPage() {
           <div className="relative min-w-0 self-end lg:mb-1 lg:h-[446px] min-[1440px]:-ml-[14px]">
             <div className="absolute -bottom-2 -right-2 top-8 w-[70%] rounded bg-[#2c2f71] lg:-bottom-[2px] lg:top-10 min-[1440px]:-right-1" aria-hidden="true" />
             <div className="relative z-10 h-[350px] w-full overflow-hidden rounded lg:absolute lg:bottom-[6px] lg:left-0 lg:h-[440px] min-[1440px]:w-[522px]">
-              <Image src={asset("overview.png")} alt="Adviser meeting a client about an insurance claim" fill sizes="(max-width: 1023px) 100vw, 522px" className="object-cover" />
+              <Image src={"/assets/services/reinsurrance/claim1.png"} alt="Adviser meeting a client about an insurance claim" fill sizes="(max-width: 1023px) 100vw, 522px" className="object-cover" />
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function ClaimAdvocacyPage() {
             <div className="absolute left-0 top-0 h-[380px] w-[calc(100%_-_8px)] lg:top-[125px] lg:h-[480px] lg:max-w-[480px]">
               <div className="absolute -bottom-2 -right-2 h-[90%] w-[70%] rounded-lg bg-[#2c2f71]" aria-hidden="true" />
               <div className="absolute inset-0 z-10 overflow-hidden rounded-lg">
-                <Image src={asset("preparedness.png")} alt="Claims adviser helping a client prepare for a loss" fill sizes="(max-width: 1023px) 100vw, 480px" className="object-cover" />
+                <Image src="/assets/services/reinsurrance/claim2.png" alt="Claims adviser helping a client prepare for a loss" fill sizes="(max-width: 1023px) 100vw, 480px" className="object-cover" />
               </div>
             </div>
           </div>

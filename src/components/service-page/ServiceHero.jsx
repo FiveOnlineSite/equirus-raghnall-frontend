@@ -218,7 +218,7 @@ export default function ServiceHero({
 
         {features.length ? (
           <div
-            className={`mx-auto mb-6 grid w-full gap-3 text-left md:mb-8 ${
+            className={`mx-auto mb-6 grid w-fit max-w-full gap-3 text-left sm:w-full md:mb-8 ${
               features.length <= 3
                 ? "max-w-[720px] sm:grid-cols-3"
                 : "max-w-[1200px] sm:grid-cols-5"
@@ -229,7 +229,7 @@ export default function ServiceHero({
 
               return (
                 <div
-                  className={`flex items-center justify-center gap-3 ${
+                  className={`flex items-center justify-start gap-3 ${
                     features.length <= 3
                       ? "sm:justify-center"
                       : "sm:justify-start"

@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Personal Cyber Insurance?"
           title="Understanding Personal Cyber Insurance"
-          image="/assets/services/commercial/cyber-personal1.png"
+          image="/assets/services/commercial/cyber-person1.png"
           imageAlt="Personal Cyber Insurance overview"
           description="Personal Cyber Insurance protects individuals and families against risks from cyber incidents, online fraud, identity theft and privacy breaches, providing financial protection and assistance for covered losses, subject to policy terms."
           coverageItems={["Identity theft and restoration expenses", "Online financial fraud and cyber-enabled theft", "Cyber extortion and ransomware-related incidents", "Online privacy and data breach-related risks","Cyber harassment and online reputation risks"]}
@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Digital Life Before Risk Finds You</>}
           description="Your digital identity is increasingly valuable and exposed. We structure Personal Cyber Insurance around your risk profile and digital lifestyle."
-          image="/assets/services/commercial/cyber-personal2.png"
+          image="/assets/services/commercial/cyber-person2.png"
           imageAlt="Personal Cyber Insurance advisory support"
           imagePosition="center"
           steps={[

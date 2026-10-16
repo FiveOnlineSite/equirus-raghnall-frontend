@@ -37,7 +37,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Terrorism & Political Violence ?"
           title="Understanding Terrorism & Political Violence "
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/reinsurrance/political1.png"
           imageAlt="Terrorism & Political Violence  overview"
           description="Terrorism & Political Violence Reinsurance protects insurers against defined losses from terrorism and political violence risks, helping manage severe, low-frequency events, accumulation exposures and portfolio volatility while maintaining underwriting capacity."
           coverageItems={["Terrorism", "Political Violence", "Strikes, Riots & Civil Commotion", "Insurrection & Rebellion","Civil War"]}
@@ -58,7 +58,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Against Terrorism & Political Violence Risks</>}
           description="We understand your portfolio, geographical exposure, accumulation and risk appetite to structure appropriate reinsurance protection."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/reinsurrance/political2.png"
           imageAlt="Terrorism & Political Violence  advisory support"
           imagePosition="center"
           steps={[

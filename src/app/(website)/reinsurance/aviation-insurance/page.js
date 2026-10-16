@@ -37,7 +37,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Aviation Insurance?"
           title="Understanding Aviation Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/reinsurrance/plane1.png"
           imageAlt="Aviation Insurance overview"
           description="Aviation Insurance protects aircraft owners, operators and aviation businesses against financial losses from aviation risks, including damage to aircraft, passenger liability and third-party claims, subject to policy terms and conditions."
           coverageItems={["Aircraft Hull Damage", "Third-Party Liability", "Passenger Liability", "Ground Risks","Airport & Hangar Liability"]}
@@ -58,7 +58,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Flights Before Risk Takes Off</>}
           description="We understand your aircraft, operations, routes and aviation exposures to structure insurance aligned with your requirements."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/reinsurrance/plane2.png"
           imageAlt="Aviation Insurance advisory support"
           imagePosition="center"
           steps={[

@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Corporate Cyber Insurance?"
           title="Understanding Corporate Cyber Insurance"
-          image="/assets/services/commercial/cyber1.png"
+          image="/assets/services/commercial/cybers1.png"
           imageAlt="Corporate Cyber Insurance overview"
           description="Corporate Cyber Insurance protects businesses against financial and liability exposures from cyber attacks, data breaches and network security incidents, covering incident response, data recovery, business interruption and third-party claims, subject to policy terms."
           coverageItems={["Data breaches and privacy incidents", "Network security and cyber attacks", "Cyber business interruption", "Incident response and investigation costs","Data and system restoration"]}
@@ -64,7 +64,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Yourself Before Risk Finds You</>}
           description="Cyber incidents hit technology, data and operations at once, so we structure Corporate Cyber Insurance around your cyber risks."
-          image="/assets/services/commercial/cyber2.png"
+          image="/assets/services/commercial/cybers2.png"
           imageAlt="Corporate Cyber Insurance advisory support"
           imagePosition="center"
           steps={[

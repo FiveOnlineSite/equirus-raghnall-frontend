@@ -38,7 +38,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Parametric Insurance?"
           title="Understanding Parametric Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/reinsurrance/param1.png"
           imageAlt="Parametric Insurance overview"
           description="Parametric Insurance provides a predefined payout when an agreed measurable event reaches a specified threshold. Unlike traditional insurance, payout depends on the trigger's intensity rather than assessment of the actual physical loss."
           coverageItems={["Natural Catastrophe Risks", "Weather-related Risks", "Earthquake", "Excessive Rainfall","Wind Speed"]}
@@ -59,7 +59,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Business Before Risk Impacts You</>}
           description="We understand your operations, locations and risk triggers to structure parametric protection aligned with your requirements."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/reinsurrance/param2.png"
           imageAlt="Parametric Insurance advisory support"
           imagePosition="center"
           steps={[

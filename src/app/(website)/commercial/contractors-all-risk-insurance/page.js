@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Yourself Before Risk Finds You</>}
           description="Every project has its own timeline, obligations, site conditions and risks. We structure CAR solutions around your requirements."
-          image="/assets/services/commercial/car2.png"
+          image="/assets/services/commercial/car-2.png"
           imageAlt="Contractors All Risk (CAR) advisory support"
           imagePosition="center"
           steps={[

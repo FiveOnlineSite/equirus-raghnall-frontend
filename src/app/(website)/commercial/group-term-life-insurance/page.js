@@ -43,7 +43,7 @@ export default function Page() {
           image="/assets/services/commercial/term1.png"
           imageAlt="Group Term Life Insurance overview"
           description="Group Term Life Insurance provides employer-sponsored life cover to employees under a single policy, paying the life benefit to the designated beneficiary if a covered employee dies during the policy period."
-          coverageItems={["Life cover for eligible employees", "Death benefit during the policy period", "Financial protection for employees' families", "Flexible sum insured structures","Coverage for eligible employee categories"]}
+          coverageItems={["Life cover for eligible employees", "Death benefit during the policy period", "Financial protection for employee's families", "Flexible sum insured structures","Coverage for eligible employee categories"]}
           example="If a covered employee passes away during the policy period, the applicable sum insured can be paid to the designated beneficiary in accordance with the policy terms, helping provide financial support to the employee's family."
         />
         <ServiceCoverageGrid
@@ -55,7 +55,7 @@ export default function Page() {
             { title: "Employer-Sponsored Life Benefits", description: "Employers can offer life insurance as an employee benefit, with cover structured around workforce requirements and the selected policy design." },
             { title: "Flexible Sum Insured Options", description: "Cover can use fixed, salary-linked, designation-based or other eligible benefit structures, depending on the insurer and policy terms." },
             { title: "Additional Protection Benefits", description: "Where available and selected, additional benefits or riders may enhance employee protection, subject to terms and conditions." },
-            { title: "Employee & Family Financial Security", description: "Group Term Life Insurance can be part of an employee welfare programme, adding financial protection for employees' families." },
+            { title: "Employee & Family Financial Security", description: "Group Term Life Insurance can be part of an employee welfare programme, adding financial protection for employee's families." },
           ]}
         />
         <ServiceAdvisorySupport

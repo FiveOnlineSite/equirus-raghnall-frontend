@@ -75,7 +75,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is High Net-Worth Solutions?"
           title="Understanding High Net-Worth Solutions"
-          image="/assets/services/private/high1.png"
+          image="/assets/services/private/highs1.png"
           imageAlt="High Net-Worth Solutions overview"
           description="High Net-Worth Solutions are specialised insurance and risk management solutions for individuals and families with significant assets and unique lifestyle exposures. From luxury residences to art, jewellery and international travel, conventional insurance may not adequately cover these risks."
           coverageItems={[
@@ -137,7 +137,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>A Holistic Approach to Private Client Risk</>}
           description="Your wealth is unique. Your insurance should be too."
-          image="/assets/services/private/high2.png"
+          image="/assets/services/private/highs2.png"
           imageAlt="High Net-Worth Solutions advisory support"
           imagePosition="center"
           steps={[

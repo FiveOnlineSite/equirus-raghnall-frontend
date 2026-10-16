@@ -63,7 +63,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Keep Your Business Moving With the Right Protection</>}
           description="Every fleet has different vehicles, routes and needs. Our specialists help you structure insurance around your business."
-          image="/assets/services/private/commercial1.png"
+          image="/assets/services/private/truck2.png"
           imageAlt="Commercial Vehicle & Fleet advisory support"
           imagePosition="center"
           steps={[

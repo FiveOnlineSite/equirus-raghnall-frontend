@@ -40,7 +40,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Travel Insurance?"
           title="Understanding Travel Insurance"
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/private/travel1.png"
           imageAlt="Travel Insurance overview"
           description="Travel Insurance protects you against financial losses from specified medical emergencies, accidents, trip disruptions, baggage loss and other covered events. Whether travelling internationally or within India, the right plan provides valuable support when unexpected situations affect your journey."
           coverageItems={["Overseas Medical Expenses", "Emergency Medical Evacuation", "Trip Cancellation & Interruption", "Baggage Loss & Delay","Travel Delay"]}
@@ -62,7 +62,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Protect Your Journey Before You Take Off</>}
           description="Every trip is different. Our specialists help you find suitable travel insurance for your destination, duration and traveller profile."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/private/travel2.png"
           imageAlt="Travel Insurance advisory support"
           imagePosition="center"
           steps={[

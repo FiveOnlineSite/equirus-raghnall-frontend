@@ -38,7 +38,7 @@ export default function Page() {
         <ServiceOverview
           label="What Is Liability & Financial Lines ?"
           title="Understanding Liability & Financial Lines "
-          image="/assets/services/directors-officers/overview.png"
+          image="/assets/services/reinsurrance/finance1.png"
           imageAlt="Liability & Financial Lines  overview"
           description="Liability & Financial Lines Reinsurance lets insurers transfer defined portions of their liability and financial lines portfolios to reinsurers, helping manage accumulation, volatility, severity and emerging exposures while supporting sustainable underwriting capacity."
           coverageItems={["Directors & Officers Liability", "Professional Indemnity", "Errors & Omissions", "Employment Practices Liability","Cyber Liability"]}
@@ -59,7 +59,7 @@ export default function Page() {
           label="Advisory Support"
           title={<>Strengthen Your Liability & Financial Lines Portfolio</>}
           description="We understand your portfolio, underwriting strategy, claims experience and risk appetite to structure appropriate reinsurance solutions."
-          image="/assets/services/directors-officers/advisory-support.png"
+          image="/assets/services/reinsurrance/finance2.png"
           imageAlt="Liability & Financial Lines  advisory support"
           imagePosition="center"
           steps={[
